@@ -26,9 +26,10 @@ const handlePageChange = (page) => {
             :onPageChange="handlePageChange"
             :extraClass="'mb-8'"
         />
-        <div class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-4 gap-x-4 justify-items-center">
+
+        <div class="flex flex-wrap justify-center">
             <div v-for="product in paginateProducts" :key="product.title"
-                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-4 my-4"
             >
                 <a href="#">
                     <img class="rounded-t-lg" :src="product.img" alt="" />
