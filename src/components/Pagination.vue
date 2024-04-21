@@ -113,9 +113,9 @@ export default {
   --border-color: #dee2e6;
 }
 .dark .pages-container {
-  --theme-color: #235487;
-  --background-color: #121212;
-  --border-color: #444546;
+  --theme-color: #246bb8;
+  --background-color: #1f2937;
+  --border-color: #505050;
 }
 
 .pages-container .pages {

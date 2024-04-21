@@ -54,14 +54,26 @@ const {
 		<link rel="preconnect" href="https://www.google.com">
 		<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 	</head>
-	<body>
+	<body class="bg-background-light dark:bg-gray-900 scrollbar scrollbar-w-3 scrollbar-thumb-rounded-[0.25rem] scrollbar-track-gray-200 scrollbar-thumb-gray-400 dark:scrollbar-track-gray-900 dark:scrollbar-thumb-gray-700">
 		<Header />
-		<div class="container mx-auto ">
+		<div class="container mx-auto">
 			<slot />
 		</div>
 		<Footer />
 	</body>
 </html>
+<!--  DARK MODE -->
+<script is:inline>
+	if (
+		localStorage.getItem('color-theme') === 'dark' ||
+		(!('color-theme' in localStorage) &&
+			window.matchMedia('(prefers-color-scheme: dark)').matches)
+	) {
+		document.documentElement.classList.add('dark');
+	} else {
+		document.documentElement.classList.remove('dark');
+	}
+</script>
 <style is:global>
 
 </style>
