@@ -1,3 +1,85 @@
+<script setup>
+import { ref, computed, onMounted, watch } from "vue";
+const props = defineProps({
+  total:{
+    type: Number,
+    required: true,
+  },
+  current:{
+    type: Number,
+    required: true,
+  },
+  onPageChange: {
+    type: Function,
+  },
+  extraClass: {
+    type: String,
+    default: "",
+  }
+});
+
+const totalPages = ref(props.total)
+const currentPage = ref(props.current)
+const ellipsis = "···"
+const pre = "Anterior"
+const next = "Siguiente"
+const showPages = ref(true)
+
+const pages = computed ( () => {
+  const c = currentPage.value;
+  const t = totalPages.value;
+  if (t <= 11) {
+    const pages = [];
+    for (let i = 1; i <= t; i++) {
+      pages.push(i);
+    }
+    return pages;
+  } else {
+    let pages = [];
+    if (c <= 5) {
+      pages = [1, 2, 3, 4, 5, ellipsis, t];
+    } else if (c >= t - 4) {
+      pages = [1, ellipsis, t - 4, t - 3, t - 2, t - 1, t,];
+    } else {
+      pages = [1, ellipsis, c - 1, c, c + 1, ellipsis, t,];
+    }
+    return pages;
+  }
+})
+const nextDisabled = computed ( () => {
+  return currentPage.value === totalPages.value;
+})
+const prevDisabled = computed ( () => {
+  return currentPage.value === 1;
+})
+
+const handlePageChange =  () => {
+  props.onPageChange(currentPage.value);
+}
+const handleClickActive = (page) => {
+  if (page === currentPage.value || page === ellipsis) return;
+  currentPage.value = page;
+  handlePageChange()
+}
+const handleClickControl = (n) => {
+  currentPage.value += n;
+  handlePageChange()
+}
+
+onMounted(() => {
+  if(window.innerWidth < 520 ){
+    showPages.value = false;
+  }
+})
+
+watch(
+  () => props.current,
+  () => {
+    currentPage.value = props.current
+  }
+)
+
+</script>
 <template>
   <nav :class="[extraClass,'pages-container']" id="pagination">
     <ul class="pages">
@@ -17,94 +99,6 @@
     </ul>
   </nav>
 </template>
-
-<script>
-export default {
-  props: {
-    total:{
-      type: Number,
-      required: true,
-    },
-    current:{
-      type: Number,
-      required: true,
-    },
-    onPageChange: {
-      type: Function,
-    },
-    extraClass: {
-      type: String,
-      default: "",
-    }
-  },
-  data() {
-    return {
-      totalPages: this.total,
-      currentPage: this.current,
-      ellipsis: "···",
-      pre: "Anterior",
-      next: "Siguiente",
-      showPages: true,
-    };
-  },
-  computed: {
-
-    pages() {
-      const c = this.currentPage;
-      const t = this.totalPages;
-      if (t <= 11) {
-        const pages = [];
-        for (let i = 1; i <= t; i++) {
-          pages.push(i);
-        }
-        return pages;
-      } else {
-        let pages = [];
-        if (c <= 5) {
-          pages = [1, 2, 3, 4, 5, this.ellipsis, t];
-        } else if (c >= t - 4) {
-          pages = [1, this.ellipsis, t - 4, t - 3, t - 2, t - 1, t,];
-        } else {
-          pages = [1, this.ellipsis, c - 1, c, c + 1, this.ellipsis, t,];
-        }
-        return pages;
-      }
-    },
-    nextDisabled() {
-       return this.currentPage === this.totalPages;
-    },
-    prevDisabled() {
-       return this.currentPage === 1;
-    },
-
-  },
-  methods: {
-    handlePageChange () {
-      this.onPageChange(this.currentPage);
-    },
-    handleClickActive(page) {
-      if (page === this.currentPage || page === this.ellipsis) return;
-      this.currentPage = page;
-      this.handlePageChange()
-    },
-    handleClickControl(n) {
-      this.currentPage += n;
-      this.handlePageChange()
-    },
-  },
-  mounted() {
-    if(window.innerWidth < 520 ){
-       this.showPages = false;
-    }
-  },
-  watch: {
-    current() {
-      this.currentPage = this.current;
-    }
-  }
-
-};
-</script>
 
 <style scoped>
 .pages-container {

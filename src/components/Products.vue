@@ -5,12 +5,12 @@ import Product from '@/components/Product.vue';
 import Pagination from '@/components/Pagination.vue';
 
 const currentPage = ref(1);
-const perPage = ref(12);
-const totalPages = Math.ceil(products.length / perPage.value );
-
+const perPage = 12;
+const totalPages = Math.ceil(products.length / perPage );
+//console.log(totalPages)
 const paginateProducts = computed ( () => {
-    const startIndex = (currentPage.value - 1) * perPage.value;
-    const endIndex = startIndex + perPage.value;
+    const startIndex = (currentPage.value - 1) * perPage;
+    const endIndex = startIndex + perPage;
     return products.slice(startIndex, endIndex);
 })
 
@@ -22,14 +22,15 @@ const handlePageChange = (page) => {
 <template>
     <div>
         <Pagination
+            client:load
             :total="totalPages"
             :current="currentPage"
             :onPageChange="handlePageChange"
-            :extraClass="'mb-8'"
+            extraClass="mb-8"
         />
 
         <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-4 justify-items-center">
-            <template v-for="product in paginateProducts" :key="product.title">
+            <template v-for="product in paginateProducts" :key="product">
                 <Product 
                     :image="product.img"
                     :title="product.title"
@@ -44,10 +45,11 @@ const handlePageChange = (page) => {
         </div>
 
         <Pagination
+            client:load
             :total="totalPages"
             :current="currentPage"
             :onPageChange="handlePageChange"
-            :extraClass="'mt-8'"
+            extraClass="mt-8"
         />
     </div>
 </template>
