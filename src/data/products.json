@@ -2,7 +2,9 @@
     "products": [
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Puré de papas x 125g",
+            "title": "Puré de papas",
+            "weight": "125g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 25 unidades",
             "category": "Purés de papa",
@@ -10,7 +12,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Puré de papas x 1kg",
+            "title": "Puré de papas",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Purés de papa",
@@ -18,7 +22,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Puré de papas x 2kg",
+            "title": "Puré de papas",
+            "weight": "2kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 5 unidades",
             "category": "Purés de papa",
@@ -30,7 +36,9 @@
 
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de verduras x 68g",
+            "title": "Sopa crema de verduras",
+            "weight": "68g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas crema",
@@ -38,7 +46,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de espárragos x 68g",
+            "title": "Sopa crema de espárragos",
+            "weight": "68g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas crema",
@@ -46,7 +56,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de choclo x 68g",
+            "title": "Sopa crema de choclo",
+            "weight": "68g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas crema",
@@ -54,7 +66,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de arvejas x 68g",
+            "title": "Sopa crema de arvejas",
+            "weight": "68g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas crema",
@@ -62,15 +76,23 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de pollo x 68g",
+            "title": "Sopa crema de pollo",
+            "weight": "68g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas crema",
             "provider": "Oscar David"
         },
+
+
+
+
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de verduras x 1kg",
+            "title": "Sopa crema de verduras",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Sopas crema",
@@ -78,7 +100,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de espárragos x 1kg",
+            "title": "Sopa crema de espárragos",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Sopas crema",
@@ -86,7 +110,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de choclo x 1kg",
+            "title": "Sopa crema de choclo",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Sopas crema",
@@ -94,7 +120,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de arvejas x 1kg",
+            "title": "Sopa crema de arvejas",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Sopas crema",
@@ -102,7 +130,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa crema de pollo x 1kg",
+            "title": "Sopa crema de pollo",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Sopas crema",
@@ -114,7 +144,9 @@
 
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa de verduras con fideos de letras x --g",
+            "title": "Sopa de verduras con fideos de letras",
+            "weight": "110g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas con fideos",
@@ -122,7 +154,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa de verduras con fideos coditos x --g",
+            "title": "Sopa de verduras con fideos coditos",
+            "weight": "110g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas con fideos",
@@ -130,7 +164,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Sopa de verduras con fideos Ave María x --g",
+            "title": "Sopa de verduras con fideos Ave María",
+            "weight": "110g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 10 unidades",
             "category": "Sopas con fideos",
@@ -142,7 +178,9 @@
 
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Colorante arroz amarillo pote 100 sobres x 1g",
+            "title": "Colorante arroz amarillo",
+            "weight": "pote de 100 sobres de 1g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Pack x 15 unidades",
             "category": "Colorante amarillo",
@@ -154,7 +192,9 @@
 
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado pote 80 unidades x 5g",
+            "title": "Caldo verduras deshidratado",
+            "weight": "pote de 80 unidades de 5g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Pack x 15 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -162,7 +202,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo pote 80 unidades x 5g",
+            "title": "Caldo verduras deshidratado sabor pollo",
+            "weight": "pote de 80 unidades de 5g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Pack x 15 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -170,7 +212,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne pote 80 unidades x 5g",
+            "title": "Caldo verduras deshidratado sabor carne",
+            "weight": "pote de 80 unidades de 5g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Pack x 15 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -178,15 +222,23 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sin sal pote 80 unidades x 5g",
+            "title": "Caldo verduras deshidratado sin sal",
+            "weight": "pote de 80 unidades de 5g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Pack x 15 unidades",
             "category": "Caldos de verdura deshidratados",
             "provider": "Oscar David"
         },
+
+
+
+
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado x 5kg",
+            "title": "Caldo verduras deshidratado",
+            "weight": "5kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 2 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -194,7 +246,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo x 5kg",
+            "title": "Caldo verduras deshidratado sabor pollo",
+            "weight": "5kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 2 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -202,7 +256,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne x 5kg",
+            "title": "Caldo verduras deshidratado sabor carne",
+            "weight": "5kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 2 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -210,15 +266,23 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor finas hierbas x 5kg",
+            "title": "Caldo verduras deshidratado sabor finas hierbas",
+            "weight": "5kg",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 2 unidades",
             "category": "Caldos de verdura deshidratados",
             "provider": "Oscar David"
         },
+
+
+
+
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado x 660g",
+            "title": "Caldo verduras deshidratado",
+            "weight": "660g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 12 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -226,7 +290,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo x 660g",
+            "title": "Caldo verduras deshidratado sabor pollo",
+            "weight": "660g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 12 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -234,7 +300,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne x 660g",
+            "title": "Caldo verduras deshidratado sabor carne",
+            "weight": "660g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 12 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -242,15 +310,23 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor finas hierbas x 660g",
+            "title": "Caldo verduras deshidratado sabor finas hierbas",
+            "weight": "660g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 12 unidades",
             "category": "Caldos de verdura deshidratados",
             "provider": "Oscar David"
         },
+
+
+
+
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado x 250g",
+            "title": "Caldo verduras deshidratado",
+            "weight": "250g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 14 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -258,7 +334,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo x 250g",
+            "title": "Caldo verduras deshidratado sabor pollo",
+            "weight": "250g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 14 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -266,7 +344,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne x 250g",
+            "title": "Caldo verduras deshidratado sabor carne",
+            "weight": "250g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 14 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -274,103 +354,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor finas hierbas x 250g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 14 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sin sal x 5kg",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 2 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo sin sal x 5kg",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 2 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne sin sal x 5kg",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 2 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor finas hierbas sin sal x 5kg",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 2 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sin sal x 500g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 12 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo sin sal x 500g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 12 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne sin sal x 500g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 12 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor finas hierbas sin sal x 500g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 12 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sin sal x 250g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 14 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor pollo sin sal x 250g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 14 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor carne sin sal x 250g",
-            "brand": "Sabores del Sol",
-            "description": "Caja x 14 unidades",
-            "category": "Caldos de verdura deshidratados",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/sabores_del_sol.png",
-            "title": "Caldo verduras deshidratado sabor finas hierbas sin sal x 250g",
+            "title": "Caldo verduras deshidratado sabor finas hierbas",
+            "weight": "250g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 14 unidades",
             "category": "Caldos de verdura deshidratados",
@@ -382,7 +368,141 @@
 
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Salsa demiglace sobre x 30g",
+            "title": "Caldo verduras deshidratado sin sal",
+            "weight": "5kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 2 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor pollo sin sal",
+            "weight": "5kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 2 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor carne sin sal",
+            "weight": "5kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 2 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor finas hierbas sin sal",
+            "weight": "5kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 2 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+
+
+
+
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sin sal",
+            "weight": "500g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 12 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor pollo sin sal",
+            "weight": "500g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 12 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor carne sin sal",
+            "weight": "500g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 12 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor finas hierbas sin sal",
+            "weight": "500g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 12 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+
+
+
+
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sin sal",
+            "weight": "250g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 14 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor pollo sin sal",
+            "weight": "250g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 14 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor carne sin sal",
+            "weight": "250g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 14 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Caldo verduras deshidratado sabor finas hierbas sin sal",
+            "weight": "250g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Caja x 14 unidades",
+            "category": "Caldos de verdura deshidratados",
+            "provider": "Oscar David"
+        },
+
+
+
+
+        {
+            "img": "/images/sabores_del_sol.png",
+            "title": "Salsa demiglace sobre",
+            "weight": "30g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 15 unidades",
             "category": "Salsas en polvo",
@@ -390,15 +510,23 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Salsa blanca sobre x 30g",
+            "title": "Salsa blanca sobre",
+            "weight": "30g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 15 unidades",
             "category": "Salsas en polvo",
             "provider": "Oscar David"
         },
+
+
+
+
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Salsa demiglace pouch x 640g",
+            "title": "Salsa demiglace pouch",
+            "weight": "640g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Salsas en polvo",
@@ -406,7 +534,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Salsa blanca pouch x 640g",
+            "title": "Salsa blanca pouch",
+            "weight": "640g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Caja x 10 unidades",
             "category": "Salsas en polvo",
@@ -418,7 +548,9 @@
 
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Condimento para tacos x 30g",
+            "title": "Condimento para tacos",
+            "weight": "30g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 15 unidades",
             "category": "Condimentos",
@@ -426,7 +558,9 @@
         },
         {
             "img": "/images/sabores_del_sol.png",
-            "title": "Condimento para guacamole x 30g",
+            "title": "Condimento para guacamole",
+            "weight": "30g",
+            "dose": "",
             "brand": "Sabores del Sol",
             "description": "Blister x 15 unidades",
             "category": "Condimentos",
@@ -438,7 +572,9 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor chocolate x 1kg",
+            "title": "Mousse sabor chocolate",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -446,7 +582,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor frutilla x 1kg",
+            "title": "Mousse sabor frutilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -454,7 +592,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor vainilla x 1kg",
+            "title": "Mousse sabor vainilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -462,7 +602,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor limón x 1kg",
+            "title": "Mousse sabor limón",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -470,7 +612,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor dulce de leche x 1kg",
+            "title": "Mousse sabor dulce de leche",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -478,7 +622,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor maracuyá x 1kg",
+            "title": "Mousse sabor maracuyá",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -486,7 +632,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor frutos del bosque x 1kg",
+            "title": "Mousse sabor frutos del bosque",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -494,7 +642,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Mousse sabor café - crema moka x 1kg",
+            "title": "Mousse sabor café - crema moka",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvos para preparar mousse",
@@ -505,7 +655,9 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Sabor chocolate x 1kg",
+            "title": "Sabor chocolate",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Alimentos para saborizar leche",
@@ -513,7 +665,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Sabor frutilla x 1kg",
+            "title": "Sabor frutilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Alimentos para saborizar leche",
@@ -521,7 +675,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Sabor vainilla x 1kg",
+            "title": "Sabor vainilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Alimentos para saborizar leche",
@@ -529,7 +685,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Sabor banana x 1kg",
+            "title": "Sabor banana",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Alimentos para saborizar leche",
@@ -537,7 +695,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Sabor dulce de leche x 1kg",
+            "title": "Sabor dulce de leche",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Alimentos para saborizar leche",
@@ -549,7 +709,9 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Polvo para hornear x 1kg",
+            "title": "Polvo para hornear",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -557,7 +719,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Azúcar impalpable x 1kg",
+            "title": "Azúcar impalpable",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -565,7 +729,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Azúcar impalpable x 5kg",
+            "title": "Azúcar impalpable",
+            "weight": "5kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 2 unidades",
             "category": "Varios repostería",
@@ -573,7 +739,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Azúcar negra x 1kg",
+            "title": "Azúcar negra",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -581,7 +749,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Brillo pastelero x 1kg",
+            "title": "Brillo pastelero",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -589,7 +759,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Cacao en polvo amargo x 1kg",
+            "title": "Cacao en polvo amargo",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 8 unidades",
             "category": "Varios repostería",
@@ -597,7 +769,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Cacao en polvo dulce x 1kg",
+            "title": "Cacao en polvo dulce",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -605,7 +779,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Cacao en polvo dulce x 180g",
+            "title": "Cacao en polvo dulce",
+            "weight": "180g",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 70 unidades",
             "category": "Varios repostería",
@@ -613,7 +789,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Almidón de maíz x 1kg",
+            "title": "Almidón de maíz",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -621,7 +799,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Glasé real x 1kg",
+            "title": "Glasé real",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -629,7 +809,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Glasé real colores x 1kg",
+            "title": "Glasé real colores",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -637,7 +819,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Cremor tártaro x --kg",
+            "title": "Cremor tártaro",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -646,6 +830,8 @@
         {
             "img": "/images/aral.png",
             "title": "Bicarbonato de sodio x 1kg",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -653,7 +839,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Bicarbonato de amonio x 1kg",
+            "title": "Bicarbonato de amonio",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Varios repostería",
@@ -661,7 +849,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Esencia de vainilla x 2L",
+            "title": "Esencia de vainilla",
+            "weight": "2L",
+            "dose": "",
             "brand": "Aral",
             "description": "Film x 5 unidades",
             "category": "Varios repostería",
@@ -673,7 +863,9 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Crema chantilly x 1kg",
+            "title": "Crema chantilly",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -681,7 +873,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Crema pastelera en frío x 1kg",
+            "title": "Crema pastelera en frío",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -689,7 +883,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Crema pastelera en caliente x 1kg",
+            "title": "Crema pastelera en caliente",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -697,7 +893,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Crema chantilly rosa bebé x 1kg",
+            "title": "Crema chantilly rosa bebé",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -705,7 +903,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Crema chantilly celeste cielo x 1kg",
+            "title": "Crema chantilly celeste cielo",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -713,7 +913,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Crema chantilly naranja ocaso x 1kg",
+            "title": "Crema chantilly naranja ocaso",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -721,7 +923,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Crema chantilly amarillo vaticano x 1kg",
+            "title": "Crema chantilly amarillo vaticano",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar cremas",
@@ -733,7 +937,9 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de budín x 1kg",
+            "title": "Premezcla de budín",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -741,7 +947,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de budín chocolate x 1kg",
+            "title": "Premezcla de budín chocolate",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -749,7 +957,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de bizcochuelo vainilla x 1kg",
+            "title": "Premezcla de bizcochuelo vainilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -757,7 +967,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de bizcochuelo limón x 1kg",
+            "title": "Premezcla de bizcochuelo limón",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -765,7 +977,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de bizcochuelo chocolate x 1kg",
+            "title": "Premezcla de bizcochuelo chocolate",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -773,7 +987,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de bizcochuelo naranja x 1kg",
+            "title": "Premezcla de bizcochuelo naranja",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -781,7 +997,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de brownies x 1kg",
+            "title": "Premezcla de brownies",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -789,7 +1007,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Premezcla de muffins x 1kg",
+            "title": "Premezcla de muffins",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Premezclas con huevo",
@@ -801,7 +1021,9 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Helado sabor vainilla x 1kg",
+            "title": "Helado sabor vainilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar helados",
@@ -809,7 +1031,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Helado sabor chocolate x 1kg",
+            "title": "Helado sabor chocolate",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar helados",
@@ -817,7 +1041,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Helado sabor dulce de leche x 1kg",
+            "title": "Helado sabor dulce de leche",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar helados",
@@ -825,7 +1051,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Helado sabor frutilla x 1kg",
+            "title": "Helado sabor frutilla",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar helados",
@@ -833,7 +1061,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Helado sabor frutos del bosque x 1kg",
+            "title": "Helado sabor frutos del bosque",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar helados",
@@ -841,7 +1071,9 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Helado sabor limón x 1kg",
+            "title": "Helado sabor limón",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar helados",
@@ -853,82 +1085,102 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor ananá x 1kg",
+            "title": "Gelatina sabor ananá",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor durazno x 1kg",
+            "title": "Gelatina sabor durazno",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor cereza x 1kg",
+            "title": "Gelatina sabor cereza",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor frambuesa x 1kg",
+            "title": "Gelatina sabor frambuesa",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor frutilla x 1kg",
+            "title": "Gelatina sabor frutilla",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor limón x 1kg",
+            "title": "Gelatina sabor limón",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor manzana verde x 1kg",
+            "title": "Gelatina sabor manzana verde",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor naranja x 1kg",
+            "title": "Gelatina sabor naranja",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor pera x 1kg",
+            "title": "Gelatina sabor pera",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sin sabor x 1kg",
+            "title": "Gelatina sin sabor",
+            "weight": "1kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
 
@@ -937,74 +1189,92 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor ananá x 3kg",
+            "title": "Gelatina sabor ananá",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
             "title": "Gelatina sabor durazno x 3kg",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor cereza x 3kg",
+            "title": "Gelatina sabor cereza",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor frambuesa x 3kg",
+            "title": "Gelatina sabor frambuesa",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor frutilla x 3kg",
+            "title": "Gelatina sabor frutilla",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor limón x 3kg",
+            "title": "Gelatina sabor limón",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor manzana verde x 3kg",
+            "title": "Gelatina sabor manzana verde",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
             "title": "Gelatina sabor naranja x 3kg",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
             "title": "Gelatina sabor pera x 3kg",
+            "weight": "3kg",
+            "dose": "170 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar gelatinas dosis 170 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
 
@@ -1013,74 +1283,92 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor ananá sin azúcar x 1kg",
+            "title": "Gelatina sabor ananá sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor durazno sin azúcar x 1kg",
+            "title": "Gelatina sabor durazno sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor cereza sin azúcar x 1kg",
+            "title": "Gelatina sabor cereza sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor frambuesa sin azúcar x 1kg",
+            "title": "Gelatina sabor frambuesa sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor frutilla sin azúcar x 1kg",
+            "title": "Gelatina sabor frutilla sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor limón sin azúcar x 1kg",
+            "title": "Gelatina sabor limón sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor manzana verde sin azúcar x 1kg",
+            "title": "Gelatina sabor manzana verde sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor naranja sin azúcar x 1kg",
+            "title": "Gelatina sabor naranja sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor pera sin azúcar x 1kg",
+            "title": "Gelatina sabor pera sin azúcar",
+            "weight": "1kg",
+            "dose": "30 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar gelatinas dosis 30 g/L",
+            "category": "Polvo para preparar gelatinas",
             "provider": "Oscar David"
         },        
 
@@ -1089,42 +1377,52 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor vainilla x 1kg",
+            "title": "Postre sabor vainilla",
+            "weight": "1kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         }, 
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor chocolate x 1kg",
+            "title": "Postre sabor chocolate",
+            "weight": "1kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor dulce de leche x 1kg",
+            "title": "Postre sabor dulce de leche",
+            "weight": "1kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor caramelo x 1kg",
+            "title": "Postre sabor caramelo",
+            "weight": "1kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor frutilla x 1kg",
+            "title": "Postre sabor frutilla",
+            "weight": "1kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
 
@@ -1133,42 +1431,52 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor vainilla x 3kg",
+            "title": "Postre sabor vainilla",
+            "weight": "3kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         }, 
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor chocolate x 3kg",
+            "title": "Postre sabor chocolate",
+            "weight": "3kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor dulce de leche x 3kg",
+            "title": "Postre sabor dulce de leche",
+            "weight": "3kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor caramelo x 3kg",
+            "title": "Postre sabor caramelo",
+            "weight": "3kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor frutilla x 3kg",
+            "title": "Postre sabor frutilla",
+            "weight": "3kg",
+            "dose": "200 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar postres dosis 200 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         
@@ -1178,77 +1486,41 @@
         {
             "img": "/images/aral.png",
             "title": "Postre sabor vainilla sin azúcar x 1kg",
+            "weight": "1kg",
+            "dose": "60 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 60 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         }, 
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor chocolate sin azúcar x 1kg",
+            "title": "Postre sabor chocolate sin azúcar",
+            "weight": "1kg",
+            "dose": "60 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 60 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor dulce de leche sin azúcar x 1kg",
+            "title": "Postre sabor dulce de leche sin azúcar",
+            "weight": "1kg",
+            "dose": "60 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 60 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor frutilla sin azúcar x 1kg",
+            "title": "Postre sabor frutilla sin azúcar",
+            "weight": "1kg",
+            "dose": "60 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar postres dosis 60 g/L",
-            "provider": "Oscar David"
-        },
-
-
-
-
-        {
-            "img": "/images/aral.png",
-            "title": "Flan sabor vainilla x 1kg",
-            "brand": "Aral",
-            "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/aral.png",
-            "title": "Flan sabor chocolate x 1kg",
-            "brand": "Aral",
-            "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/aral.png",
-            "title": "Flan sabor dulce de leche x 1kg",
-            "brand": "Aral",
-            "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/aral.png",
-            "title": "Flan sabor caramelo x 1kg",
-            "brand": "Aral",
-            "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
-            "provider": "Oscar David"
-        },
-        {
-            "img": "/images/aral.png",
-            "title": "Flan sabor frutilla x 1kg",
-            "brand": "Aral",
-            "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
+            "category": "Polvo para preparar postres",
             "provider": "Oscar David"
         },
 
@@ -1257,42 +1529,106 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor vainilla x 3kg",
+            "title": "Flan sabor vainilla",
+            "weight": "1kg",
+            "dose": "160 g/L",
+            "brand": "Aral",
+            "description": "Caja x 10 unidades",
+            "category": "Polvo para preparar flanes",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/aral.png",
+            "title": "Flan sabor chocolate",
+            "weight": "1kg",
+            "dose": "160 g/L",
+            "brand": "Aral",
+            "description": "Caja x 10 unidades",
+            "category": "Polvo para preparar flanes",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/aral.png",
+            "title": "Flan sabor dulce de leche",
+            "weight": "1kg",
+            "dose": "160 g/L",
+            "brand": "Aral",
+            "description": "Caja x 10 unidades",
+            "category": "Polvo para preparar flanes",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/aral.png",
+            "title": "Flan sabor caramelo",
+            "weight": "1kg",
+            "dose": "160 g/L",
+            "brand": "Aral",
+            "description": "Caja x 10 unidades",
+            "category": "Polvo para preparar flanes",
+            "provider": "Oscar David"
+        },
+        {
+            "img": "/images/aral.png",
+            "title": "Flan sabor frutilla",
+            "weight": "1kg",
+            "dose": "160 g/L",
+            "brand": "Aral",
+            "description": "Caja x 10 unidades",
+            "category": "Polvo para preparar flanes",
+            "provider": "Oscar David"
+        },
+
+
+
+
+        {
+            "img": "/images/aral.png",
+            "title": "Flan sabor vainilla",
+            "weight": "3kg",
+            "dose": "160 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor chocolate x 3kg",
+            "title": "Flan sabor chocolate",
+            "weight": "3kg",
+            "dose": "160 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor dulce de leche x 3kg",
+            "title": "Flan sabor dulce de leche",
+            "weight": "3kg",
+            "dose": "160 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor caramelo x 3kg",
+            "title": "Flan sabor caramelo",
+            "weight": "3kg",
+            "dose": "160 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor frutilla x 3kg",
+            "title": "Flan sabor frutilla",
+            "weight": "3kg",
+            "dose": "160 g/L",
             "brand": "Aral",
             "description": "Caja x 4 unidades",
-            "category": "Polvo para preparar flanes dosis 160 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
 
@@ -1300,34 +1636,42 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor vainilla sin azúcar x 1kg",
+            "title": "Flan sabor vainilla sin azúcar",
+            "weight": "1kg",
+            "dose": "40 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 40 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor chocolate sin azúcar x 1kg",
+            "title": "Flan sabor chocolate sin azúcar",
+            "weight": "1kg",
+            "dose": "40 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 40 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor dulce de leche sin azúcar x 1kg",
+            "title": "Flan sabor dulce de leche sin azúcar",
+            "weight": "1kg",
+            "dose": "40 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 40 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Flan sabor frutilla sin azúcar x 1kg",
+            "title": "Flan sabor frutilla sin azúcar",
+            "weight": "1kg",
+            "dose": "40 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar flanes dosis 40 g/L",
+            "category": "Polvo para preparar flanes",
             "provider": "Oscar David"
         },
 
@@ -1335,42 +1679,52 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Jugo en polvo sabor naranja x 1kg",
+            "title": "Jugo en polvo sabor naranja",
+            "weight": "1kg",
+            "dose": "48 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar jugos dosis 48 g/L",
+            "category": "Polvo para preparar jugos",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Jugo en polvo sabor pomelo x 1kg",
+            "title": "Jugo en polvo sabor pomelo",
+            "weight": "1kg",
+            "dose": "48 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar jugos dosis 48 g/L",
+            "category": "Polvo para preparar jugos",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Jugo en polvo sabor manzana x 1kg",
+            "title": "Jugo en polvo sabor manzana",
+            "weight": "1kg",
+            "dose": "48 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar jugos dosis 48 g/L",
+            "category": "Polvo para preparar jugos",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Jugo en polvo sabor ananá x 1kg",
+            "title": "Jugo en polvo sabor ananá",
+            "weight": "1kg",
+            "dose": "48 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar jugos dosis 48 g/L",
+            "category": "Polvo para preparar jugos",
             "provider": "Oscar David"
         },
         {
             "img": "/images/aral.png",
-            "title": "Jugo en polvo sabor durazno x 1kg",
+            "title": "Jugo en polvo sabor durazno",
+            "weight": "1kg",
+            "dose": "48 g/L",
             "brand": "Aral",
             "description": "Caja x 10 unidades",
-            "category": "Polvo para preparar jugos dosis 48 g/L",
+            "category": "Polvo para preparar jugos",
             "provider": "Oscar David"
         },
 
@@ -1379,7 +1733,9 @@
 
         {
             "img": "/images/aral2.png",
-            "title": "Hidratante sabor naranja - durazno x 1kg",
+            "title": "Hidratante sabor naranja - durazno",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral 2",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar bebida hidratante",
@@ -1387,7 +1743,9 @@
         },
         {
             "img": "/images/aral2.png",
-            "title": "Hidratante sabor manzana x 1kg",
+            "title": "Hidratante sabor manzana",
+            "weight": "1kg",
+            "dose": "",
             "brand": "Aral 2",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar bebida hidratante",
@@ -1399,7 +1757,9 @@
 
         {
             "img": "/images/aral2.png",
-            "title": "Hidratante sabor naranja - durazno x 40g",
+            "title": "Hidratante sabor naranja - durazno",
+            "weight": "40g",
+            "dose": "",
             "brand": "Aral 2",
             "description": "Blister x 12 unidades",
             "category": "Polvo para preparar bebida hidratante",
@@ -1407,7 +1767,9 @@
         },
         {
             "img": "/images/aral2.png",
-            "title": "Hidratante sabor manzana x 40g",
+            "title": "Hidratante sabor manzana",
+            "weight": "40g",
+            "dose": "",
             "brand": "Aral 2",
             "description": "Blister x 12 unidades",
             "category": "Polvo para preparar bebida hidratante",
@@ -1420,7 +1782,9 @@
 
         {
             "img": "/images/viejo_minero.png",
-            "title": "Bitter con naranja x 1L",
+            "title": "Bitter con naranja",
+            "weight": "1L",
+            "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
             "category": "Cócteles",
@@ -1428,7 +1792,9 @@
         },
         {
             "img": "/images/viejo_minero.png",
-            "title": "Amargo con alcohol x 1L",
+            "title": "Amargo con alcohol",
+            "weight": "1L",
+            "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
             "category": "Cócteles",
@@ -1436,7 +1802,9 @@
         },
         {
             "img": "/images/viejo_minero.png",
-            "title": "Sangría tinta x 1L",
+            "title": "Sangría tinta",
+            "weight": "1L",
+            "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
             "category": "Cócteles",
@@ -1444,7 +1812,9 @@
         },
         {
             "img": "/images/viejo_minero.png",
-            "title": "Sangría blanca x 1L",
+            "title": "Sangría blanca",
+            "weight": "1L",
+            "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
             "category": "Cócteles",
@@ -1452,7 +1822,9 @@
         },
         {
             "img": "/images/viejo_minero.png",
-            "title": "Americano Rosso x 1L",
+            "title": "Americano Rosso",
+            "weight": "1L",
+            "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
             "category": "Cócteles",
@@ -1460,7 +1832,9 @@
         },
         {
             "img": "/images/viejo_minero.png",
-            "title": "Americano blanco x 1L",
+            "title": "Americano blanco",
+            "weight": "1L",
+            "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
             "category": "Cócteles",
