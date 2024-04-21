@@ -829,7 +829,7 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Bicarbonato de sodio x 1kg",
+            "title": "Bicarbonato de sodio",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -1199,7 +1199,7 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor durazno x 3kg",
+            "title": "Gelatina sabor durazno",
             "weight": "3kg",
             "dose": "170 g/L",
             "brand": "Aral",
@@ -1259,7 +1259,7 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor naranja x 3kg",
+            "title": "Gelatina sabor naranja",
             "weight": "3kg",
             "dose": "170 g/L",
             "brand": "Aral",
@@ -1269,7 +1269,7 @@
         },
         {
             "img": "/images/aral.png",
-            "title": "Gelatina sabor pera x 3kg",
+            "title": "Gelatina sabor pera",
             "weight": "3kg",
             "dose": "170 g/L",
             "brand": "Aral",
@@ -1485,7 +1485,7 @@
 
         {
             "img": "/images/aral.png",
-            "title": "Postre sabor vainilla sin azúcar x 1kg",
+            "title": "Postre sabor vainilla sin azúcar",
             "weight": "1kg",
             "dose": "60 g/L",
             "brand": "Aral",
