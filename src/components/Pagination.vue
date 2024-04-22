@@ -76,7 +76,13 @@ watch(
   () => props.current,
   () => {
     currentPage.value = props.current
-  }
+  },
+)
+watch(
+  () => props.total,
+  () => {
+    totalPages.value = props.total
+  },
 )
 
 </script>
