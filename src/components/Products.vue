@@ -5,12 +5,9 @@ import Product from '@/components/Product.vue';
 import Pagination from '@/components/Pagination.vue';
 import Filters from '@/components/Filters.vue';
 import { onMounted } from 'vue';
-import {
-    initDropdowns,
-} from 'flowbite';
+
 
 onMounted(() => {
-    initDropdowns();
     categories.value = calculateCounts('category');
     brands.value = calculateCounts('brand');
 })
