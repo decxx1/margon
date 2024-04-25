@@ -50,48 +50,54 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div class="flex items-center justify-center p-4">
-        <button :id="'dropFilters'+title"
-            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-            type="button"
-        >
-            Filtrar por {{ title }}
-            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-        </button>
+    <div class="inline-flex items-center justify-center p-4">
+        <div>
+            <label class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Filtrar por {{ title }}</label>
+            <button :id="'dropFilters'+title"
+                class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                type="button"
+            >
+                <svg class="w-3 h-3 text-gray-500 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M18.796 4H5.204a1 1 0 0 0-.753 1.659l5.302 6.058a1 1 0 0 1 .247.659v4.874a.5.5 0 0 0 .2.4l3 2.25a.5.5 0 0 0 .8-.4v-7.124a1 1 0 0 1 .247-.659l5.302-6.059c.566-.646.106-1.658-.753-1.658Z"/>
+                </svg>
 
-        <!-- Dropdown menu -->
-        <div :id="'dropdownFilters' + title" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
-            <h6 class="mb-3 text-sm font-bold text-gray-900 dark:text-white">
-            {{ title }}
-            </h6>
-            <ul class="py-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" :aria-labelledby="'dropFilters'+title">
+                    {{ currentFilter === 'all' ? 'Todos' : currentFilter }}
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
 
-                <li>
-                    <div @click="handleFilterChange('all')" :class="[currentFilter === 'all' ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600 [&.active]:bg-primary-100']">
-                        <label
-                            class="cursor-pointer w-full ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
-                        >Todas
-                        </label>
-                        <span class="text-center mr-3 leading-4 w-4 h-4 text-blue-600 bg-primary-100 border-primary-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                        >{{ totalCount }}</span>
-                    </div>
-                </li>
-                <li v-for="(item, index) in items" :key="index">
-                    
-                    <div @click="handleFilterChange(item.name)" :class="[currentFilter === item.name ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600 [&.active]:bg-primary-100']">
-                        <label
-                            class="cursor-pointer w-full ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
-                        >{{item.name}}
-                        </label>
-                        <span class="text-center mr-3 leading-4 w-4 h-4 text-blue-600 bg-primary-100 border-primary-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
-                        >{{ item.count }}</span>
-                    </div>
-                </li>
+            <!-- Dropdown menu -->
+            <div :id="'dropdownFilters' + title" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+                <h6 class="mb-3 text-sm font-bold text-gray-900 dark:text-white">
+                {{ title }}
+                </h6>
+                <ul class="py-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" :aria-labelledby="'dropFilters'+title">
 
-            </ul>
+                    <li>
+                        <div @click="handleFilterChange('all')" :class="[currentFilter === 'all' ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600 [&.active]:bg-primary-100']">
+                            <label
+                                class="cursor-pointer w-full ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
+                            >Todas
+                            </label>
+                            <span class="text-center mr-3 leading-4 w-4 h-4 text-blue-600 bg-primary-100 border-primary-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >{{ totalCount }}</span>
+                        </div>
+                    </li>
+                    <li v-for="(item, index) in items" :key="index">
+                        
+                        <div @click="handleFilterChange(item.name)" :class="[currentFilter === item.name ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600 [&.active]:bg-primary-100']">
+                            <label
+                                class="cursor-pointer w-full ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
+                            >{{item.name}}
+                            </label>
+                            <span class="text-center mr-3 leading-4 w-4 h-4 text-blue-600 bg-primary-100 border-primary-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            >{{ item.count }}</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-</div>
+    </div>
 </template>
