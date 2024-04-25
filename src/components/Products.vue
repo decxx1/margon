@@ -125,7 +125,6 @@ const handleBrandChange = (value) => {
                     :brand="product.brand"
                     :description="product.description"
                     :category="product.category"
-                    :provider="product.provider"
                     :weight="product.weight"
                     :dose="product.dose"
                 />
