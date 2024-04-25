@@ -183,7 +183,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/5g/sabores_del_sol_caldo_pollo_5g.webp",
             "title": "Caldo verduras deshidratado sabor pollo",
             "weight": "pote de 80 unidades de 5g",
             "dose": "",
@@ -192,7 +192,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/5g/sabores_del_sol_caldo_carne_5g.webp",
             "title": "Caldo verduras deshidratado sabor carne",
             "weight": "pote de 80 unidades de 5g",
             "dose": "",
@@ -263,7 +263,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_pollo_660g.webp",
             "title": "Caldo verduras deshidratado sabor pollo",
             "weight": "660g",
             "dose": "",
@@ -272,7 +272,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_carne_660g.webp",
             "title": "Caldo verduras deshidratado sabor carne",
             "weight": "660g",
             "dose": "",
@@ -281,7 +281,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_finashierbas_660g.webp",
             "title": "Caldo verduras deshidratado sabor finas hierbas",
             "weight": "660g",
             "dose": "",
@@ -385,7 +385,7 @@
 
 
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_verdura_deshidratado_sin_sal_500g.webp",
             "title": "Caldo verduras deshidratado sin sal",
             "weight": "500g",
             "dose": "",
@@ -443,7 +443,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/250g/sabores_del_sol_caldo_sin_sal_carne_250g.png",
             "title": "Caldo verduras deshidratado sabor carne sin sal",
             "weight": "250g",
             "dose": "",
@@ -509,7 +509,7 @@
 
 
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/condimentos/condimento_para_tacos.webp",
             "title": "Condimento para tacos",
             "weight": "30g",
             "dose": "",
@@ -518,7 +518,7 @@
             "category": "Condimentos"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/condimentos/condimento_para_guacamole.webp",
             "title": "Condimento para guacamole",
             "weight": "30g",
             "dose": "",
@@ -1149,7 +1149,7 @@
 
 
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_anana_1kg.webp",
             "title": "Gelatina sabor ananá",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1158,7 +1158,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_durazno_1kg.webp",
             "title": "Gelatina sabor durazno",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1167,7 +1167,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_cereza_1kg.webp",
             "title": "Gelatina sabor cereza",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1176,7 +1176,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_frambuesa_1kg.webp",
             "title": "Gelatina sabor frambuesa",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1185,7 +1185,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_frutilla_1kg.webp",
             "title": "Gelatina sabor frutilla",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1194,7 +1194,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_limon_1kg.webp",
             "title": "Gelatina sabor limón",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1203,7 +1203,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_manzana_1kg.webp",
             "title": "Gelatina sabor manzana verde",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1212,7 +1212,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_naranja_1kg.webp",
             "title": "Gelatina sabor naranja",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1221,7 +1221,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_pera_1kg.webp",
             "title": "Gelatina sabor pera",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1230,7 +1230,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_sin_sabor_1kg.webp",
             "title": "Gelatina sin sabor",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1328,7 +1328,7 @@
 
 
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_anana_1kg.webp",
             "title": "Gelatina sabor ananá sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1337,7 +1337,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_durazno_1kg.webp",
             "title": "Gelatina sabor durazno sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1346,7 +1346,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_cereza_1kg.webp",
             "title": "Gelatina sabor cereza sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1355,7 +1355,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_frambuesa_1kg.webp",
             "title": "Gelatina sabor frambuesa sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1364,7 +1364,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_frutilla_1kg.webp",
             "title": "Gelatina sabor frutilla sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1373,7 +1373,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_limon_1kg.webp",
             "title": "Gelatina sabor limón sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1382,7 +1382,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_manzana_1kg.webp",
             "title": "Gelatina sabor manzana verde sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1391,7 +1391,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_naranja_1kg.webp",
             "title": "Gelatina sabor naranja sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1400,7 +1400,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_pera_1kg.webp",
             "title": "Gelatina sabor pera sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1781,14 +1781,13 @@
 
 
         {
-            "img": "/images/viejo_minero.png",
+            "img": "/images/viejo_minero/viejo_minero_bitter_1L.webp",
             "title": "Bitter con naranja",
             "weight": "1L",
             "dose": "",
             "brand": "Viejo Minero",
             "description": "Pack x 6 unidades",
-            "category": "Cócteles",
-            "provider": "Oscar David"
+            "category": "Cócteles"
         },
         {
             "img": "/images/viejo_minero/viejo_minero_amargo_1L.webp",
