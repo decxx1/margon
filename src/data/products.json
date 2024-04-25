@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/pure_papas/125g/sabores_del_sol_pure_de_papas_125g.webp",
             "title": "Puré de papas",
             "weight": "125g",
             "dose": "",
@@ -10,7 +10,7 @@
             "category": "Purés de papa"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/pure_papas/1kg/sabores_del_sol_pure_de_papas_1kg.webp",
             "title": "Puré de papas",
             "weight": "1kg",
             "dose": "",
@@ -32,7 +32,7 @@
 
 
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/sopas_crema/68g/sabores_del_sol_sopa_verduras_68g.webp",
             "title": "Sopa crema de verduras",
             "weight": "68g",
             "dose": "",
@@ -41,7 +41,7 @@
             "category": "Sopas crema"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/sopas_crema/68g/sabores_del_sol_sopa_esparragos_68g.webp",
             "title": "Sopa crema de espárragos",
             "weight": "68g",
             "dose": "",
@@ -50,7 +50,7 @@
             "category": "Sopas crema"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/sopas_crema/68g/sabores_del_sol_sopa_choclo_68g.webp",
             "title": "Sopa crema de choclo",
             "weight": "68g",
             "dose": "",
@@ -68,7 +68,7 @@
             "category": "Sopas crema"
         },
         {
-            "img": "/images/sabores_del_sol.png",
+            "img": "/images/sabores_del_sol/sopas_crema/68g/sabores_del_sol_sopa_pollo_68g.webp",
             "title": "Sopa crema de pollo",
             "weight": "68g",
             "dose": "",
@@ -385,7 +385,7 @@
 
 
         {
-            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_verdura_deshidratado_sin_sal_500g.webp",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_verdura_sin_sal_500g.webp",
             "title": "Caldo verduras deshidratado sin sal",
             "weight": "500g",
             "dose": "",
@@ -443,7 +443,7 @@
             "category": "Caldos de verdura deshidratados"
         },
         {
-            "img": "/images/sabores_del_sol/caldos_deshidratados/250g/sabores_del_sol_caldo_sin_sal_carne_250g.png",
+            "img": "/images/sabores_del_sol/caldos_deshidratados/250g/sabores_del_sol_caldo_sin_sal_carne_250g.webp",
             "title": "Caldo verduras deshidratado sabor carne sin sal",
             "weight": "250g",
             "dose": "",
@@ -531,7 +531,7 @@
 
 
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/mousse/1kg/aral_mousse_cafe_1kg.webp",
             "title": "Mousse sabor chocolate",
             "weight": "1kg",
             "dose": "",
@@ -540,7 +540,7 @@
             "category": "Polvos para preparar mousse"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/mousse/1kg/aral_mousse_frutilla_1kg.webp",
             "title": "Mousse sabor frutilla",
             "weight": "1kg",
             "dose": "",
@@ -655,7 +655,7 @@
 
 
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/varios/aral_polvo_para_hornear_1kg.webp",
             "title": "Polvo para hornear",
             "weight": "1kg",
             "dose": "",
@@ -664,7 +664,7 @@
             "category": "Varios repostería"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/varios/aral_azucar_impalpable_1kg.webp",
             "title": "Azúcar impalpable",
             "weight": "1kg",
             "dose": "",
@@ -682,7 +682,7 @@
             "category": "Varios repostería"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/varios/aral_azucar_negra_1kg.webp",
             "title": "Azúcar negra",
             "weight": "1kg",
             "dose": "",
@@ -700,7 +700,7 @@
             "category": "Varios repostería"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/varios/aral_cacao_amargo_1kg.webp",
             "title": "Cacao en polvo amargo",
             "weight": "1kg",
             "dose": "",
@@ -727,7 +727,7 @@
             "category": "Varios repostería"
         },
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/varios/aral_almidon_de_maiz_1kg.webp",
             "title": "Almidón de maíz",
             "weight": "1kg",
             "dose": "",
@@ -785,7 +785,7 @@
 
 
         {
-            "img": "/images/aral/esencias/aral_esencia_vainilla_2L.jpg",
+            "img": "/images/aral/esencias/aral_esencia_vainilla_2L.webp",
             "title": "Esencia de vainilla",
             "weight": "2L",
             "dose": "",
@@ -794,7 +794,7 @@
             "category": "Esencias artificiales"
         },
         {
-            "img": "/images/aral/esencias/aral_esencia_chocolate_2L.jpg",
+            "img": "/images/aral/esencias/aral_esencia_chocolate_2L.webp",
             "title": "Esencia de chocolate",
             "weight": "2L",
             "dose": "",
@@ -803,7 +803,7 @@
             "category": "Esencias artificiales"
         },
         {
-            "img": "/images/aral/esencias/aral_esencia_coco_2L.jpg",
+            "img": "/images/aral/esencias/aral_esencia_coco_2L.webp",
             "title": "Esencia de coco",
             "weight": "2L",
             "dose": "",
@@ -812,7 +812,7 @@
             "category": "Esencias artificiales"
         },
         {
-            "img": "/images/aral/esencias/aral_esencia_limon_2L.jpg",
+            "img": "/images/aral/esencias/aral_esencia_limon_2L.webp",
             "title": "Esencia de limón",
             "weight": "2L",
             "dose": "",
@@ -821,7 +821,7 @@
             "category": "Esencias artificiales"
         },
         {
-            "img": "/images/aral/esencias/aral_esencia_manteca_2L.jpg",
+            "img": "/images/aral/esencias/aral_esencia_manteca_2L.webp",
             "title": "Esencia de manteca",
             "weight": "2L",
             "dose": "",
@@ -830,7 +830,7 @@
             "category": "Esencias artificiales"
         },
         {
-            "img": "/images/aral/esencias/aral_esencia_naranja_2L.jpg",
+            "img": "/images/aral/esencias/aral_esencia_naranja_2L.webp",
             "title": "Esencia de naranja",
             "weight": "2L",
             "dose": "",
@@ -1147,9 +1147,38 @@
 
 
 
+        {
+            "img": "/images/aral/gelatinas/35g/aral_gelatina_anana_35g.webp",
+            "title": "Gelatina sabor ananá",
+            "weight": "35g",
+            "dose": "---",
+            "brand": "Aral",
+            "description": "---",
+            "category": "Polvo para preparar gelatinas"
+        },
+        {
+            "img": "/images/aral/gelatinas/35g/aral_gelatina_frambuesa_35g.webp",
+            "title": "Gelatina sabor frambuesa",
+            "weight": "35g",
+            "dose": "---",
+            "brand": "Aral",
+            "description": "---",
+            "category": "Polvo para preparar gelatinas"
+        },
+        {
+            "img": "/images/aral/gelatinas/35g/aral_gelatina_frutilla_35g.webp",
+            "title": "Gelatina sabor frutilla",
+            "weight": "35g",
+            "dose": "---",
+            "brand": "Aral",
+            "description": "---",
+            "category": "Polvo para preparar gelatinas"
+        },
+
+
 
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_anana_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor ananá",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1167,7 +1196,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_cereza_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor cereza",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1176,7 +1205,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_frambuesa_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor frambuesa",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1185,7 +1214,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_frutilla_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor frutilla",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1194,7 +1223,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_limon_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor limón",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1203,7 +1232,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_manzana_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor manzana verde",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1212,7 +1241,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_naranja_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor naranja",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1221,7 +1250,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_de_pera_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor pera",
             "weight": "1kg",
             "dose": "170 g/L",
@@ -1328,7 +1357,7 @@
 
 
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_anana_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor ananá sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1346,7 +1375,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_cereza_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor cereza sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1364,7 +1393,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_frutilla_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor frutilla sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1373,7 +1402,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_limon_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor limón sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1400,7 +1429,7 @@
             "category": "Polvo para preparar gelatinas"
         },
         {
-            "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_pera_1kg.webp",
+            "img": "/images/aral.png",
             "title": "Gelatina sabor pera sin azúcar",
             "weight": "1kg",
             "dose": "30 g/L",
@@ -1687,7 +1716,7 @@
 
 
         {
-            "img": "/images/aral.png",
+            "img": "/images/aral/jugos/aral_jugo_naranja_1kg.webp",
             "title": "Jugo en polvo sabor naranja",
             "weight": "1kg",
             "dose": "48 g/L",
@@ -1736,20 +1765,20 @@
 
 
         {
-            "img": "/images/aral2.png",
+            "img": "/images/aral.png",
             "title": "Hidratante sabor naranja - durazno",
             "weight": "1kg",
             "dose": "",
-            "brand": "Aral Bebidas",
+            "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar bebida hidratante"
         },
         {
-            "img": "/images/aral2.png",
+            "img": "/images/aral.png",
             "title": "Hidratante sabor manzana",
             "weight": "1kg",
             "dose": "",
-            "brand": "Aral Bebidas",
+            "brand": "Aral",
             "description": "Caja x 10 unidades",
             "category": "Polvo para preparar bebida hidratante"
         },
@@ -1758,20 +1787,20 @@
 
 
         {
-            "img": "/images/aral2.png",
+            "img": "/images/aral.png",
             "title": "Hidratante sabor naranja - durazno",
             "weight": "40g",
             "dose": "",
-            "brand": "Aral Bebidas",
+            "brand": "Aral",
             "description": "Blister x 12 unidades",
             "category": "Polvo para preparar bebida hidratante"
         },
         {
-            "img": "/images/aral2.png",
+            "img": "/images/aral.png",
             "title": "Hidratante sabor manzana",
             "weight": "40g",
             "dose": "",
-            "brand": "Aral Bebidas",
+            "brand": "Aral",
             "description": "Blister x 12 unidades",
             "category": "Polvo para preparar bebida hidratante"
         },
