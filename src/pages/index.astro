@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Hero from '@/components/Hero.astro';
 import Brands from '@/components/Brands.astro';
+import ContentSection from '@/components/ContentSection.astro';
 ---
 <Layout 
 	title="Margon"
@@ -12,6 +13,39 @@ import Brands from '@/components/Brands.astro';
 >
 	<Hero />
 	<Brands />
+	<ContentSection
+		left={true}
+		title="Sabores del Sol"
+		subtitle="Línea Salados"
+		description="Nuestra línea ofrece una amplia variedad, desde sopas cremas y caldos deshidratados hasta condimentos y puré de papas. Con Sabores del Sol, garantizamos sabores auténticos y calidad superior en cada producto."
+		img="images/logos/sabores_del_sol.svg"
+		imgDark="images/logos/sabores_del_sol.svg"
+	/>
+	<ContentSection
+		left={false}
+		title="Aral"
+		subtitle="Línea Dulces"
+		description="Descubre la excelencia en productos dulces con Aral. Productos de calidad, desde postres y mousses hasta jugos y más. Con Aral, garantizamos sabores distintivos y confiabilidad en cada pedido."
+		img="images/logos/aral_azul.svg"
+		imgDark="images/logos/aral_azul.svg"
+	/>
+	<ContentSection 
+		left={true}
+		title="Aralito"
+		subtitle="Línea Golosinas"
+		description="Con Aralito, ofrecemos una amplia gama de productos dulces diseñados específicamente para el público infantil. Desde jugos para congelar hasta caramelos líquidos, nuestra línea de golosinas garantiza calidad y diversión en cada producto."
+		img="images/logos/aralito.svg"
+		imgDark="images/logos/aralito.svg"
+	/>
+	<ContentSection
+		left={false}
+		title="Viejo Minero"
+		subtitle="Línea cócteles y bebidas"
+		description="Explora la innovación y el sabor exclusivo de Viejo Minero en el mundo de los cócteles y las bebidas alcoholicas. Desde amargos y sangrías, exquisitos cocteles preparados"
+		img="images/logos/viejo_minero.svg"
+		imgDark="images/logos/viejo_minero_blanco.svg"
+	/>
+	
 </Layout>
 
 <style>

@@ -80,7 +80,7 @@ const handleBrandChange = (value) => {
     <section class="mt-32">
         
         <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow-md dark:bg-gray-800 md:rounded-lg">
-            <div class="md:w-8/12 w-11/12 mx-auto flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-center lg:justify-between pb-4">
+            <div class="w-full mx-auto px-4 flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-center lg:justify-between pb-4">
                 <div>
                     <Filters 
                         client:load
@@ -95,7 +95,7 @@ const handleBrandChange = (value) => {
                         :onChange="handleBrandChange"
                     />
                 </div>
-                <div>
+                <div class="md:pb-4 lg:pb-0">
                     <label class="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Buscar</label>
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">

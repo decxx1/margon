@@ -19,7 +19,8 @@ export default {
 				'800': '#ae2915',
 				'900': '#852517',
 				'950': '#490f06',
-			}
+			},
+			background: '#fffcfb',
 		  }
 	},
 	plugins: [

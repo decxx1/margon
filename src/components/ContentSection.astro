@@ -1,0 +1,57 @@
+---
+interface Props {
+    title: string;
+    subtitle: string;
+    description: string;
+    img: string;
+    left: boolean;
+    imgDark?: string;
+}
+
+const { title, subtitle, description, img, left, imgDark } = Astro.props
+---
+{left && 
+    <section class="bg-white dark:bg-gray-800">
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+            <div class="grid grid-cols-1 gap-4 justify-items-center">
+                <img class="w-full max-w-72 dark:hidden"
+                    src={img} 
+                    alt={title} />
+                <img class="w-full max-w-72 hidden dark:block"
+                    src={imgDark} 
+                    alt={title} />
+            </div>
+            <div class="mt-4 md:mt-0 text-center md:text-left">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
+                <p class="mb-4 font-semibold text-gray-500 dark:text-gray-400">{subtitle}</p>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">{description}</p>
+            </div>
+        </div>
+    </section>
+}
+{!left && 
+    <section>
+        <div
+            class="grid gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+            <div class="mt-4 md:mt-0 text-center md:text-right">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
+                <p class="mb-4 font-semibold text-gray-500 dark:text-gray-400">{subtitle}</p>
+                <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                    {description}
+                </p>
+            </div>
+            <div class="order-first md:order-last grid grid-cols-1 gap-4 justify-items-center">
+                <img class="w-full max-w-72 dark:hidden"
+                    src={img} 
+                    alt={title} />
+                <img class="w-full max-w-72 hidden dark:block"
+                    src={imgDark} 
+                    alt={title} />
+            </div>
+            
+        </div>
+    </section>
+}
