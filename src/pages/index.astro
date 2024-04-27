@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import Hero from '@/components/Hero.astro';
 import Brands from '@/components/Brands.astro';
 import ContentSection from '@/components/ContentSection.astro';
+import Mvp from '@/components/mostViewedProducts.astro'
 ---
 <Layout 
 	title="Margon"
@@ -37,14 +38,17 @@ import ContentSection from '@/components/ContentSection.astro';
 		img="images/logos/aralito.svg"
 		imgDark="images/logos/aralito.svg"
 	/>
+	
 	<ContentSection
 		left={false}
 		title="Viejo Minero"
-		subtitle="Línea cócteles y bebidas"
+		subtitle="Línea cócteles"
 		description="Explora la innovación y el sabor exclusivo de Viejo Minero en el mundo de los cócteles y las bebidas alcoholicas. Desde amargos y sangrías, exquisitos cocteles preparados"
 		img="images/logos/viejo_minero.svg"
 		imgDark="images/logos/viejo_minero_blanco.svg"
 	/>
+	
+	<Mvp />
 	
 </Layout>
 
