@@ -52,7 +52,7 @@ const widthTitle = (text) => {
             <a href="#">
                 <h5 :class="widthTitle(title)" class="mb-3  text-center font-bold tracking-tight text-gray-900 dark:text-white">{{ title }}</h5>
             </a>
-            <p class="text-center bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">{{ category }}</p>
+            <p class="text-center bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-primary-900 dark:text-primary-300">{{ category }}</p>
             
             <p class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold text-sm">Marca: </span>{{ brand }}</p>
             <div class="grid grid-cols-2">

@@ -75,23 +75,23 @@ onMounted(() => {
                 <ul class="py-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" :aria-labelledby="'dropFilters'+title">
 
                     <li>
-                        <div @click="handleFilterChange('all')" :class="[currentFilter === 'all' ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600 [&.active]:bg-primary-100']">
+                        <div @click="handleFilterChange('all')" :class="[currentFilter === 'all' ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-primary-100 dark:hover:bg-primary-600 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-600']">
                             <label
                                 class="cursor-pointer w-full ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
                             >Todas
                             </label>
-                            <span class="text-center mr-3 leading-4 w-4 h-4 text-blue-600 bg-primary-100 border-primary-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            <span class="text-center text-xs leading-4 px-1 text-primary-900 dark:text-primary-200 bg-primary-100 border-primary-300 rounded focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-primary-700 dark:focus:ring-offset-primary-700 focus:ring-2 dark:bg-primary-600 dark:border-primary-500"
                             >{{ totalCount }}</span>
                         </div>
                     </li>
                     <li v-for="(item, index) in items" :key="index">
                         
-                        <div @click="handleFilterChange(item.name)" :class="[currentFilter === item.name ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600 [&.active]:bg-primary-100']">
+                        <div @click="handleFilterChange(item.name)" :class="[currentFilter === item.name ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded hover:bg-gray-100 dark:hover:bg-primary-600 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-600']">
                             <label
                                 class="cursor-pointer w-full ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300"
                             >{{item.name}}
                             </label>
-                            <span class="text-center mr-3 leading-4 w-4 h-4 text-blue-600 bg-primary-100 border-primary-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                            <span class="text-center text-xs leading-4 px-1  text-primary-900 dark:text-primary-200 bg-primary-100 border-primary-300 rounded focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-primary-700 dark:focus:ring-offset-primary-700 focus:ring-2 dark:bg-primary-600 dark:border-primary-500"
                             >{{ item.count }}</span>
                         </div>
                     </li>
