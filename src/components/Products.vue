@@ -79,7 +79,7 @@ const handleBrandChange = (value) => {
 <template>
     <section class="mt-32">
         
-        <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow-md dark:bg-gray-800 md:rounded-lg">
+        <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow-md dark:bg-gray-800 rounded-3xl px-10">
             <div class="w-full mx-auto px-4 flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-center lg:justify-between pb-4">
                 <div>
                     <Filters 
@@ -106,16 +106,14 @@ const handleBrandChange = (value) => {
                         />
                     </div>
                 </div>
-                
-                <Pagination
-                    client:load
-                    :total="totalPages"
-                    :current="currentPage"
-                    :onPageChange="handlePageChange"
-                    extraClass="mx-auto border-t"
-                />
             </div>
-            
+            <Pagination
+                client:load
+                :total="totalPages"
+                :current="currentPage"
+                :onPageChange="handlePageChange"
+                extraClass="mx-auto border-t"
+            />
         </section>
         <div class="container mx-auto grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-4 justify-items-center">
             <template v-for="product in paginateProducts" :key="product">

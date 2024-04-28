@@ -59,7 +59,7 @@ const widthTitle = (text) => {
                 <p v-if="weight" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold text-sm">Peso: </span>{{ weight }}</p>
                 <p v-if="dose" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold text-sm">Dosis: </span>{{ dose }}</p>
             </div>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold text-sm">Presentación: </span>{{ description }}</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400"><span class="font-bold text-sm">Presentación: </span>{{ description }}</p>
         </div>
         
     </div>
