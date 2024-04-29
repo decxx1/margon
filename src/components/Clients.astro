@@ -1,0 +1,24 @@
+---
+import Client from '@/components/Client.astro';
+---
+<section class="bg-white dark:bg-gray-800">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-950 dark:text-white">
+                Nuestros distribuidores
+            </h2>
+            <p class="font-light text-primary-900 dark:text-gray-400 sm:text-xl">
+                Trabajamos en conjunto con empresas clientes en las ciudades de Mendoza, San Juan, San Luis, Córdoba y Buenos Aires.
+            </p>
+        </div>
+        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 xl:gap-8 md:space-y-0">
+
+            <Client title="Oscar David"/>
+            <Client title="Café América"/>
+            <Client title="Cereales El Diamante"/>
+            <Client title="Mayorista Verona"/>
+            <Client title="Marleben SRL"/>
+
+        </div>
+    </div>
+</section>

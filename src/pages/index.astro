@@ -3,7 +3,9 @@ import Layout from '@/layouts/Layout.astro';
 import Hero from '@/components/Hero.astro';
 import Brands from '@/components/Brands.astro';
 import ContentSection from '@/components/ContentSection.astro';
-import Mvp from '@/components/mostViewedProducts.astro'
+import Mvp from '@/components/MostViewedProducts.astro'
+import CallToAction from '@/components/CallToAction.astro';
+import Clients from '@/components/Clients.astro';
 ---
 <Layout 
 	title="Margon"
@@ -14,6 +16,7 @@ import Mvp from '@/components/mostViewedProducts.astro'
 >
 	<Hero />
 	<Brands />
+	<section class="container mx-auto">
 	<ContentSection
 		left={true}
 		title="Sabores del Sol"
@@ -47,8 +50,12 @@ import Mvp from '@/components/mostViewedProducts.astro'
 		img="images/logos/viejo_minero.svg"
 		imgDark="images/logos/viejo_minero_blanco.svg"
 	/>
-	
+	</section>
 	<Mvp />
+
+	<CallToAction />
+
+	<Clients />
 	
 </Layout>
 

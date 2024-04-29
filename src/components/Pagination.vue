@@ -108,12 +108,12 @@ watch(
 
 <style scoped>
 .pages-container {
-  --theme-color: #c22a13;
+  --theme-color: #be4a10;
   --background-color: #fff;
-  --border-color: #dee2e6;
+  --border-color: #feefd6;
 }
 .dark .pages-container {
-  --theme-color: #852517;
+  --theme-color: #973a15;
   --background-color: #1f2937;
   --border-color: #505050;
 }
