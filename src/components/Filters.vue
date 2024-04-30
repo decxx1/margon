@@ -55,7 +55,7 @@ onMounted(() => {
             <label class="block mb-2 text-sm font-semibold text-primary-950 dark:text-white">Filtrar por {{ title }}</label>
             <button 
                 :id="'dropFilters'+title"
-                class="inline-flex items-center text-primary-950 bg-primary-50 border border-primary-200 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                class="inline-flex items-center text-primary-950 bg-primary-50 border border-primary-200 focus:outline-none hover:bg-primary-100 focus:ring-4 focus:ring-primary-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                 type="button"
             >
                 <svg class="w-3 h-3 text-primary-900 dark:text-gray-400 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ onMounted(() => {
                 <ul class="py-3 space-y-1 text-sm text-primary-950 dark:text-gray-200" :aria-labelledby="'dropFilters'+title">
 
                     <li>
-                        <div @click="handleFilterChange('all')" :class="[currentFilter === 'all' ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded border-primary-200 hover:bg-primary-100 dark:hover:bg-primary-600 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-600']">
+                        <div @click="handleFilterChange('all')" :class="[currentFilter === 'all' ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded border-primary-200 hover:bg-primary-50 dark:hover:bg-primary-600 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-600']">
                             <label
                                 class="cursor-pointer w-full ms-2 text-sm font-medium text-primary-950 rounded dark:text-gray-300"
                             >Todas
@@ -87,7 +87,7 @@ onMounted(() => {
                     </li>
                     <li v-for="(item, index) in items" :key="index">
                         
-                        <div @click="handleFilterChange(item.name)" :class="[currentFilter === item.name ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded border-primary-200 hover:bg-gray-100 dark:hover:bg-primary-600 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-600']">
+                        <div @click="handleFilterChange(item.name)" :class="[currentFilter === item.name ? 'active' : '', 'cursor-pointer flex items-center py-2 rounded border-primary-200 hover:bg-primary-50 dark:hover:bg-primary-600 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-600']">
                             <label
                                 class="cursor-pointer w-full ms-2 text-sm font-medium text-primary-950 rounded dark:text-gray-300"
                             >{{item.name}}

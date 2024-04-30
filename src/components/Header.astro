@@ -1,21 +1,31 @@
 ---
 import ColorModeSwitcher from '@/components/ColorModeSwitcher.vue';
 import Menu from '@/components/Menu.vue';
+import Phone from '@/icons/Phone.astro';
+import Map from '@/icons/Map.astro';
+import {
+    telphoneReadble,
+    telphoneLinkeable,
+    address,
+    mapUrl
+} from '@/hooks/env.js'
 ---
 
     <!-- TopBar Nav -->
-    <nav class="bg-primary-100 dark:bg-primary-950">
+    <nav class="bg-primary-100 dark:bg-gray-900">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
-            <a href="https://flowbite.com" class="flex items-center">
-               
+            <a href={'tel:' + telphoneLinkeable} class="flex items-center text-primary-950 hover:font-semibold dark:text-gray-100">
+                <Phone />
+                {telphoneReadble}
             </a>
             <div class="flex items-center">
-                <a href="tel:5541251234"
-                    class="hidden mr-6 text-sm font-medium text-gray-900 dark:text-white hover:underline sm:inline">(555)
-                    412-1234</a>
-                <a href="#"
-                    class="text-sm font-medium sm:mr-6 text-primary-600 dark:text-primary-500 hover:underline">Contact
-                    us</a>
+                <a
+                    href={mapUrl}
+                    class="items-center hidden mr-6 text-sm font-medium text-primary-950 dark:text-gray-100 hover:font-semibold sm:flex"
+                >
+                    <Map />
+                    {address}
+                </a>
             </div>
         </div>
     </nav>
