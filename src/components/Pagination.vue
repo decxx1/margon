@@ -108,12 +108,14 @@ watch(
 
 <style scoped>
 .pages-container {
-  --theme-color: #be4a10;
-  --background-color: #fff;
-  --border-color: #feefd6;
+  --theme-color: #421708;
+  --bg-select: #be4a10;
+  --background-color: #fff8ed;
+  --border-color: #fcdaac;
 }
 .dark .pages-container {
-  --theme-color: #973a15;
+  --theme-color: #fff8ed;
+  --bg-select: #7a3214;
   --background-color: #1f2937;
   --border-color: #505050;
 }
@@ -152,14 +154,14 @@ watch(
   padding: 0 16px;
 }
 .pages-container .pages .page:hover {
-  background-color: var(--theme-color);
-  border-color: var(--theme-color);
+  background-color: var(--bg-select);
+  border-color: var(--bg-select);
   color: var(--background-color);
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .pages-container .pages .active {
-  background-color: var(--theme-color);
-  border-color: var(--theme-color);
+  background-color: var(--bg-select);
+  border-color: var(--bg-select);
   color: var(--background-color);
 }
 .pages-container .pages .active:hover {
