@@ -1,3 +1,6 @@
+---
+import Brand from '@/components/Brand.astro';
+---
 <section>
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
@@ -5,44 +8,23 @@
             <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"></p>
         </div>
         <div class="grid gap-6 grid-cols-2 md:grid-cols-4">
-            
-            <div class="bg-white rounded-lg border border-primary-100 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full max-w-64 lg:max-w-full mx-auto">
-                <a href="#sabores_del_sol" class="flex justify-center items-center h-full">
-                    <img class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg"
-                        src="images/logos/sabores_del_sol.svg"
-                        alt="Sabores del sol" />
-                </a>
-            </div>
-            
-            <div class="bg-white rounded-lg border border-primary-100 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full max-w-64 lg:max-w-full mx-auto">
-                <a href="#aral" class="flex justify-center items-center h-full">
-                    <img 
-                        class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg"
-                        src="images/logos/aral_azul.svg"
-                        alt="Aral" 
-                    />
-                </a>
-            </div>
-
-            <div class="bg-white rounded-lg border border-primary-100 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full max-w-64 lg:max-w-full mx-auto">
-                <a href="#aralito" class="flex justify-center items-center h-full ">
-                    <img class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg"
-                        src="images/logos/aralito.svg"
-                        alt="Aral Golosinas" />
-                </a>
-            </div>
-
-            <div class="bg-white rounded-lg border border-primary-100 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full max-w-64 lg:max-w-full mx-auto">
-                <a href="#viejo_minero" class="flex justify-center items-center h-full">
-                    <img class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg dark:hidden"
-                        src="images/logos/viejo_minero.svg"
-                        alt="Viejo Minero" />
-                        <img class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg hidden dark:block"
-                        src="images/logos/viejo_minero_blanco.svg"
-                        alt="Viejo Minero" />
-                </a>
-            </div>
-
+            <Brand 
+                img="images/logos/sabores_del_sol.svg"
+                title="Sabores del sol"
+            />
+            <Brand 
+                img="images/logos/aral_azul.svg"
+                title="Aral" 
+            />
+            <Brand 
+                img="images/logos/aralito.svg"
+                title="Aral Golosinas"
+            />
+            <Brand 
+                img="images/logos/viejo_minero.svg"
+                title="Viejo Minero"
+                imgDark="images/logos/viejo_minero_blanco.svg"
+            />   
         </div>
     </div>
 </section>

@@ -1,0 +1,21 @@
+---
+interface Props {
+    img: string;
+    imgDark?: string;
+    title: string;
+    titleDark?: string;
+}
+const { img, title, imgDark, titleDark } = Astro.props;
+---
+<div class="bg-white rounded-lg border border-primary-100 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full max-w-64 lg:max-w-full mx-auto hover:border hover:border-primary-200 hover:scale-110 dark:hover:border-gray-200">
+    <a href="#sabores_del_sol" class="flex justify-center items-center h-full">
+        <img class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg dark:hidden"
+            src={img}
+            alt={title}
+        />
+        <img class="p-4 max-h-full max-w-64 sm:max-w-full rounded-lg hidden dark:block"
+            src={imgDark ?? img}
+            alt={titleDark ?? title}
+        />
+    </a>
+</div>
