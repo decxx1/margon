@@ -78,16 +78,16 @@ const handleBrandChange = (value) => {
 </script>
 <template>
     <section class="mt-32">
-        <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow dark:bg-gray-800 rounded-3xl px-10">
+        <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow border border-primary-200 dark:bg-gray-800 rounded-3xl px-10">
             <div class="w-full mx-auto px-4 flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-center lg:justify-between pb-4">
                 <div>
-                    <Filters 
+                    <Filters
                         client:load
                         title="Categorías"
                         :items="categories"
                         :onChange="handleCategoryChange"
                     />
-                    <Filters 
+                    <Filters
                         client:load
                         title="Marcas"
                         :items="brands"

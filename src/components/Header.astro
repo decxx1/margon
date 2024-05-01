@@ -12,8 +12,8 @@ import {
 ---
 
     <!-- TopBar Nav -->
-    <nav class="bg-primary-100 dark:bg-gray-900">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+    <nav class="top-header bg-primary-100 dark:bg-gray-900 transition-all duration-500 h-12 py-2.5">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6">
             <a href={'tel:' + telphoneLinkeable} class="flex items-center text-primary-950 hover:font-semibold dark:text-gray-100">
                 <Phone />
                 {telphoneReadble}
@@ -67,13 +67,18 @@ import {
     //sticky header
 
       const header = document.querySelector(".header");
+      const topHeader = document.querySelector(".top-header");
       window.addEventListener("scroll", () => {
         if (window.scrollY > 0) {
           header.classList.add("sticky");
-          header.classList.add("shadow-md")
+          header.classList.add("shadow-md");
+          topHeader.classList.remove("h-12");
+          topHeader.classList.add("h-0");
         } else {
           header.classList.remove("sticky");
           header.classList.remove("shadow-md");
+          topHeader.classList.remove("h-0");
+          topHeader.classList.add("h-12");
         }
       });
   </script>
