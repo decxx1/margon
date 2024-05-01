@@ -15,7 +15,7 @@ import {
     <nav class="top-header bg-primary-100 dark:bg-gray-900 transition-all duration-500 h-12 py-2.5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6">
             <a href={'tel:' + telphoneLinkeable} class="flex items-center text-primary-950 hover:font-semibold dark:text-gray-100">
-                <Phone />
+                <Phone extraClass='text-primary-600 mr-2' />
                 {telphoneReadble}
             </a>
             <div class="flex items-center">
@@ -23,7 +23,7 @@ import {
                     href={mapUrl}
                     class="items-center hidden mr-6 text-sm font-medium text-primary-950 dark:text-gray-100 hover:font-semibold sm:flex"
                 >
-                    <Map />
+                    <Map extraClass='text-primary-600 mr-2' />
                     {address}
                 </a>
             </div>
