@@ -531,8 +531,7 @@
 
 
         {
-            "img": "/images/aral/mousse/1kg/aral_mousse_cafe_1kg.webp",
-            "title": "Mousse sabor chocolate",
+            "img": "/images/logos/aral_azul.svg",            "title": "Mousse sabor chocolate",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -594,7 +593,7 @@
             "category": "Polvos para preparar mousse"
         },
         {
-            "img": "/images/logos/aral_azul.svg",
+            "img": "/images/aral/mousse/1kg/aral_mousse_cafe_1kg.webp",
             "title": "Mousse sabor café - crema moka",
             "weight": "1kg",
             "dose": "",
