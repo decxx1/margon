@@ -1,25 +1,46 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import Breadcrumb from '@/components/Breadcrumb.astro';
-import FormContact from '@/components/FormContact.astro';
+import ContactInfo from '@/components/ContactInfo.astro';
+import FormContact from '@/components/FormContact.vue';
+import {
+    mapIframe,
+    secretKey,
+
+} from '@/hooks/env.js';
 ---
 <Layout 
 	title="Contacto"
-	canonical="https://margon.com.ar"
+	canonical="https://margon.com.ar/contacto"
 	metaTitle=""
 	metaDescription=""
 	metaImg=""
 >
-    <Breadcrumb
-        page="Contacto"
-        title="Contacto"
-        description="Contacta con nosotros"
-    />
-    <FormContact />
+
+    <section class="bg-body dark:bg-gray-900">
+        <div class="bg-[url('/images/contact.webp')] bg-no-repeat bg-cover bg-center bg-gray-600 bg-blend-multiply">
+            <div class="px-4 lg:pt-24 pt-8 pb-72 lg:pb-80 mx-auto max-w-screen-sm text-center lg:px-6 ">
+                <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-50">Contacto</h1>
+                <p class="mb-16 font-light text-gray-400 sm:text-xl">Contáctenos para obtener nuestros productos</p>
+            </div> 
+        </div>
+        <div class="py-16 px-4 mx-auto -mt-96 max-w-screen-xl sm:py-20 lg:px-6 ">
+            <FormContact client:load />
+            
+            <ContactInfo />
+        </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 py-12">
+        <div class="max-w-screen-lg mx-auto rounded-xl shadow-xl" set:html={mapIframe}>
+
+        </div>
+    </section>
+    
 </Layout>
 
 
-
+<!-- recaptcha v3 -->
+<script async src={'https://www.google.com/recaptcha/api.js?render=' + secretKey}></script>
 <script>
 
 </script>
