@@ -531,7 +531,8 @@
 
 
         {
-            "img": "/images/logos/aral_azul.svg",            "title": "Mousse sabor chocolate",
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Mousse sabor chocolate",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -606,7 +607,7 @@
 
         {
             "img": "/images/logos/aral_azul.svg",
-            "title": "Sabor chocolate",
+            "title": "Saborizante para leche sabor chocolate",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -615,7 +616,7 @@
         },
         {
             "img": "/images/logos/aral_azul.svg",
-            "title": "Sabor frutilla",
+            "title": "Saborizante para leche sabor frutilla",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -624,7 +625,7 @@
         },
         {
             "img": "/images/logos/aral_azul.svg",
-            "title": "Sabor vainilla",
+            "title": "Saborizante para leche sabor vainilla",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -633,7 +634,7 @@
         },
         {
             "img": "/images/logos/aral_azul.svg",
-            "title": "Sabor banana",
+            "title": "Saborizante para leche sabor banana",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -642,7 +643,7 @@
         },
         {
             "img": "/images/logos/aral_azul.svg",
-            "title": "Sabor dulce de leche",
+            "title": "Saborizante para leche sabor dulce de leche",
             "weight": "1kg",
             "dose": "",
             "brand": "Aral",
@@ -1150,27 +1151,27 @@
             "img": "/images/aral/gelatinas/35g/aral_gelatina_anana_35g.webp",
             "title": "Gelatina sabor ananá",
             "weight": "35g",
-            "dose": "---",
+            "dose": "",
             "brand": "Aral",
-            "description": "---",
+            "description": "",
             "category": "Polvo para preparar gelatinas"
         },
         {
             "img": "/images/aral/gelatinas/35g/aral_gelatina_frambuesa_35g.webp",
             "title": "Gelatina sabor frambuesa",
             "weight": "35g",
-            "dose": "---",
+            "dose": "",
             "brand": "Aral",
-            "description": "---",
+            "description": "",
             "category": "Polvo para preparar gelatinas"
         },
         {
             "img": "/images/aral/gelatinas/35g/aral_gelatina_frutilla_35g.webp",
             "title": "Gelatina sabor frutilla",
             "weight": "35g",
-            "dose": "---",
+            "dose": "",
             "brand": "Aral",
-            "description": "---",
+            "description": "",
             "category": "Polvo para preparar gelatinas"
         },
 

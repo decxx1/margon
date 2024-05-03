@@ -12,6 +12,7 @@ const { title, subtitle, description, img } = Astro.props
     <a href="/catalogo" class="h-auto w-56 mx-auto ">
         <img 
             class="max-h-full max-w-48 sm:max-w-full mx-auto object-contain rounded-lg sm:rounded-none sm:rounded-l-lg"
+            loading="lazy"
             src={img}
             alt={title}
         />
