@@ -1,18 +1,15 @@
 ---
+import Map from '@/icons/Map.astro';
 interface Props {
     title: string;
+    address: string;
 }
-const {title} = Astro.props
+
+const {title, address} = Astro.props
 ---
 <div class="flex justify-between items-center p-6 border-l-8 bg-white rounded-lg shadow dark:bg-gray-800 border-primary-600 dark:border-primary-500 hover:bg-gray-50">
     <div>
         <h3 class="mb-2 text-xl font-bold text-primary-950 dark:text-primary-50">{title}</h3>
-        <p class="font-light text-gray-500 dark:text-gray-400"></p>
+        <p class="flex font-light text-primary-900 dark:text-gray-400"><Map extraClass='text-primary-600 mr-2 mt-1' />{address}</p>
     </div>
-    <svg class="w-6 h-6 text-primary-600 dark:text-primary-500" fill="currentColor"
-        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-            clip-rule="evenodd"></path>
-    </svg>
 </div>
