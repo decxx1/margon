@@ -6,7 +6,7 @@ import ContentSection from '@/components/ContentSection.astro';
 import Mvp from '@/components/MostViewedProducts.astro'
 import CallToAction from '@/components/CallToAction.astro';
 import CallToAction2 from '@/components/CallToAction2.astro';
-
+import Features from '@/components/Features.astro';
 ---
 <Layout 
 	title="Margon"
@@ -16,6 +16,7 @@ import CallToAction2 from '@/components/CallToAction2.astro';
 	metaImg=""
 >
 	<Hero />
+	<Features />
 	<Brands />
 	<section class="container mx-auto">
 		<ContentSection
@@ -56,7 +57,6 @@ import CallToAction2 from '@/components/CallToAction2.astro';
 	<Mvp />
 
 	<CallToAction />
-	
 </Layout>
 
 <style>
