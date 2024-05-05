@@ -6,8 +6,8 @@ interface Props {
 }
 const { title, items, icon } = Astro.props
 ---
-<div class="flex items-start my-10">
-    <div class="-my-1.5 mx-5 flex justify-center items-center w-16 h-16 bg-primary-100 rounded dark:bg-gray-700">
+<div class="max-md:flex max-md:items-start my-10">
+    <div class="max-md:-my-1.5 max-md:mx-5 md:mb-3 flex justify-center items-center w-16 h-16 bg-primary-100 rounded dark:bg-gray-700">
         <i class={icon + " w-9 h-9 text-primary-600 dark:text-primary-300"}></i>
     </div>
     <div>
