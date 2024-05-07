@@ -6,26 +6,28 @@ interface Props {
 }
 const { title, items, icon } = Astro.props
 ---
-<div class="max-md:flex max-md:items-start my-10">
-    <div class="max-md:-my-1.5 max-md:mx-5 md:mb-3 flex justify-center items-center w-16 h-16 bg-primary-100 rounded dark:bg-gray-700">
-        <i class={icon + " w-9 h-9 text-primary-600 dark:text-primary-300"}></i>
-    </div>
-    <div>
-        <h3 class="mb-2 text-xl font-bold text-primary-950 dark:text-primary-50">{title}</h3>
-        <ul role="list" class="mt-6 lg:mb-0 space-y-4">
-            { items.map((item) =>(
-                <li class="flex space-x-2.5 min-w-44 max-w-48">
-                    <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500"
-                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <p class="leading-tight text-primary-900 dark:text-gray-400">{item}</p>
-                </li>
-                ))  
-            }
-        </ul>
+<div class="w-full py-10 px-8 bg-white border-t-4 border-primary-600 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-md:flex max-md:items-start">
+        <div class="max-md:-my-1.5 max-md:mr-5 md:mb-3 flex justify-center items-center w-16 h-16 bg-primary-100 rounded dark:bg-gray-700">
+            <i class={icon + " w-9 h-9 text-primary-600 dark:text-primary-300"}></i>
+        </div>
+        <div>
+            <h3 class="mb-2 text-xl font-bold text-primary-950 dark:text-primary-50">{title}</h3>
+            <ul role="list" class="mt-6 lg:mb-0 space-y-4">
+                { items.map((item) =>(
+                    <li class="flex space-x-2.5">
+                        <svg class="flex-shrink-0 w-5 h-5 text-primary-600 dark:text-primary-500"
+                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <p class="leading-tight text-primary-900 dark:text-gray-400">{item}</p>
+                    </li>
+                    ))  
+                }
+            </ul>
+        </div>
     </div>
 </div>
 
