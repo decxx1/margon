@@ -2,19 +2,20 @@
 import Layout from '@/layouts/Layout.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
 import Clients from '@/components/Clients.astro';
+import CallToAction4 from '@/components/CallToAction4.astro';
 ---
 <Layout 
-	title="Distribuidores"
-	canonical="https://margon.com.ar/distribuidores"
-	metaTitle="MarGon - Distribuidores"
+	title="Puntos de Venta"
+	canonical="https://margon.com.ar/puntos-venta"
+	metaTitle="MarGon - Puntos de venta"
 	metaDescription="Enterate dónde conseguir nuestros productos, trabajamos en conjunto con distribuidores y mayoristas de Mendoza, San Juan, San Luis, Córdoba y Buenos Aires."
 	metaImg="https://margon.com.ar/images/contact.webp"
 >
 <Breadcrumb
-        page="Distribuidores"
-        title="Distribuidores"
+        page="Puntos de venta"
+        title="Puntos de venta"
         description="Dónde conseguir nuestros productos"
     />
-<Clients />
-
+	<Clients />
+	<CallToAction4 />
 </Layout>
