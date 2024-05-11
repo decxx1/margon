@@ -89,7 +89,7 @@ const handleBrandChange = (value) => {
 <template>
     <section class="mt-32">
         <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow border border-primary-200 dark:border-gray-700 dark:bg-gray-800 rounded-3xl px-10">
-            <div class="w-full mx-auto px-4 pb-6 pt-4 md:pb-2 flex flex-column sm:flex-row flex-wrap items-center justify-center lg:justify-between">
+            <div class="w-full mx-auto px-2 sm:px-4 pb-6 pt-4 md:pb-2 flex flex-column sm:flex-row flex-wrap items-center justify-center lg:justify-between">
                 <Pagination
                     client:load
                     :total="totalPages"
@@ -97,7 +97,7 @@ const handleBrandChange = (value) => {
                     :onPageChange="handlePageChange"
                     extraClass=""
                 />
-                <div class="">
+                <div class="grid grid-cols-1 gap-3">
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
                             <svg class="w-5 h-5 text-primary-950 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
@@ -106,20 +106,22 @@ const handleBrandChange = (value) => {
                             placeholder="Buscar productos" 
                         />
                     </div>
+                    <button
+                        data-drawer-target="drawer-navigation"
+                        data-drawer-toggle="drawer-navigation"
+                        aria-controls="drawer-navigation"
+                        data-drawer-body-scrolling="true"
+                        class="min-[1023px]:hidden mb-4 px-2 py-1 my-auto flex mr-2 text-primary-950 border bg-primary-50 border-primary-200 rounded-lg cursor-pointer hover:text-primary-900 hover:bg-primary-100 focus:bg-primary-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-primary-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                        <svg class="w-5 h-5 mr-3 text-primary-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M15 3H0V2h15zm-3 5H3V7h9zm-2 5H5v-1h5z" clip-rule="evenodd"/></svg>
+                        Filtros
+                    </button>
                 </div>
-                <button
-                    data-drawer-target="drawer-navigation"
-                    data-drawer-toggle="drawer-navigation"
-                    aria-controls="drawer-navigation"
-                    data-drawer-body-scrolling="true"
-                    class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                    Filtros
-                </button>
+                
             </div>
         </section>
-        <div class="grid gap-4 grid-cols-12">
-            <div class="col-span-12 min-[942px]:col-span-4 min-[1160px]:col-span-3 min-[1610px]:col-span-2">
+        <div class="grid gap-4 grid-cols-12 container mx-auto">
+            <div class="col-span-12 min-[1023px]:col-span-4 min-[1279px]:col-span-3 min-[1610px]:col-span-2">
                 <Sidebar>
                     <ul class="space-y-2">
                         <Filters2
@@ -141,7 +143,7 @@ const handleBrandChange = (value) => {
                     </ul>
                 </Sidebar>
             </div>
-            <div class="col-span-12 min-[942px]:col-span-8 min-[1160px]:col-span-9 min-[1610px]:col-span-10 mx-auto grid min-[1610px]:grid-cols-4 min-[1160px]:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-2 md:gap-x-4 justify-items-center">
+            <div class="auto-rows-max col-span-12 min-[1023px]:col-span-8 min-[1279px]:col-span-9 min-[1610px]:col-span-10 mx-auto grid min-[1610px]:grid-cols-4 min-[1279px]:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-2 md:gap-x-4 justify-items-center">
                 <template v-for="product in paginateProducts" :key="product">
                     <Product
                         :image="product.img"

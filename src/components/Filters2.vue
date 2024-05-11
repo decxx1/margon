@@ -78,20 +78,32 @@ onMounted(() => {
             </svg>
         </button>
             <ul :id="'dropdown-pages'+ title" class="py-2 space-y-2">
-                <li v-for="(item, index) in items" :key="index">
-                <button
-                    @click="handleFilterChange(item.name)"
-                    class="flex items-center p-2 pl-3 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                >
-                        <div class="flex-1 ml-3 text-left text-primary-950">{{item.name}}</div>
+                <li >
+                    <button
+                        @click="handleFilterChange('all')"
+                        :class="[currentFilter === 'all' ? 'active' : '','flex items-center p-2 pl-3 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-primary-50 dark:text-white dark:hover:bg-gray-700 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-800']"
+                    >
+                        <div class="flex-1 ml-3 text-left text-primary-950">Todas</div>
                         <em
                             class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800"
                         >
-                        {{ item.count }}
+                        {{ totalCount }}
                         </em>
                     </button>
                 </li>
-            
+                <li v-for="(item, index) in items" :key="index">
+                    <button
+                        @click="handleFilterChange(item.name)"
+                        :class="[currentFilter === item.name ? 'active' : '','flex items-center p-2 pl-3 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-primary-50 dark:text-white dark:hover:bg-gray-700 [&.active]:bg-primary-100 dark:[&.active]:bg-primary-800']"
+                    >
+                        <div class="flex-1 ml-3 text-left text-primary-950">
+                            {{item.name}}
+                        </div>
+                        <em class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">
+                            {{ item.count }}
+                        </em>
+                    </button>
+                </li>
             </ul>
         </li>
 </template>
