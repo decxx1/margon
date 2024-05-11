@@ -43,7 +43,7 @@ const widthTitle = (text) => {
 </script>
 <template>
     <div 
-        class="w-72 bg-white border border-primary-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-4 my-4"
+        class="w-72 h-auto bg-white border border-primary-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-4 my-4"
     >
         <div class="w-64 h-56 mx-auto">
             <img class="rounded-t-lg w-full h-full object-contain" loading="lazy" :src="image" :alt="title" />
@@ -59,7 +59,7 @@ const widthTitle = (text) => {
                 <p v-if="weight" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Peso: </em>{{ weight }}</p>
                 <p v-if="dose" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Dosis: </em>{{ dose }}</p>
             </div>
-            <p class="font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Presentación: </em>{{ description }}</p>
+            <p v-if="description" class="font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Descripción: </em>{{ description }}</p>
         </div>
         
     </div>

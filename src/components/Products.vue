@@ -2,8 +2,10 @@
 import { computed, ref } from 'vue';
 import { products } from '@/data/products.json';
 import Product from '@/components/Product.vue';
+import Sidebar from '@/components/Sidebar.vue';
 import Pagination from '@/components/Pagination.vue';
 import Filters from '@/components/Filters.vue';
+import Filters2 from '@/components/Filters2.vue';
 import { onMounted } from 'vue';
 
 
@@ -87,23 +89,15 @@ const handleBrandChange = (value) => {
 <template>
     <section class="mt-32">
         <section class="md:w-8/12 w-11/12 mx-auto overflow-hidden bg-white shadow border border-primary-200 dark:border-gray-700 dark:bg-gray-800 rounded-3xl px-10">
-            <div class="w-full mx-auto px-4 flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-center lg:justify-between pb-4">
-                <div>
-                    <Filters
-                        client:load
-                        title="Categorías"
-                        :items="categories"
-                        :onChange="handleCategoryChange"
-                    />
-                    <Filters
-                        client:load
-                        title="Marcas"
-                        :items="brands"
-                        :onChange="handleBrandChange"
-                    />
-                </div>
-                <div class="md:pb-4 lg:pb-0">
-                    <label class="block mb-2 text-sm font-semibold text-primary-950 dark:text-white">Buscar</label>
+            <div class="w-full mx-auto px-4 pb-6 pt-4 md:pb-2 flex flex-column sm:flex-row flex-wrap items-center justify-center lg:justify-between">
+                <Pagination
+                    client:load
+                    :total="totalPages"
+                    :current="currentPage"
+                    :onPageChange="handlePageChange"
+                    extraClass=""
+                />
+                <div class="">
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 rtl:inset-r-0 rtl:right-0 flex items-center ps-3 pointer-events-none">
                             <svg class="w-5 h-5 text-primary-950 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
@@ -113,29 +107,54 @@ const handleBrandChange = (value) => {
                         />
                     </div>
                 </div>
+                <button
+                    data-drawer-target="drawer-navigation"
+                    data-drawer-toggle="drawer-navigation"
+                    aria-controls="drawer-navigation"
+                    data-drawer-body-scrolling="true"
+                    class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                    Filtros
+                </button>
             </div>
-            <Pagination
-                client:load
-                :total="totalPages"
-                :current="currentPage"
-                :onPageChange="handlePageChange"
-                extraClass="mx-auto border-t border-primary-200 dark:border-gray-700"
-            />
         </section>
-        <div class="container mx-auto grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-4 justify-items-center">
-            <template v-for="product in paginateProducts" :key="product">
-                <Product
-                    :image="product.img"
-                    :title="product.title"
-                    :brand="product.brand"
-                    :description="product.description"
-                    :category="product.category"
-                    :weight="product.weight"
-                    :dose="product.dose"
-                />
-            </template>
+        <div class="grid gap-4 grid-cols-12">
+            <div class="col-span-12 min-[942px]:col-span-4 min-[1160px]:col-span-3 min-[1610px]:col-span-2">
+                <Sidebar>
+                    <ul class="space-y-2">
+                        <Filters2
+                            client:load
+                            title="Marcas"
+                            :items="brands"
+                            :onChange="handleBrandChange"
+                        />
+                    </ul>
+                    <ul
+                        class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
+                    >
+                        <Filters2
+                            client:load
+                            title="Categorías"
+                            :items="categories"
+                            :onChange="handleCategoryChange"
+                        />
+                    </ul>
+                </Sidebar>
+            </div>
+            <div class="col-span-12 min-[942px]:col-span-8 min-[1160px]:col-span-9 min-[1610px]:col-span-10 mx-auto grid min-[1610px]:grid-cols-4 min-[1160px]:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-2 md:gap-x-4 justify-items-center">
+                <template v-for="product in paginateProducts" :key="product">
+                    <Product
+                        :image="product.img"
+                        :title="product.title"
+                        :brand="product.brand"
+                        :description="product.description"
+                        :category="product.category"
+                        :weight="product.weight"
+                        :dose="product.dose"
+                    />
+                </template>
+            </div>
         </div>
-
         <Pagination
             client:load
             :total="totalPages"
