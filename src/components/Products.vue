@@ -4,24 +4,13 @@ import { products } from '@/data/products.json';
 import Product from '@/components/Product.vue';
 import Sidebar from '@/components/Sidebar.vue';
 import Pagination from '@/components/Pagination.vue';
-import Filters from '@/components/Filters.vue';
-import Filters2 from '@/components/Filters2.vue';
-import { onMounted } from 'vue';
 
 
-
-onMounted(() => {
-    categories.value = calculateCounts('category');
-    brands.value = calculateCounts('brand');
-})
 
 const currentPage = ref(1);
 const perPage = 12;
 const totalPages = ref(Math.ceil(products.length / perPage ));
-const categories = ref([]);
-const brands = ref([]);
-const currentCategory = ref('all');
-const currentBrand = ref('all');
+
 const searchProduct = ref('');
 //console.log(totalPages)
 const paginateProducts = computed ( () => {
@@ -31,12 +20,7 @@ const paginateProducts = computed ( () => {
     
     // Filtrar productos por la categoría actual
     let filteredProducts = products;
-    if (currentCategory.value !== 'all') {
-        filteredProducts = filteredProducts.filter(product => product.category === currentCategory.value);
-    }
-    if (currentBrand.value !== 'all' ) {
-        filteredProducts = filteredProducts.filter(product => product.brand === currentBrand.value);
-    }
+
     if (input.length > 0) {
         filteredProducts = filteredProducts.filter(function(product) {
             return product.title.toLowerCase().includes(input) || product.category.toLowerCase().includes(input) || product.description.toLowerCase().includes(input);
@@ -47,46 +31,12 @@ const paginateProducts = computed ( () => {
     return filteredProducts.slice(startIndex, endIndex);
 })
 
-const calculateCounts = (valueToCount) => {
-    const count = {};
 
-    // Iterar sobre los productos
-    for (let i = 0; i < products.length; i++) {
-        const value = products[i][valueToCount];
-        // Verificar si la categoría ya existe en el objeto de categorías
-        if (value in count) {
-            count[value]++;
-        } else {
-            count[value] = 1;
-        }
-    }
-
-    // Convertir el objeto de categorías en un array de objetos
-    const newValue = Object.keys(count).map(value => {
-        return {
-            name: value,
-            count: count[value]
-        };
-    });
-
-    // Ordenar el array de categorías por nombre
-    newValue.sort((a, b) => a.name.localeCompare(b.name));
-
-    return newValue;
-}
 
 const handlePageChange = (page) => {
     currentPage.value = page;
 }
-const handleCategoryChange = (value) => {
-    currentBrand.value = 'all';
-    currentCategory.value = value;
-}
-const handleBrandChange = (value) => {
-    currentCategory.value = 'all';
-    currentBrand.value = value;
-    
-}
+
 
 </script>
 <template>
@@ -109,46 +59,12 @@ const handleBrandChange = (value) => {
                             placeholder="Buscar productos" 
                         />
                     </div>
-                    <button
-                        data-drawer-target="drawer-navigation"
-                        data-drawer-toggle="drawer-navigation"
-                        aria-controls="drawer-navigation"
-                        data-drawer-body-scrolling="true"
-                        class="min-[1023px]:hidden mb-4 px-2 py-1 my-auto flex mr-2 text-primary-950 border bg-primary-50 border-primary-200 rounded-lg cursor-pointer hover:text-primary-900 hover:bg-primary-100 focus:bg-primary-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-primary-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                    >
-                        <svg class="w-5 h-5 mr-3 text-primary-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M15 3H0V2h15zm-3 5H3V7h9zm-2 5H5v-1h5z" clip-rule="evenodd"/></svg>
-                        Filtros
-                    </button>
                 </div>
                 
             </div>
         </section>
-        <div class="grid gap-4 grid-cols-12 container mx-auto">
-            <div class="col-span-12 min-[1023px]:col-span-4 min-[1279px]:col-span-3 min-[1610px]:col-span-2">
-                <Sidebar>
-                    <ul class="space-y-2">
-                        <Filters2
-                            client:load
-                            title="Marcas"
-                            :items="brands"
-                            :onChange="handleBrandChange"
-                            :currentFilter="currentBrand"
-                        />
-                    </ul>
-                    <ul
-                        class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700"
-                    >
-                        <Filters2
-                            client:load
-                            title="Categorías"
-                            :items="categories"
-                            :onChange="handleCategoryChange"
-                            :currentFilter="currentCategory"
-                        />
-                    </ul>
-                </Sidebar>
-            </div>
-            <div class="auto-rows-max col-span-12 min-[1023px]:col-span-8 min-[1279px]:col-span-9 min-[1610px]:col-span-10 mx-auto grid min-[1610px]:grid-cols-4 min-[1279px]:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-2 gap-x-2 md:gap-x-4 justify-items-center">
+        <div class="container mx-auto">
+            <div class="auto-rows-max mx-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-2 gap-x-2 md:gap-x-4 justify-items-center">
                 <template v-for="product in paginateProducts" :key="product">
                     <Product
                         :image="product.img"
