@@ -20,7 +20,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "Sabores: verdura, espárragos, choclo, arvejas y pollo",
-            "category": "Sopas crema"
+            "category": "Sopas"
         },
 
 
@@ -33,7 +33,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "Fideos: letras, coditos, ave maría",
-            "category": "Sopas con fideos"
+            "category": "Sopas"
         },
  
 
@@ -76,7 +76,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "",
-            "category": "Aditivos salado"
+            "category": "Aditivos salados"
         },
 
 
@@ -89,7 +89,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "",
-            "category": "Aditivos salado"
+            "category": "Aditivos salados"
         },
         {
             "img": "/images/logos/sabores_del_sol.svg",
@@ -98,7 +98,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "",
-            "category": "Aditivos salado"
+            "category": "Aditivos salados"
         },
 
 
@@ -116,7 +116,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "",
-            "category": "Aditivos salado"
+            "category": "Aditivos salados"
         },
         {
             "img": "/images/sabores_del_sol/condimentos/condimento_para_guacamole.webp",
@@ -125,7 +125,7 @@
             "dose": "",
             "brand": "Sabores del Sol",
             "description": "",
-            "category": "Aditivos salado"
+            "category": "Aditivos salados"
         },
 
 
@@ -168,13 +168,13 @@
 
 
         {
-            "img": "/images/aralito/juguitos/aralito_juguito_banana.jpg",
-            "title": "Juguitos",
+            "img": "/images/aralito/juguitos/aralito_juguito_para_congelar.webp",
+            "title": "Juguitos para congelar",
             "weight": "60cc",
             "dose": "",
             "brand": "Aralito",
             "description": "Sabores: banana, cola, durazno, frutilla, limón, manzana, naranja, pera, tutti frutti y uva.",
-            "category": "Juguitos congelados"
+            "category": "Golosinas"
         },
  
 
@@ -369,12 +369,12 @@
 
         {
             "img": "/images/aral/jugos/aral_jugo_naranja_1kg.webp",
-            "title": "Jugo",
+            "title": "Jugo en polvo",
             "weight": "1kg",
             "dose": "48 g/L",
             "brand": "Aral",
             "description": "Sabores: naranja, pomelo, manzana, ananá y durazno",
-            "category": "Jugos en polvo"
+            "category": "Jugos"
         },
  
 
@@ -525,7 +525,7 @@
         },
         {
             "img": "/images/aral/esencias/aral_esencia_coco_2L.webp",
-            "title": "Esencia",
+            "title": "Esencia artificial",
             "weight": "2L",
             "dose": "",
             "brand": "Aral",

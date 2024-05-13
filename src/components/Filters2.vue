@@ -1,6 +1,5 @@
 <script setup>
-import { computed, ref, onMounted } from 'vue';
-import { Dropdown } from 'flowbite';
+import { computed, ref, watch } from 'vue';
 const props = defineProps({
   title:{
     type: String,
@@ -13,10 +12,21 @@ const props = defineProps({
   onChange: {
     type: Function,
   },
+  currentFilter: {
+    type: String,
+    required: true
+  }
 });
 
 const currentFilter = ref('all');
-const dropdown = ref(null);
+watch(
+    () => props.currentFilter,
+    () => {
+        if(props.currentFilter){
+            currentFilter.value = props.currentFilter
+        }
+    }
+);
 
 const totalCount = computed(() => {
   return props.items.reduce((acc, item) => acc + item.count, 0);
@@ -24,30 +34,8 @@ const totalCount = computed(() => {
 const handleFilterChange =  (filter) => {
     currentFilter.value = filter;
     props.onChange(currentFilter.value);
-    dropdown.value.hide();
 }
-onMounted(() => {
-    const $targetEl = document.getElementById('dropdownFilters'+props.title);
-    // set the element that trigger the dropdown menu on click
-    const $triggerEl = document.getElementById('dropFilters'+props.title);
 
-    // options with default values
-    const options = {
-        placement: 'bottom',
-        triggerType: 'click',
-        offsetSkidding: 0,
-        offsetDistance: 10,
-        delay: 300,
-        ignoreClickOutsideClass: false,
-    };
-
-    // instance options object
-    const instanceOptions = {
-        id: 'dropFilters'+props.title,
-        override: true
-    };
-    dropdown.value = new Dropdown($targetEl, $triggerEl, options, instanceOptions);
-})
 </script>
 <template>
     <li>

@@ -39,7 +39,7 @@ const paginateProducts = computed ( () => {
     }
     if (input.length > 0) {
         filteredProducts = filteredProducts.filter(function(product) {
-            return product.title.toLowerCase().includes(input);
+            return product.title.toLowerCase().includes(input) || product.category.toLowerCase().includes(input) || product.description.toLowerCase().includes(input);
         });
     }
     totalPages.value = Math.ceil(filteredProducts.length / perPage );
@@ -79,10 +79,13 @@ const handlePageChange = (page) => {
     currentPage.value = page;
 }
 const handleCategoryChange = (value) => {
+    currentBrand.value = 'all';
     currentCategory.value = value;
 }
 const handleBrandChange = (value) => {
+    currentCategory.value = 'all';
     currentBrand.value = value;
+    
 }
 
 </script>
@@ -129,6 +132,7 @@ const handleBrandChange = (value) => {
                             title="Marcas"
                             :items="brands"
                             :onChange="handleBrandChange"
+                            :currentFilter="currentBrand"
                         />
                     </ul>
                     <ul
@@ -139,6 +143,7 @@ const handleBrandChange = (value) => {
                             title="Categorías"
                             :items="categories"
                             :onChange="handleCategoryChange"
+                            :currentFilter="currentCategory"
                         />
                     </ul>
                 </Sidebar>
