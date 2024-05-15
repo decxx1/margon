@@ -8,11 +8,7 @@ defineProps({
         type: String,
         required: true,
     },
-    brand: {
-        type: String,
-        required: true,
-    },
-    description: {
+    packaging: {
         type: String,
         required: true,
     },
@@ -20,14 +16,14 @@ defineProps({
         type: String,
         required: true,
     },
-    weight: {
+    flavors: {
         type: String,
         required: false,
     },
-    dose: {
+    variety: {
         type: String,
         required: false,
-    }
+    },
 });
 const widthTitle = (text) => {
     const width = text.length
@@ -54,12 +50,10 @@ const widthTitle = (text) => {
             </a>
             <p class="text-center bg-primary-100 text-primary-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-primary-900 dark:text-primary-300">{{ category }}</p>
             
-            <p class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Marca: </em>{{ brand }}</p>
-            <div class="grid grid-cols-2">
-                <p v-if="weight" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Peso: </em>{{ weight }}</p>
-                <p v-if="dose" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Dosis: </em>{{ dose }}</p>
-            </div>
-            <p v-if="description" class="font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Descripción: </em>{{ description }}</p>
+            <p v-if="variety" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Variedades: </em>{{ variety }}</p>
+            <p v-if="flavors" class="mb-3 mt-2 font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Sabores: </em>{{ flavors }}</p>
+            
+            <p v-if="packaging" class="font-normal text-gray-700 dark:text-gray-400"><em class="font-bold text-primary-900 dark:text-primary-50 text-sm">Presentación: </em>{{ packaging }}</p>
         </div>
         
     </div>

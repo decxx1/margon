@@ -1,0 +1,594 @@
+{
+    "products": [
+        {
+            "img": "/images/sabores_del_sol/pure_papas/125g/sabores_del_sol_pure_de_papas_125g.webp",
+            "title": "Puré de papas",
+            "weight": "125g, 1kg, 2kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "",
+            "category": "Purés de papa"
+        },
+
+
+
+
+        {
+            "img": "/images/sabores_del_sol/sopas_crema/68g/sabores_del_sol_sopa_verduras_68g.webp",
+            "title": "Sopa crema",
+            "weight": "68g, 1kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Sabores: verdura, espárragos, choclo, arvejas y pollo",
+            "category": "Sopas"
+        },
+
+
+
+
+        {
+            "img": "/images/logos/sabores_del_sol.svg",
+            "title": "Sopa de verduras con fideos",
+            "weight": "110g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Fideos: letras, coditos, ave maría",
+            "category": "Sopas"
+        },
+ 
+
+
+
+        {
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_carne_660g.webp",
+            "title": "Caldo",
+            "weight": "5g, 250g, 660g, 5kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Sabores: verdura, verdura con pollo, verdura con carne y finas hierbas",
+            "category": "Caldos deshidratados"
+        },
+
+
+
+
+        {
+            "img": "/images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_verdura_sin_sal_500g.webp",
+            "title": "Caldo sin sal",
+            "weight": "5g, 250g, 500g, 5kg",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "Sabores: verdura, verdura con pollo, verdura con carne y finas hierbas",
+            "category": "Caldos deshidratados"
+        },
+
+
+
+
+
+
+
+
+        {
+            "img": "/images/logos/sabores_del_sol.svg",
+            "title": "Colorante arroz amarillo",
+            "weight": "pote de 100 sobres de 1g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "",
+            "category": "Aditivos salados"
+        },
+
+
+
+
+        {
+            "img": "/images/logos/sabores_del_sol.svg",
+            "title": "Salsa demiglace",
+            "weight": "30g y 640g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "",
+            "category": "Aditivos salados"
+        },
+        {
+            "img": "/images/logos/sabores_del_sol.svg",
+            "title": "Salsa blanca",
+            "weight": "30g y 640g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "",
+            "category": "Aditivos salados"
+        },
+
+
+
+
+
+
+
+
+
+        {
+            "img": "/images/sabores_del_sol/condimentos/condimento_para_tacos.webp",
+            "title": "Condimento para tacos",
+            "weight": "30g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "",
+            "category": "Aditivos salados"
+        },
+        {
+            "img": "/images/sabores_del_sol/condimentos/condimento_para_guacamole.webp",
+            "title": "Condimento para guacamole",
+            "weight": "30g",
+            "dose": "",
+            "brand": "Sabores del Sol",
+            "description": "",
+            "category": "Aditivos salados"
+        },
+
+
+
+
+ 
+
+
+
+
+
+
+
+        {
+            "img": "/images/aral/mousse/1kg/aral_mousse_frutilla_1kg.webp",
+            "title": "Mousse",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: chocolate, frutilla, vainilla, limón, dulce de leche, maracuyá, frutos del bosque y café-crema moka",
+            "category": "Mousses"
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+        {
+            "img": "/images/aralito/juguitos/aralito_juguito_para_congelar.webp",
+            "title": "Juguitos para congelar",
+            "weight": "60cc",
+            "dose": "",
+            "brand": "Aralito",
+            "description": "Sabores: banana, cola, durazno, frutilla, limón, manzana, naranja, pera, tutti frutti y uva.",
+            "category": "Golosinas"
+        },
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Crema chantilly",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Colores: chantilly, rosa bebé, celeste cielo, naranja ocaso y amarillo vaticano",
+            "category": "Cremas"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Crema pastelera en frío",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Cremas"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Crema pastelera en caliente",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Cremas"
+        },
+
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Budín",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate",
+            "category": "Premezclas"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Bizcochuelo",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, limón y naranja",
+            "category": "Premezclas"
+        },
+      
+
+      
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Brownies",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Premezclas"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Muffins",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Premezclas"
+        },
+
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Helado",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, dulce de leche, frutilla, frutos del bosque y limón",
+            "category": "Helados"
+        },
+
+
+
+        {
+            "img": "/images/aral/gelatinas/35g/aral_gelatina_frambuesa_35g.webp",
+            "title": "Gelatina",
+            "weight": "35g, 1kg, 3kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: ananá, frambuesa, frutilla, durazno, cereza, limón, manzana verde, naranja, pera, sin sabor",
+            "category": "Gelatinas"
+        },
+
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Gelatina sin azúcar",
+            "weight": "35g, 1kg, 3kg",
+            "dose": "30 g/L",
+            "brand": "Aral",
+            "description": "Sabores: ananá, frambuesa, frutilla, durazno, cereza, limón, manzana verde, naranja, pera, sin sabor",
+            "category": "Gelatinas"
+        },
+        
+
+
+
+
+        {
+            "img": "/images/aral/postres/3kg/aral_postre_vainilla_3kg.jpg",
+            "title": "Postre",
+            "weight": "1kg y 3kg",
+            "dose": "200 g/L",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, dulce de leche, caramelo y frutilla ",
+            "category": "Postres"
+        }, 
+  
+
+     
+     
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Postre sin azúcar",
+            "weight": "1kg y 3kg",
+            "dose": "60 g/L",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, dulce de leche, caramelo y frutilla ",
+            "category": "Postres"
+        }, 
+ 
+
+
+
+
+        {
+            "img": "/images/aral/flanes/3kg/aral_flan_vainilla_3kg.jpg",
+            "title": "Flan",
+            "weight": "1kg y 3kg",
+            "dose": "160 g/L",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, dulce de leche, caramelo y frutilla",
+            "category": "Flanes"
+        },
+
+
+
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Flan sin azúcar",
+            "weight": "1kg y 3kg",
+            "dose": "40 g/L",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, dulce de leche, caramelo y frutilla",
+            "category": "Flanes"
+        },
+
+
+
+
+        {
+            "img": "/images/aral/jugos/aral_jugo_naranja_1kg.webp",
+            "title": "Jugo en polvo",
+            "weight": "1kg",
+            "dose": "48 g/L",
+            "brand": "Aral",
+            "description": "Sabores: naranja, pomelo, manzana, ananá y durazno",
+            "category": "Jugos"
+        },
+ 
+
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Hidratante",
+            "weight": "40g y 1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: naranja-durazno, manzana",
+            "category": "Bebidas hidratantes"
+        },
+
+
+
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Saborizante para leche",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: chocolate, frutilla, vainilla, banana y dulce de leche",
+            "category": "Aditivos"
+        },
+
+
+
+
+        {
+            "img": "/images/aral/varios/aral_polvo_para_hornear_1kg.webp",
+            "title": "Polvo para hornear",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/aral/varios/aral_azucar_impalpable_1kg.webp",
+            "title": "Azúcar impalpable",
+            "weight": "1kg y 5kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/aral/varios/aral_azucar_negra_1kg.webp",
+            "title": "Azúcar negra",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Brillo pastelero",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/aral/varios/aral_cacao_amargo_1kg.webp",
+            "title": "Cacao en polvo amargo",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Cacao en polvo dulce",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/aralito/cacao/aralito_cacao_180g.jpg",
+            "title": "Cacao en polvo dulce",
+            "weight": "180g",
+            "dose": "",
+            "brand": "Aralito",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/aral/varios/aral_almidon_de_maiz_1kg.webp",
+            "title": "Almidón de maíz",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Glasé real",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Glasé real colores",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Cremor tártaro",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Bicarbonato de sodio",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/logos/aral_azul.svg",
+            "title": "Bicarbonato de amonio",
+            "weight": "1kg",
+            "dose": "",
+            "brand": "Aral",
+            "description": "",
+            "category": "Aditivos"
+        },
+        {
+            "img": "/images/aral/esencias/aral_esencia_coco_2L.webp",
+            "title": "Esencia artificial",
+            "weight": "2L",
+            "dose": "",
+            "brand": "Aral",
+            "description": "Sabores: vainilla, chocolate, coco, limón, manteca, naranja y pan dulce",
+            "category": "Aditivos"
+        },
+
+
+
+
+        {
+            "img": "/images/viejo_minero/viejo_minero_bitter_1L.webp",
+            "title": "Bitter con naranja",
+            "weight": "1L",
+            "dose": "",
+            "brand": "Viejo Minero",
+            "description": "",
+            "category": "Cócteles"
+        },
+        {
+            "img": "/images/viejo_minero/viejo_minero_amargo_1L.webp",
+            "title": "Amargo con alcohol",
+            "weight": "1L",
+            "dose": "",
+            "brand": "Viejo Minero",
+            "description": "",
+            "category": "Cócteles"
+        },
+        {
+            "img": "/images/logos/viejo_minero.svg",
+            "title": "Sangría tinta",
+            "weight": "1L",
+            "dose": "",
+            "brand": "Viejo Minero",
+            "description": "",
+            "category": "Cócteles"
+        },
+        {
+            "img": "/images/logos/viejo_minero.svg",
+            "title": "Sangría blanca",
+            "weight": "1L",
+            "dose": "",
+            "brand": "Viejo Minero",
+            "description": "",
+            "category": "Cócteles"
+        },
+        {
+            "img": "/images/logos/viejo_minero.svg",
+            "title": "Americano Rosso",
+            "weight": "1L",
+            "dose": "",
+            "brand": "Viejo Minero",
+            "description": "",
+            "category": "Cócteles"
+        },
+        {
+            "img": "/images/logos/viejo_minero.svg",
+            "title": "Americano blanco",
+            "weight": "1L",
+            "dose": "",
+            "brand": "Viejo Minero",
+            "description": "",
+            "category": "Cócteles"
+        }
+    ]
+}
