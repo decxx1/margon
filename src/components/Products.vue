@@ -66,6 +66,7 @@ const handlePageChange = (page) => {
             </div>
         </div>
         <Pagination
+            v-show="paginateProducts && paginateProducts.length > 0"
             client:load
             :total="totalPages"
             :current="currentPage"
