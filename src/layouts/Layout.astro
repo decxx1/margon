@@ -1,4 +1,10 @@
 ---
+import '@fontsource/source-sans-pro/200.css';
+import '@fontsource/source-sans-pro/300.css';
+import '@fontsource/source-sans-pro/400.css';
+import '@fontsource/source-sans-pro/600.css';
+import '@fontsource/source-sans-pro/700.css';
+import '@fontsource/source-sans-pro/900.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import Whatsapp from '@/components/Whatsapp.astro';
@@ -59,7 +65,7 @@ const {
 			<link rel="preload" as="image" href={preLoad} type="image/webp"/>
 		}
 	</head>
-	<body class="bg-body dark:bg-gray-900 scrollbar scrollbar-w-3 scrollbar-thumb-rounded-[0.25rem] scrollbar-track-gray-200 scrollbar-thumb-gray-400 dark:scrollbar-track-gray-900 dark:scrollbar-thumb-gray-700">
+	<body class="font-sourceSansPro bg-body dark:bg-gray-900 scrollbar scrollbar-w-3 scrollbar-thumb-rounded-[0.25rem] scrollbar-track-gray-200 scrollbar-thumb-gray-400 dark:scrollbar-track-gray-900 dark:scrollbar-thumb-gray-700">
 		<Header />
 			<main>
 				<slot />

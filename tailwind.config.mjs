@@ -5,7 +5,11 @@ export default {
 		'./node_modules/flowbite/**/*.js'
 	],
 	theme: {
-		extend: {},
+		extend: {
+            fontFamily: {
+                sourceSansPro: ['Source Sans Pro', 'sans-serif'],
+            },
+        },
 		colors: {
 			primary: { 
 				'50': '#fdf7ef',

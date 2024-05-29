@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
     "@astrojs/vue": "^4.1.0",
+    "@fontsource/source-sans-pro": "^5.0.8",
     "astro": "^4.6.3",
     "axios": "^1.6.8",
     "flowbite": "^2.3.0",
