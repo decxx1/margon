@@ -12,16 +12,16 @@ import {
 ---
 
     <!-- TopBar Nav -->
-    <nav class="top-header bg-primary-100 dark:bg-gray-900 transition-all duration-500 h-12 py-2.5">
+    <nav class="top-header bg-secondary-100 dark:bg-gray-900 transition-all duration-500 h-12 py-2.5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6">
-            <a href={'tel:' + telphoneLinkeable} class="flex items-center text-primary-950 hover:font-semibold dark:text-gray-100">
+            <a href={'tel:' + telphoneLinkeable} class="flex items-center text-primary-800 hover:font-semibold dark:text-gray-100">
                 <Phone extraClass='text-primary-600 mr-2' />
                 {telphoneReadble}
             </a>
             <div class="flex items-center">
                 <a
                     href={mapUrl}
-                    class="items-center hidden mr-6 text-sm font-medium text-primary-950 dark:text-gray-100 hover:font-semibold sm:flex"
+                    class="items-center hidden mr-6 text-sm font-medium text-primary-800 dark:text-gray-100 hover:font-semibold sm:flex"
                 >
                     <Map extraClass='text-primary-600 mr-2' />
                     {address}
@@ -34,7 +34,8 @@ import {
         <nav class=" bg-white px-4 lg:px-6 py-4 dark:bg-gray-800 border-primary-200 dark:border-gray-600 border-y">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="./" class="flex items-center">
-                    <img src="images/logos/margon.png" class="mr-3 h-6 sm:h-9" alt="Margon Logo" />
+                    <img loading="lazy" src="images/logos/margon_logo_corto.webp" class="mr-3 h-4 sm:h-5 dark:hidden" alt="Margon Logo" />
+                    <img loading="lazy" src="images/logos/margon_logo_corto_blanco.webp" class="mr-3 h-4 sm:h-5 hidden dark:block" alt="Margon Logo" />
                 </a>
                 <div class="flex items-center lg:order-2">
                     <ColorModeSwitcher client:load />

@@ -50,7 +50,7 @@
         id="theme-toggle"
         data-tooltip-target="tooltip-toggle"
         type="button"
-        class="text-primary-800 hover:text-primary-700 hover:bg-primary-50 dark:hover:bg-gray-700 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-primary-100 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+        class="text-primary-700 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-gray-700 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-4 focus:ring-primary-100 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
     >
         <svg
             v-show="!iconDark"

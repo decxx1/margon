@@ -31,56 +31,56 @@ const handleFilterChange =  (filter) => {
 </script>
 <template>
     <section>
-                <div class="container lg:max-w-screen-lg mx-auto">
-                            <!-- Categories List -->
-                            <div class="categories categories-view1 max-sm:px-4">
-                                <ul class="grid grid-cols-12 gap-4">
-                                    <li class="md:col-span-6 col-span-12">
-                                        <div @click="handleFilterChange(SaladLine)" :class="[currentFilter === SaladLine ? 'bg-primary-50 text-primary-900 shadow-lg dark:bg-gray-700 dark:text-primary-200 border-primary-600 dark:border-gray-300' : 'bg-white text-primary-950 border-primary-200 dark:bg-gray-800 dark:text-white dark:border-gray-700','categories-view1-wrap border  cursor-pointer  hover:scale-105 hover:text-primary-900 hover:shadow hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
-                                            <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
-                                              <img src="/images/logos/sabores_del_sol.svg" alt="logo sabores del sol" class="w-20 h-20 pr-2 pb-5" />
-                                            </div>  
-                                          
-                                            <p class="font-bold text-lg">Línea Salados</p>
-                                            <span :class="[currentFilter === SaladLine ? 'opacity-30' : 'opacity-5','soup w-20 h-20 max-sm:hidden']" ></span>
-                                        </div>
-                                    </li>
-                                    <li class="md:col-span-6 col-span-12">
-                                        <div @click="handleFilterChange(sweetLine)" :class="[currentFilter === sweetLine ? 'bg-primary-50 text-primary-900 shadow-lg dark:text-primary-200 border-primary-600 dark:border-gray-300 dark:bg-gray-700' : 'bg-white text-primary-950 dark:bg-gray-800 dark:text-white border-primary-200 dark:border-gray-700','categories-view1-wrap border cursor-pointer hover:scale-105 hover:text-primary-900 hover:shadow hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
-                                          <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
-                                            <img src="/images/logos/aral_azul.svg" alt="logo aral" class="w-20 h-20 pr-2 pb-5" />
-                                          </div>
-                                            <p class="font-bold text-lg">Línea Dulces, Panadería y Repostería</p>
-                                            <span :class="[currentFilter === sweetLine ? 'opacity-30' : 'opacity-5','dessert w-20 h-20 max-sm:hidden']" ></span>
-                                        </div>
-                                    </li>
-                                    <li class="md:col-span-6 col-span-12">
-                                        <div @click="handleFilterChange(candyLine)" :class="[currentFilter === candyLine ? 'bg-primary-50 text-primary-900 shadow-lg dark:text-primary-200 border-primary-600 dark:border-gray-300 dark:bg-gray-700' : 'bg-white text-primary-950 dark:bg-gray-800 dark:text-white border-primary-200 dark:border-gray-700','categories-view1-wrap border cursor-pointer hover:scale-105 hover:text-primary-900 hover:shadow hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
-                                          <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
-                                            <img src="/images/logos/aralito.svg" alt="logo aralito" class="w-20 h-20 pr-2 pb-5" />
-                                          </div>
-                                            <p class="font-bold text-lg">Línea Golosinas</p>
-                                            <span :class="[currentFilter === candyLine ? 'opacity-30' : 'opacity-5','candies w-20 h-20 max-sm:hidden']" ></span>
-                                        </div>
-                                    </li>
-                                    <li class="md:col-span-6 col-span-12">
-                                        <div @click="handleFilterChange(cocktailLine)" :class="[currentFilter === cocktailLine ? 'bg-primary-50 text-primary-900 shadow-lg dark:text-primary-200 border-primary-600 dark:border-gray-300 dark:bg-gray-700' : 'bg-white text-primary-950 dark:bg-gray-800 dark:text-white border-primary-200 dark:border-gray-700','categories-view1-wrap border cursor-pointer hover:scale-105 hover:text-primary-900 hover:shadow hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
-                                          <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
-                                            <img src="/images/logos/viejo_minero.svg" alt="logo viejo minero" class="w-20 h-20 pr-2 pb-5 dark:hidden" />
-                                            <img src="/images/logos/viejo_minero_blanco.svg" alt="logo viejo minero blanco" class="w-20 h-20 pr-2 pb-5 hidden dark:block" />
-                                          </div>
-                                            <p class="font-bold text-lg">Línea Cócteles</p>
-                                            <span :class="[currentFilter === cocktailLine ? 'opacity-30' : 'opacity-5','drink w-20 h-20 max-sm:hidden']" ></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Categories List -->
-
-                            <div class="more-spacer"></div>
-                           
+      <div class="container lg:max-w-screen-lg mx-auto">
+          <!-- Categories List -->
+          <div class="categories categories-view1 max-sm:px-4">
+              <ul class="grid grid-cols-12 gap-4">
+                  <li class="md:col-span-6 col-span-12">
+                      <div @click="handleFilterChange(SaladLine)" :class="[currentFilter === SaladLine ? 'bg-primary-50 text-primary-700 shadow-lg shadow-primary-200 dark:shadow-gray-950 dark:bg-gray-700 dark:text-primary-200 border-primary-600 dark:border-gray-300' : 'bg-white text-primary-600 border-primary-200 dark:bg-gray-800 dark:text-white dark:border-gray-700','categories-view1-wrap border cursor-pointer  hover:scale-105 hover:text-primary-800 hover:shadow hover:shadow-primary-200 hover:dark:shadow-gray-950 hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
+                          <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
+                            <img src="/images/logos/sabores_del_sol.svg" alt="logo sabores del sol" class="w-20 h-20 pr-2 pb-5" />
+                          </div>  
+                        
+                          <p class="font-bold text-lg">Línea Salados</p>
+                          <span :class="[currentFilter === SaladLine ? 'opacity-30' : 'opacity-5','soup w-20 h-20 max-sm:hidden']" ></span>
+                      </div>
+                  </li>
+                  <li class="md:col-span-6 col-span-12">
+                      <div @click="handleFilterChange(sweetLine)" :class="[currentFilter === sweetLine ? 'bg-primary-50 text-primary-700 shadow-lg shadow-primary-200 dark:shadow-gray-950 dark:text-primary-200 border-primary-600 dark:border-gray-300 dark:bg-gray-700' : 'bg-white text-primary-600 dark:bg-gray-800 dark:text-white border-primary-200 dark:border-gray-700','categories-view1-wrap border cursor-pointer hover:scale-105 hover:text-primary-700 hover:shadow hover:shadow-primary-200 hover:dark:shadow-gray-950 hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
+                        <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
+                          <img src="/images/logos/aral_azul.svg" alt="logo aral" class="w-20 h-20 pr-2 pb-5" />
                         </div>
-                    </section>
+                          <p class="font-bold text-lg">Línea Dulces, Panadería y Repostería</p>
+                          <span :class="[currentFilter === sweetLine ? 'opacity-30' : 'opacity-5','dessert w-20 h-20 max-sm:hidden']" ></span>
+                      </div>
+                  </li>
+                  <li class="md:col-span-6 col-span-12">
+                      <div @click="handleFilterChange(candyLine)" :class="[currentFilter === candyLine ? 'bg-primary-50 text-primary-700 shadow-lg shadow-primary-200 dark:shadow-gray-950 dark:text-primary-200 border-primary-600 dark:border-gray-300 dark:bg-gray-700' : 'bg-white text-primary-600 dark:bg-gray-800 dark:text-white border-primary-200 dark:border-gray-700','categories-view1-wrap border cursor-pointer hover:scale-105 hover:text-primary-700 hover:shadow hover:shadow-primary-200 hover:dark:shadow-gray-950 hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
+                        <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
+                          <img src="/images/logos/aralito.svg" alt="logo aralito" class="w-20 h-20 pr-2 pb-5" />
+                        </div>
+                          <p class="font-bold text-lg">Línea Golosinas</p>
+                          <span :class="[currentFilter === candyLine ? 'opacity-30' : 'opacity-5','candies w-20 h-20 max-sm:hidden']" ></span>
+                      </div>
+                  </li>
+                  <li class="md:col-span-6 col-span-12">
+                      <div @click="handleFilterChange(cocktailLine)" :class="[currentFilter === cocktailLine ? 'bg-primary-50 text-primary-700 shadow-lg shadow-primary-200 dark:shadow-gray-950 dark:text-primary-200 border-primary-600 dark:border-gray-300 dark:bg-gray-700' : 'bg-white text-primary-600 dark:bg-gray-800 dark:text-white border-primary-200 dark:border-gray-700','categories-view1-wrap border cursor-pointer hover:scale-105 hover:text-primary-700 hover:shadow hover:shadow-primary-200 hover:dark:shadow-gray-950 hover:bg-primary-50 dark:hover:bg-gray-700 hover:dark:text-primary-100']">
+                        <div class="img border rounded-full rounded-l-none border-primary-200 dark:border-gray-600">
+                          <img src="/images/logos/viejo_minero.svg" alt="logo viejo minero" class="w-20 h-20 pr-2 pb-5 dark:hidden" />
+                          <img src="/images/logos/viejo_minero_blanco.svg" alt="logo viejo minero blanco" class="w-20 h-20 pr-2 pb-5 hidden dark:block" />
+                        </div>
+                          <p class="font-bold text-lg">Línea Cócteles</p>
+                          <span :class="[currentFilter === cocktailLine ? 'opacity-30' : 'opacity-5','drink w-20 h-20 max-sm:hidden']" ></span>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <!-- Categories List -->
+
+          <div class="more-spacer"></div>
+          
+      </div>
+  </section>
 </template>
 <style scoped>
 .categories-view1-wrap p,

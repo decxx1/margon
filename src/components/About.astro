@@ -2,46 +2,47 @@
 
 <section class="container mx-auto py-32">
     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-950 dark:text-white">Sobre Nosotros</h2>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-600 dark:text-white">Sobre Nosotros</h2>
       
     </div>
     <div class="effect w-full p-6 bg-white border border-primary-100 dark:bg-gray-800 dark:border-gray-700">
         
         <div class="px-8 md:px-16 lg:px-44 mb-8">
-            <p class="text-center font-semibold text-md text-primary-900 dark:text-gray-400">
+            <p class="text-center font-semibold text-md text-primary-800 dark:text-gray-400">
             Somos una empresa familiar, con amplia trayectoria en el rubro alimenticio, llevamos más de 25 años trabajando para la elaboración de productos de calidad que lleguen a tu mesa.
             </p>
-            <p class="text-center font-semibold text-md text-primary-900 dark:text-gray-400">
+            <p class="text-center font-semibold text-md text-primary-800 dark:text-gray-400">
                 Trabajamos con socios comerciales, tanto en el rubro panificación, catering, hoterlería, mayoristas y distribuidores de todo el país.
             </p>
         </div>
             <div class="grid grid-cols-12 gap-4 col-span-12">
                 <div class="col-span-12 md:col-span-4">
-                    <h3 class="flex items-center mb-1 text-2xl font-bold text-primary-950 dark:text-white">Misión</h3>
+                    <h3 class="flex items-center mb-1 text-2xl font-bold text-primary-600 dark:text-white">Misión</h3>
                     <p class="text-base font-normal text-primary-900 dark:text-gray-400">
                         Ofrecer productos y servicios alimenticios de calidad, proyectando satisfacción en nuestros clientes, consumidores, proveedores y empleados, logrando innovación y crecimiento constante en armonía con la comunidad
                     </p>
                 </div>
                 <div class="col-span-12 md:col-span-4">
-                    <h3 class="flex items-center mb-1 text-2xl font-bold text-primary-950 dark:text-white">Visión</h3>
+                    <h3 class="flex items-center mb-1 text-2xl font-bold text-primary-600 dark:text-white">Visión</h3>
                     <p class="text-base font-normal text-primary-900 dark:text-gray-400">
                         Ser una empresa alimenticia líder en la región, sin dejar de lado nuestra simpleza familiar, centrando nuestros esfuerzos en la comunidad que nos rodea
                     </p>
                 </div>
                 <div class="col-span-12 md:col-span-4 order-first md:order-last max-md:my-6">
-                    <img class="w-full" src="/images/logos/margon.png" alt="MarGon logo" />
+                    <img loading="lazy" class="w-full dark:hidden" src="/images/logos/margon_logo.webp" alt="MarGon logo" />
+                    <img loading="lazy" class="w-full hidden dark:block" src="/images/logos/margon_logo_blanco.webp" alt="MarGon logo" />
                 </div>
             </div>
             <div class="mt-4">
-                <h3 class="flex items-center mb-1 text-2xl font-bold text-primary-950 dark:text-white">Valores</h3>
+                <h3 class="flex items-center mb-1 text-2xl font-bold text-primary-600 dark:text-white">Valores</h3>
                 <ol class="text-base font-normal text-primary-900 dark:text-gray-400 sm:grid sm:grid-cols-2 sm:gap-4">
                     <li>
-                        <strong>Colaboración:</strong> creer en el trabajo en equipo como fundamental para el crecimiento y buen funcionamiento de la organización. Velar por la solidaridad y compañerismo, entre pares, personal de distintos rangos, familiares y no familiares.<br/>
-                        <strong>Confianza:</strong> creer en la honestidad, credibilidad, transparencia de todos los miembros de la organización y velar porque así sea.
+                        <strong class="text-primary-800 dark:text-gray-300">Colaboración:</strong> creer en el trabajo en equipo como fundamental para el crecimiento y buen funcionamiento de la organización. Velar por la solidaridad y compañerismo, entre pares, personal de distintos rangos, familiares y no familiares.<br/>
+                        <strong class="text-primary-800 dark:text-gray-300">Confianza:</strong> creer en la honestidad, credibilidad, transparencia de todos los miembros de la organización y velar porque así sea.
                     </li>
                     <li>
-                        <strong>Resiliencia:</strong> apelar a la fortaleza de los miembros de la organización para seguir adelante en contextos hostiles y poder hacer frente a conflictos, crisis y adversidades.<br/>
-                        <strong>Respeto:</strong> primar opiniones, criterios y sentimientos de todos los miembros de la empresa, sean familiares o no, comprendiendo que todas las personas son diferentes, apelando a la empatía.
+                        <strong class="text-primary-800 dark:text-gray-300">Resiliencia:</strong> apelar a la fortaleza de los miembros de la organización para seguir adelante en contextos hostiles y poder hacer frente a conflictos, crisis y adversidades.<br/>
+                        <strong class="text-primary-800 dark:text-gray-300">Respeto:</strong> primar opiniones, criterios y sentimientos de todos los miembros de la empresa, sean familiares o no, comprendiendo que todas las personas son diferentes, apelando a la empatía.
                     </li>
                 </ol>
             </div>
@@ -63,11 +64,17 @@
   width:50%;
   top:80%;
   max-width:550px;
-  background:#777;
-  box-shadow:0 15px 10px #777;
+  background:#f6d4b2;
+  box-shadow:0 15px 10px #f6d4b2;
   -webkit-transform:rotate(-3deg);
   transform:rotate(-3deg)
 }
+html.dark .effect:before,
+html.dark .effect:after {
+  background:#777 !important;
+  box-shadow:0 15px 10px #777 !important;
+}
+
 .effect:after {
   -webkit-transform:rotate(3deg);
   transform:rotate(3deg);
