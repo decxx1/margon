@@ -257,13 +257,13 @@
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
     },
-    
-    
+
+
     {
-        "img": "/images/aralito/juguitos/aralito_juguito_para_congelar.webp",
-        "title": "Juguitos para Congelar",
-        "packaging": "Bolsas x 30 unidades de 60cc",
-        "flavors": "Pera, Limón, Durazno, Banana, Naranja, Frutilla, Tutti Fruti, Cola, Uva, Manzana",
+        "img": "/images/aralito/cacao/aralito_cacao_180g.webp",
+        "title": "Cacao Instantáneo",
+        "packaging": "180g",
+        "flavors": "Chocolate",
         "variety": "",
         "category": "Línea Golosinas"
     },
@@ -275,6 +275,17 @@
         "variety": "",
         "category": "Línea Golosinas"
     },
+    {
+        "img": "/images/aralito/juguitos/aralito_juguito_para_congelar.webp",
+        "title": "Juguitos para Congelar",
+        "packaging": "Bolsas x 30 unidades de 60cc",
+        "flavors": "Pera, Limón, Durazno, Banana, Naranja, Frutilla, Tutti Fruti, Cola, Uva, Manzana",
+        "variety": "",
+        "category": "Línea Golosinas"
+    },
+    
+
+
     {
         "img": "/images/viejo_minero/viejo_minero_amargo_1L.webp",
         "title": "Aperitivo Viejo Minero",
