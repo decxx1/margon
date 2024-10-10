@@ -18,7 +18,7 @@ const form = ref({
   token: '',
   asunto: '',
   secret_key: secretKey,
-  addressee: "decxx1@gmail.com",
+  addressee: email,
 })
 const resetForm = () => {
   form.value=  {
