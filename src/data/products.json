@@ -114,22 +114,6 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/jugos/aral_jugo_naranja_1kg.webp",
-        "title": "Jugos en Polvo",
-        "packaging": "1Kg",
-        "flavors": "Naranja, Ananá, Durazno, Pomelo y Manzana",
-        "variety": "",
-        "category": "Línea Dulces, Panadería y Repostería"
-    },
-    {
-        "img": "/images/logos/aral_azul.svg",
-        "title": "Bebidas Hidratantes",
-        "packaging": "40g y 1Kg",
-        "flavors": "Manzana Verde y Naranja-Durazno",
-        "variety": "",
-        "category": "Línea Dulces, Panadería y Repostería"
-    },
-    {
         "img": "/images/aral/mousse/1kg/aral_mousse_cafe_1kg.webp",
         "title": "Mousses",
         "packaging": "1Kg",
@@ -141,7 +125,7 @@
         "img": "/images/logos/aral_azul.svg",
         "title": "Alimentos para Saborizar Leche",
         "packaging": "1Kg",
-        "flavors": "Chocolate, Frutilla, Vainilla, Banana y Dulce de Leche",
+        "flavors": "Chocolate, Frutilla, Vainilla, Banana, Dulce de Leche, Cereza, Multifruta y Durazno",
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
     },
@@ -150,6 +134,14 @@
         "title": "Base para Licuados",
         "packaging": "1Kg",
         "flavors": "Banana, Dulce de Leche, Durazno, Frutilla, Frutos del Bosque y Vainilla",
+        "variety": "",
+        "category": "Línea Dulces, Panadería y Repostería"
+    },
+    {
+        "img": "/images/logos/aral_azul.svg",
+        "title": "Almidón de Maíz",
+        "packaging": "1Kg y 25Kg",
+        "flavors": "",
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
     },
@@ -163,7 +155,7 @@
     },
     {
         "img": "/images/logos/aral_azul.svg",
-        "title": "Bicarbonato",
+        "title": "Bicarbonatos",
         "packaging": "1Kg",
         "flavors": "",
         "variety": "De sodio y de amonio",
@@ -227,7 +219,7 @@
     },
     {
         "img": "/images/logos/aral_azul.svg",
-        "title": "Cremas Pasteleras",
+        "title": "Crema Pastelera",
         "packaging": "1Kg",
         "flavors": "",
         "variety": "En Frío y en Caliente",
@@ -249,6 +241,24 @@
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
     },
+    {
+        "img": "/images/aral/jugos/aral_jugo_naranja_1kg.webp",
+        "title": "Jugos en Polvo",
+        "packaging": "1Kg",
+        "flavors": "Naranja, Ananá, Durazno, Pomelo y Manzana",
+        "variety": "",
+        "category": "Línea Dulces, Panadería y Repostería"
+    },
+    {
+        "img": "/images/logos/aral_azul.svg",
+        "title": "Bebida Hidratante",
+        "packaging": "40g y 1Kg",
+        "flavors": "Manzana Verde y Naranja-Durazno",
+        "variety": "",
+        "category": "Línea Dulces, Panadería y Repostería"
+    },
+    
+    
     {
         "img": "/images/aralito/juguitos/aralito_juguito_para_congelar.webp",
         "title": "Juguitos para Congelar",
