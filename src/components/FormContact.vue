@@ -4,56 +4,74 @@ import { Toaster, toast } from 'vue-sonner'
 import { ref } from 'vue'
 import { 
     secretKey,
+    siteKey,
     endPoint,
+    email,
 } from '@/hooks/env.js';
 
 const isSending = ref(false);
 const form = ref({
-  nombre: '',
-  telefono: '',
-  mensaje: '',
+  name: '',
+  phone: '',
+  message: '',
   action: 'Contacto',
   token: '',
+  asunto: '',
+  secret_key: secretKey,
+  addressee: "decxx1@gmail.com",
 })
 const resetForm = () => {
-    form.value=  {
-        nombre: '',
-        telefono: '',
-        email: '',
-        mensaje: '',
-        action: 'Contacto',
-        token: '',
-    }
+  form.value=  {
+    name: '',
+    phone: '',
+    email: '',
+    message: '',
+    action: 'Contacto',
+    token: '',
+    asunto: '',
+    secret_key: secretKey,
+    addressee: email,
+  }
 }
 
 const handleSubmit = () => {
     if(!isSending.value){
-        isSending.value = true;
-        grecaptcha.ready(function() {
-            grecaptcha.execute(secretKey, { action: 'Contacto' }).then(function(token) {
-                form.value.token = token;
-                //console.log(form.value)
-                sendForm();
-            });
+      isSending.value = true;
+      grecaptcha.ready(function() {
+        grecaptcha.execute(siteKey, { action: 'Contacto' }).then(function(token) {                
+            form.value.asunto = "Contacto desde la web - de: " + form.value.name;
+            form.value.token = token;
+            sendForm();
         });
+      });
     }
 }
 const sendForm = () => {
     axios.post(endPoint, form.value, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
     })
     .then(response => {
-        toast.success('Tu mensaje fue enviado correctamente')
-        resetForm()
+      toast.success('Tu mensaje fue enviado correctamente')
+      resetForm()
     })
     .catch(error => {
-        console.error(error)
-        toast.error('No se pudo enviar el mensaje vuelva a intentarlo más tarde.')
+      //console.error(error)
+      if (error.response.data.errors) {
+        const formErrors = error.response.data.errors.message;
+        for (let field in formErrors) {
+          if (formErrors.hasOwnProperty(field)) {
+            toast.warning(formErrors[field]);
+            break;
+          }
+        }
+      }else if(error.response.data.message){
+        toast.error(error.response.data.message)
+      }
     })
     .finally(() => {
-        isSending.value = false
+      isSending.value = false
     })
 }
 </script>
@@ -63,19 +81,19 @@ const sendForm = () => {
     <Toaster richColors position="top-right" />
     <div class="sm:col-span-2">
         <label for="nombre" class="block mb-2 text-sm font-medium text-primary-950 dark:text-gray-300">Nombre *</label>
-        <input type="text" name="nombre" id="nombre"
+        <input type="text" name="name" id="nombre"
           class="block p-3 w-full text-sm text-primary-950 placeholder:text-primary-900 bg-primary-50 rounded-lg border border-primary-200 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
           placeholder="Tu Nombre"
-          v-model="form.nombre"
+          v-model="form.name"
           required
         />
     </div>
     <div>
       <label for="telefono" class="block mb-2 text-sm font-medium text-primary-950 dark:text-gray-300">Teléfono *</label>
-      <input type="tel" name="telefono" id="telefono"
+      <input type="tel" name="phone" id="telefono"
         class="block p-3 w-full text-sm text-primary-950 placeholder:text-primary-900 bg-primary-50 rounded-lg border border-primary-200 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
         placeholder="Tu teléfono"
-        v-model="form.telefono"
+        v-model="form.phone"
         required
       />
     </div>
@@ -91,7 +109,7 @@ const sendForm = () => {
     <div class="sm:col-span-2">
         <label for="mensaje" class="block mb-2 text-sm font-medium text-primary-950 dark:text-gray-400">Mensaje *</label>
         <textarea id="mensaje" rows="6"
-          v-model="form.mensaje"
+          v-model="form.message"
           class="block p-2.5 w-full text-sm text-primary-950 placeholder:text-primary-900 bg-primary-50 rounded-lg shadow-sm border border-primary-200 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
           placeholder="Tu mensaje"
           required

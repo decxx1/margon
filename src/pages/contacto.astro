@@ -4,7 +4,7 @@ import ContactInfo from '@/components/ContactInfo.astro';
 import FormContact from '@/components/FormContact.vue';
 import {
     mapIframe,
-    secretKey,
+    siteKey,
     telphoneReadble,
 } from '@/hooks/env.js';
 ---
@@ -33,7 +33,6 @@ import {
 
     <section class="bg-white dark:bg-gray-800 py-12">
         <div class="max-w-screen-lg mx-auto rounded-xl shadow-xl" set:html={mapIframe}>
-
         </div>
     </section>
     
@@ -41,7 +40,7 @@ import {
 
 
 <!-- recaptcha v3 -->
-<script async src={'https://www.google.com/recaptcha/api.js?render=' + secretKey}></script>
+<script async src={'https://www.google.com/recaptcha/api.js?render=' + siteKey}></script>
 <script>
 
 </script>
