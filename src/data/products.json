@@ -162,7 +162,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/brillo_pastelero.webp",
         "title": "Brillo Pastelero",
         "packaging": "1Kg",
         "flavors": "",
@@ -170,7 +170,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/varios/aral_cacao_amargo_1kg.webp",
+        "img": "/images/aral/varios/cacao_amargo_1kg.webp",
         "title": "Cacaos",
         "packaging": "1Kg",
         "flavors": "",
@@ -178,15 +178,15 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
-        "title": "Crémor Tártaro",
+        "img": "/images/aral/varios/cremor_tartaro.webp",
+        "title": "Cremor Tártaro",
         "packaging": "1Kg",
         "flavors": "",
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/esencias/aral_esencia_coco_2L.webp",
+        "img": "/images/aral/esencias/aral_esencia_vainilla_2L.webp",
         "title": "Esencias",
         "packaging": "2lt",
         "flavors": "Chocolate, Coco, Limón, Manteca, Naranja, Pan Dulce y Vainilla",
@@ -194,15 +194,15 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
-        "title": "Glace Real",
+        "img": "/images/aral/varios/glase_real.webp",
+        "title": "Glasé Real",
         "packaging": "1Kg y 5Kg",
         "flavors": "",
         "variety": "Blanco, Rosa, Verde, Amarillo, Naranja y Celeste",
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/varios/aral_polvo_para_hornear_1kg.webp",
+        "img": "/images/aral/varios/polvo_para_hornear.webp",
         "title": "Polvo para Hornear",
         "packaging": "1Kg",
         "flavors": "",
@@ -210,7 +210,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/crema_chantilly_1kg.webp",
         "title": "Crema Chantilly",
         "packaging": "1Kg",
         "flavors": "",
@@ -218,7 +218,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/crema_pastelera_frio.webp",
         "title": "Crema Pastelera",
         "packaging": "1Kg",
         "flavors": "",
@@ -226,7 +226,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/premezcla_bizcochuelo_1kg.webp",
         "title": "Premezclas",
         "packaging": "1Kg",
         "flavors": "",
@@ -234,7 +234,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/helados/helado_frutilla.webp",
         "title": "Helados",
         "packaging": "1Kg",
         "flavors": "Chocolate, Vainilla, Dulce de Leche, Limón, Frutilla y Frutos del Bosque",
@@ -250,7 +250,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/bebida_hidratante_naranja_durazno_1kg.webp",
         "title": "Bebida Hidratante",
         "packaging": "40g y 1Kg",
         "flavors": "Manzana Verde y Naranja-Durazno",
