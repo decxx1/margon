@@ -66,7 +66,7 @@
     },
 
     {
-        "img": "/images/aral/gelatinas/35g/aral_gelatina_anana_35g.webp",
+        "img": "/images/aral/gelatinas/1kg/aral_gelatina_frutilla_1kg.webp",
         "title": "Gelatinas",
         "packaging": "1Kg y 3Kg",
         "flavors": "Cereza, Frutilla, Frambuesa, Naranja, Durazno, Ananá, Limón, Manzana Verde y Pera",
@@ -74,7 +74,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/gelatinas/1kg/aral_gelatina_diet_durazno_1kg.webp",
+        "img": "/images/aral/gelatinas/35g/aral_gelatina_anana_35g.webp",
         "title": "Gelatinas DIET (Sin Azúcar)",
         "packaging": "35g y 1Kg",
         "flavors": "Cereza, Frutilla, Frambuesa, Naranja, Durazno, Ananá, Limón y Manzana Verde",
@@ -82,7 +82,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/postres/3kg/aral_postre_vainilla_3kg.jpg",
+        "img": "/images/aral/postres/3kg/aral_postre_chocolate_3kg.webp",
         "title": "Postres",
         "packaging": "1Kg y 3Kg",
         "flavors": "Chocolate, Frutilla, Vainilla, Caramelo y Dulce de Leche",
@@ -90,7 +90,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/postres/1kg/aral_postre_diet_frutilla_1kg.webp",
         "title": "Postres DIET (Sin Azúcar)",
         "packaging": "1Kg",
         "flavors": "Chocolate, Frutilla, Vainilla y Dulce de Leche",
@@ -98,7 +98,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/flanes/3kg/aral_flan_vainilla_3kg.jpg",
+        "img": "/images/aral/flanes/1kg/flan_vainilla_1kg.webp",
         "title": "Flanes",
         "packaging": "1Kg y 3Kg",
         "flavors": "Chocolate, Frutilla, Vainilla, Caramelo y Dulce de Leche",
@@ -106,7 +106,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/flanes/diet/1kg/flan_diet_dulce_de_leche.webp",
         "title": "Flanes DIET (Sin Azúcar)",
         "packaging": "1Kg",
         "flavors": "Chocolate, Frutilla, Vainilla y Dulce de Leche",
@@ -114,7 +114,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/mousse/1kg/aral_mousse_cafe_1kg.webp",
+        "img": "/images/aral/mousse/1kg/aral_mousse_chocolate_1kg.webp",
         "title": "Mousses",
         "packaging": "1Kg",
         "flavors": "Chocolate, Dulce de Leche, Café, Vainilla, Frutilla, Limón, Frutos del Bosque y Maracuyá",
@@ -122,7 +122,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/alimento_saborizar_leche/aral_alimento_saborizar_leche_banana.webp",
         "title": "Alimentos para Saborizar Leche",
         "packaging": "1Kg",
         "flavors": "Chocolate, Frutilla, Vainilla, Banana, Dulce de Leche, Cereza, Multifruta y Durazno",
@@ -130,7 +130,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/licuados/licuado_sabor_banana.webp",
         "title": "Base para Licuados",
         "packaging": "1Kg",
         "flavors": "Banana, Dulce de Leche, Durazno, Frutilla, Frutos del Bosque y Vainilla",
@@ -138,7 +138,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/aral_almidon_de_maiz.webp",
         "title": "Almidón de Maíz",
         "packaging": "1Kg y 25Kg",
         "flavors": "",
@@ -146,7 +146,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/varios/aral_azucar_impalpable_1kg.webp",
+        "img": "/images/aral/varios/aral_azucar_impalpable.webp",
         "title": "Azúcar",
         "packaging": "1Kg y 5Kg",
         "flavors": "",
@@ -154,7 +154,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/logos/aral_azul.svg",
+        "img": "/images/aral/varios/aral_bicarbonato_sodio.webp",
         "title": "Bicarbonatos",
         "packaging": "1Kg",
         "flavors": "",
