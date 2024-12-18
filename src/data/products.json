@@ -288,8 +288,16 @@
 
     {
         "img": "/images/viejo_minero/viejo_minero_amargo_1L.webp",
-        "title": "Aperitivo Viejo Minero",
-        "packaging": "Pack de 6 botellas de vidrio x 1lt",
+        "title": "Amargo Viejo Minero",
+        "packaging": "Caja x6 unid. de 1lt",
+        "flavors": "",
+        "variety": "",
+        "category": "Línea Cócteles"
+    },
+    {
+        "img": "/images/viejo_minero/viejo_minero_vermouth.webp",
+        "title": "Vermouth Viejo Minero",
+        "packaging": "Caja x6 unid. de 1lt",
         "flavors": "",
         "variety": "",
         "category": "Línea Cócteles"
