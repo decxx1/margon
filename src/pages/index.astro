@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import Hero from '@/components/Hero.astro';
+import HeroHome from '@/components/HeroHome.astro';
 import Brands from '@/components/Brands.astro';
 import ContentSection from '@/components/ContentSection.astro';
 import Mvp from '@/components/MostViewedProducts.astro'
@@ -12,53 +12,65 @@ import About from '@/components/About.astro';
 	title="MarGon SRL"
 	canonical="https://margon.com.ar"
 	metaTitle="MarGon - Productos para la industria alimenticia"
-	metaDescription="Fábrica de alimentos creadora de las marcas Sabores del Sol, Aral, Aralito y Viejo Minero. Fabricamos más de 200 productos de exelentísima calidad"
+	metaDescription="Fábrica de alimentos creadora de las marcas Sabores del Sol, Aral, Aralito, Viejo Minero y Condimax. Fabricamos más de 200 productos de exelentísima calidad"
 	metaImg="https://margon.com.ar/images/hero.webp"
 	preLoad="images/hero.webp"
 >
-	<Hero />
+	<HeroHome />
 	<Brands />
-	<section class="container mx-auto">
+	<div class="brands-stories">
 		<ContentSection
+			index={1}
+			brand="sabores"
 			left={true}
 			title="Sabores del Sol"
 			subtitle="Línea Salados"
-			description="Esta línea ofrece una amplia variedad, desde sopas cremas y caldos deshidratados hasta condimentos y puré de papas. Con Sabores del Sol, garantizamos sabores auténticos y calidad superior en cada producto."
+			description="Con más de dos décadas de trayectoria en el mercado, Sabores del Sol se ha consolidado como un aliado indispensable en el hogar: llevando la esencia de lo auténtico a cada mesa, garantizando calidad superior en cada etapa de producción y ofreciendo una amplia familia de productos como Puré de Papas Instantáneo, Caldos Deshidratados de Verduras en Polvo, Sopas Cremas, Sopas con Fideos, entre otros."
 			img="images/logos/sabores_del_sol.svg"
 			imgDark="images/logos/sabores_del_sol.svg"
 		/>
 		<ContentSection
+			index={2}
+			brand="aral"
 			left={false}
 			title="Aral"
 			subtitle="Línea Dulces, Panadería y Repostería"
-			description="Aral ofrece productos distintivos con sabores exlusivos de gelatinas, postres, flanes, mousses, cremas y más. También ofrecemos productos para la panificación como esencias, azucares y aditivos."
+			description="Abastecer al sector gastronómico requiere productos que rindan y que resguarden la calidad. Aral ofrece una trayectoria de más de dos décadas respaldando a fabricantes y distribuidores de todo el país con una línea de productos distintivos y versátiles, que incluyen: Gelatinas, Postres, Flanes, Cremas, Mousses, Premezclas de Helados, de Bizcochuelos, esencias y saborizantes, entre tantos otros productos para la elaboración de panificados como Azúcar Impalpable, Polvo para Hornear, Glasé Real, etc."
 			img="images/logos/aral_azul.svg"
 			imgDark="images/logos/aral_azul.svg"
 		/>
 		<ContentSection 
+			index={3}
+			brand="aralito"
 			left={true}
 			title="Aralito"
 			subtitle="Línea Golosinas"
-			description="Con Aralito, ofrecemos una amplia gama de productos dulces diseñados específicamente para el público infantil. Podes encontrar juguitos para congelar, caramelos líquidos, cacao para leche, entre otros."
+			description="En el mundo de los más chicos, cada momento es una oportunidad para jugar. Por eso creamos Aralito, nuestra línea de golosinas pensada exclusivamente para llenar de color y dulzura el día a día de los niños. Desde el clásico cacao para transformar sus desayunos y meriendas, hasta nuestros refrescantes juguitos para congelar para endulzar el verano."
 			img="images/logos/aralito.svg"
 			imgDark="images/logos/aralito.svg"
 		/>
-		
 		<ContentSection
+			index={4}
+			brand="viejo-minero"
 			left={false}
 			title="Viejo Minero"
-			subtitle="Línea Cócteles"
-			description="Esta línea es nuestro último lanzamiento, en donde innovamos en el desarrollo de bebidas con alcohol. Nuestro producto estrella es el Amargo Viejo Minero. ¡ Te invitamos a probarlo !"
+			subtitle="Línea Aperitivos y Cócteles con Alcohol"
+			description="Esta marca representa nuestro salto hacia la innovación en el mundo de las bebidas con alcohol, combinando tradición en la elaboración con un espíritu audaz y contemporáneo. Nuestro orgullo y producto estrella es el Aperitivo Amargo Viejo Minero, que ha sido desarrollado con una selección botánica única para ofrecer un perfil complejo, equilibrado y profundamente refrescante. También contamos con un Vermouth, y próximamente lanzaremos otros aperitivos para sumar a la línea."
 			img="images/logos/viejo_minero.svg"
 			imgDark="images/logos/viejo_minero_blanco.svg"
 		/>
-	</section>
+		<ContentSection
+			index={5}
+			brand="condimax"
+			left={true}
+			title="Condimax"
+			subtitle="Línea Salsas y Aderezos"
+			description="Entendemos que el secreto de un buen aderezo está en el respeto por las raíces, por eso nuestra marca Condimax nace de recetas tradicionales, rescatando esos sabores auténticos que forman parte de nuestra cultura gastronómica. Actualmente contamos con una Salsa de Ají Picante, Mostaza y Salsa Inglesa. Próximamente lanzaremos nuevos productos como Kétchup, Salsa Golf, Mayonesa, entre otros."
+			img="images/logos/condimax.webp"
+		/>
+	</div>
 	<CallToAction2 />
 	<Mvp />
 	<CallToAction />
 	<About />
 </Layout>
-
-<style>
-
-</style>

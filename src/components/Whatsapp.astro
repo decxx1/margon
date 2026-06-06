@@ -4,7 +4,11 @@ import {
     whatsappLinkeable,
 } from '@/hooks/env.js'
 ---
-<a class="float-button flex" target="_blank" href={'https://wa.me/' + whatsappLinkeable}>
-    <WhatsappButton extraClass="mr-1 w-8 h-8 sm:w-6 sm:h-6" />
-    <span class="font-semibold">Consultas</span>
+<a
+	class="fixed bottom-8 right-8 z-100 flex animate-whatsapp-in items-center rounded-[25px_30px_5px_25px] bg-[#25D366] px-2.5 py-2.5 pr-4 text-[17px] text-white no-underline shadow-[1px_2px_5px_2px_rgba(30,30,30,0.3)] transition-all duration-300 ease-out hover:bg-[#128C7E] max-[545px]:bottom-4 max-[545px]:right-4 max-[545px]:rounded-[20px_20px_5px_20px]"
+	target="_blank"
+	href={'https://wa.me/' + whatsappLinkeable}
+>
+	<WhatsappButton extraClass="mr-1 h-8 w-8 max-[545px]:h-8 max-[545px]:w-8 sm:h-6 sm:w-6" />
+	<span class="font-semibold max-[545px]:hidden">Consultas</span>
 </a>

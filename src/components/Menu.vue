@@ -3,31 +3,45 @@ import { ref, onMounted } from 'vue';
 
 const path = ref('');
 
+const linkBase =
+	'block py-2.5 pr-4 pl-3 text-[0.8rem] font-semibold tracking-wider uppercase transition-colors lg:inline-block lg:border-0 lg:p-0 lg:py-1';
+
+const linkInactive =
+	'text-muted hover:text-primary-600 lg:hover:text-primary-600 border-b border-border-warm lg:border-b-2 lg:border-transparent dark:text-inverse-muted dark:hover:text-primary-300 dark:border-border-warm-dark';
+
+const linkActive =
+	'text-primary-600 lg:border-b-2 lg:border-primary-500 border-b border-primary-400/50 dark:text-primary-300 dark:lg:border-primary-400';
+
 onMounted(() => {
-    path.value = window.location.pathname;   
-})
+	path.value = window.location.pathname;
+});
 </script>
 <template>
-    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-        <li>
-            <a href="/"
-                :class="[path === '/' ? 'bg-primary-700 text-white lg:text-primary-600 lg:font-bold dark:text-white lg:bg-transparent rounded' : 'text-primary-900 hover:bg-gray-50', 'block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700']"
-                aria-current="page">Inicio</a>
-        </li>
-        <li>
-            <a href="/catalogo"
-            :class="[path === '/catalogo' ? 'bg-primary-700 text-white lg:text-primary-600 lg:font-bold dark:text-white lg:bg-transparent rounded' : 'text-primary-900 hover:bg-gray-50', 'block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700']"
-                >Catálogo</a>
-        </li>
-        <li>
-            <a href="/puntos-venta"
-            :class="[path === '/puntos-venta' ? 'bg-primary-700 text-white lg:text-primary-600 lg:font-bold dark:text-white lg:bg-transparent rounded' : 'text-primary-900 hover:bg-gray-50', 'block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700']"
-                >Puntos de venta</a>
-        </li>
-        <li>
-            <a href="/contacto"
-            :class="[path === '/contacto' ? 'bg-primary-700 text-white lg:text-primary-600 lg:font-bold dark:text-white lg:bg-transparent rounded' : 'text-primary-900 hover:bg-gray-50', 'block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700']"
-                >Contacto</a>
-        </li>
-    </ul>
+	<ul class="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
+		<li>
+			<a
+				href="/"
+				:class="[linkBase, path === '/' ? linkActive : linkInactive]"
+				aria-current="page"
+			>Inicio</a>
+		</li>
+		<li>
+			<a
+				href="/catalogo"
+				:class="[linkBase, path === '/catalogo' ? linkActive : linkInactive]"
+			>Catálogo</a>
+		</li>
+		<li>
+			<a
+				href="/puntos-venta"
+				:class="[linkBase, path === '/puntos-venta' ? linkActive : linkInactive]"
+			>Puntos de venta</a>
+		</li>
+		<li>
+			<a
+				href="/contacto"
+				:class="[linkBase, path === '/contacto' ? linkActive : linkInactive]"
+			>Contacto</a>
+		</li>
+	</ul>
 </template>

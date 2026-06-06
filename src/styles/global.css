@@ -5,6 +5,7 @@
 @theme {
 	--font-sourceSansPro: "Source Sans Pro", sans-serif;
 
+	/* Marca — escala primaria */
 	--color-primary-50: #fdf7ef;
 	--color-primary-100: #fbebd9;
 	--color-primary-200: #f6d4b2;
@@ -29,5 +30,81 @@
 	--color-secondary-900: #702e1e;
 	--color-secondary-950: #3c150e;
 
+	/* Superficies — página general */
 	--color-body: #fffdfa;
+	--color-body-dark: #1c1612;
+
+	--color-tint: #fdf7ef;
+	--color-tint-dark: #221a14;
+
+	--color-featured: #1a120c;
+	--color-featured-dark: #0f0b08;
+
+	/* Tipografía */
+	--color-foreground: #2a1f16;
+	--color-muted: #5c4a3a;
+
+	--color-inverse: #fff8f0;
+	--color-inverse-muted: #c9baa8;
+	--color-inverse-subtle: #9a8b7a;
+
+	/* Tarjetas y platos */
+	--color-card: #fffdfa;
+	--color-card-dark: #2a211a;
+
+	--color-plate: #fffdfa;
+	--color-plate-dark: #1c1410;
+
+	--color-border-warm: #ede4d8;
+	--color-border-warm-dark: #3d342c;
+
+	/* Marcas — solo ContentSection y productos destacados */
+	--color-brand-sabores-tint: #fdf7ef;
+	--color-brand-sabores-tint-dark: #1e1610;
+	--color-brand-sabores-accent: #e88f4f;
+
+	--color-brand-aral-tint: #f0f6fc;
+	--color-brand-aral-tint-dark: #131d29;
+	--color-brand-aral-accent: #4a8fd4;
+
+	--color-brand-aralito-tint: #fff5f7;
+	--color-brand-aralito-tint-dark: #1c1116;
+	--color-brand-aralito-accent: #f06b8a;
+
+	--color-brand-viejo-minero-tint: #faf6ec;
+	--color-brand-viejo-minero-tint-dark: #1c1710;
+	--color-brand-viejo-minero-accent: #c9a227;
+
+	--color-brand-condimax-tint: #fdf3f2;
+	--color-brand-condimax-tint-dark: #1e110f;
+	--color-brand-condimax-accent: #d4382a;
+
+	--animate-whatsapp-in: whatsapp-in 0.5s ease-in-out;
+}
+
+@keyframes whatsapp-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@layer components {
+	.svg-viejo-minero {
+		@apply fill-foreground;
+	}
+
+	.dark .svg-viejo-minero {
+		@apply fill-inverse;
+	}
+
+	.grecaptcha-badge {
+		@apply !left-1 !z-100 !w-[70px] !overflow-hidden !transition-all !duration-300;
+	}
+
+	.grecaptcha-badge:hover {
+		@apply !w-64;
+	}
 }

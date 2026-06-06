@@ -1,31 +1,51 @@
 ---
 import ArrowRight from '@/icons/ArrowRight.astro';
+import { brandPalette } from '@/lib/brand-palette.js';
+
 interface Props {
-    title: string;
-    subtitle: string;
-    description: string;
-    img: string;
+	title: string;
+	subtitle: string;
+	description: string;
+	img: string;
+	brand: keyof typeof brandPalette;
 }
-const { title, subtitle, description, img } = Astro.props
+const { title, subtitle, description, img, brand } = Astro.props;
+const palette = brandPalette[brand];
 ---
-<div class="items-center bg-white rounded-lg shadow-lg shadow-primary-100 dark:shadow-gray-950 md:py-8 sm:flex dark:bg-gray-800 dark:border-gray-600">
-    <a href="/catalogo" class="h-auto w-56 mx-auto ">
-        <img 
-            class="max-h-full max-w-48 sm:max-w-full mx-auto object-contain rounded-lg sm:rounded-none sm:rounded-l-lg"
-            loading="lazy"
-            src={img}
-            alt={title}
-        />
-    </a>
-    <div class="p-5">
-        <h3 class="text-xl font-bold tracking-tight text-primary-600 dark:text-white">
-            <a href="/catalogo">{title}</a>
-        </h3>
-        <span class="text-primary-800 dark:text-gray-400">{subtitle}</span>
-        <p class="mt-3 mb-4 font-light text-primary-950 dark:text-gray-400" set:html={description}></p>
-        <a href="/catalogo" class="inline-flex items-center font-medium text-primary-800 dark:text-gray-500 hover:no-underline">
-            Ver catálogo
-            <ArrowRight />
-        </a>
-    </div>
-</div> 
+<article
+	data-animate="product-card"
+	class="group flex flex-col overflow-hidden rounded-2xl border border-border-warm bg-card transition-colors hover:border-[color-mix(in_srgb,var(--accent)_35%,transparent)] sm:flex-row dark:border-border-warm-dark dark:bg-card-dark dark:hover:border-[color-mix(in_srgb,var(--accent)_40%,transparent)]"
+	style={`--accent: var(${palette.accentVar})`}
+>
+	<a
+		href="/catalogo"
+		class="flex shrink-0 items-center justify-center bg-[color-mix(in_srgb,var(--accent)_5%,transparent)] p-6 sm:w-52 lg:w-56"
+	>
+		<img
+			class="max-h-44 w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+			loading="lazy"
+			src={img}
+			alt={title}
+		/>
+	</a>
+	<div class="flex flex-1 flex-col p-6 sm:p-7">
+		<span
+			class="mb-3 inline-block w-fit rounded-full border border-[color-mix(in_srgb,var(--accent)_22%,transparent)] bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] px-3 py-1 text-[0.65rem] font-bold tracking-[0.18em] text-(--accent) uppercase"
+		>{subtitle}</span>
+		<h3 class="text-xl font-black tracking-tight text-foreground dark:text-inverse">
+			<a href="/catalogo" class="transition-colors hover:text-(--accent)">{title}</a>
+		</h3>
+		<div class="my-4 h-1 w-12 rounded-sm bg-(--accent)" aria-hidden="true"></div>
+		<p
+			class="mb-5 flex-1 text-sm leading-relaxed text-muted dark:text-inverse-muted"
+			set:html={description}
+		></p>
+		<a
+			href="/catalogo"
+			class="inline-flex items-center gap-1 text-sm font-semibold tracking-wide text-(--accent) uppercase transition-colors hover:text-primary-600 dark:hover:text-primary-300"
+		>
+			Ver catálogo
+			<ArrowRight />
+		</a>
+	</div>
+</article>

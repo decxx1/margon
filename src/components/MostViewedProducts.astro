@@ -1,40 +1,50 @@
 ---
 import MostViewedProduct from '@/components/MostViewedProduct.astro';
 ---
-<section class="">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-600 dark:text-white">Productos más vistos</h2>
-            <p class="font-light text-primary-800 lg:mb-16 sm:text-xl dark:text-gray-400">
-                Los más demandados de nuestras marcas
-            </p>
-        </div>
-        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            <MostViewedProduct 
-                title="Caldo de verduras deshidratados"
-                subtitle="Sabores del Sol"
-                description="Instantáneo y muy bajo en sodio. Para complementar en dietas bajas en grasas.<br/>Contiene: 500g, rinde 25 Litros."
-                img="images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_verdura_sin_sal_500g.webp"
-            />
-            <MostViewedProduct 
-                title="Esencia de vainilla"
-                subtitle="Aral"
-                description="Contenido: 2 Litros.<br/>Usos: Cremas, masas, tortas, bizcochuelos, helados, panes, postres y repostería en general"
-                img="images/aral/esencias/aral_esencia_vainilla_2L.webp"
-            />
-            <MostViewedProduct 
-                title="Juguitos para congelar"
-                subtitle="Aralito"
-                description="Contiene: 60ml. Bebida analcoholica dietética.<br/>Sabores: Naranja, Frutilla, Tutti Frutti, Cola, Limón, Pera, Manzana, Uva, Durazno y Banana"
-                img="images/aralito/juguitos/aralito_juguito_para_congelar.webp"
-            />
-            <MostViewedProduct 
-                title="Amargo"
-                subtitle="Viejo Minero"
-                description="Contenido: 1000ml alc 15%.<br/>Bebida alcoholica hecha a base de una mezcla de hierbas, especial para preparar riquísimos tragos."
-                img="images/viejo_minero/viejo_minero_amargo_1L.webp"
-            />
-             
-        </div>  
-    </div>
-  </section>
+<section class="relative overflow-hidden bg-body py-20 lg:py-28 dark:bg-body-dark">
+	<div class="relative z-10 mx-auto max-w-7xl px-6">
+		<header data-animate="section-header" class="mb-14 text-center">
+			<p class="mb-4 text-[0.72rem] font-semibold tracking-[0.28em] text-primary-600 uppercase dark:text-primary-300">
+				Destacados
+			</p>
+			<h2 class="text-3xl font-black tracking-tight text-foreground sm:text-4xl lg:text-5xl dark:text-inverse">
+				Productos más vistos
+			</h2>
+			<div class="mx-auto mt-5 h-1 w-16 rounded-sm bg-primary-500 dark:bg-primary-400" aria-hidden="true"></div>
+			<p class="mx-auto mt-5 max-w-lg text-base text-muted dark:text-inverse-muted">
+				Los más demandados de nuestras marcas
+			</p>
+		</header>
+
+		<div class="grid gap-6 md:grid-cols-2 lg:gap-8">
+			<MostViewedProduct
+				brand="sabores"
+				title="Caldo de verduras deshidratados"
+				subtitle="Sabores del Sol"
+				description="Instantáneo y muy bajo en sodio. Para complementar en dietas bajas en grasas.<br/>Contiene: 500g, rinde 25 Litros."
+				img="images/sabores_del_sol/caldos_deshidratados/660g/sabores_del_sol_caldo_verdura_sin_sal_500g.webp"
+			/>
+			<MostViewedProduct
+				brand="aral"
+				title="Esencia de vainilla"
+				subtitle="Aral"
+				description="Contenido: 2 Litros.<br/>Usos: Cremas, masas, tortas, bizcochuelos, helados, panes, postres y repostería en general"
+				img="images/aral/esencias/aral_esencia_vainilla_2L.webp"
+			/>
+			<MostViewedProduct
+				brand="aralito"
+				title="Juguitos para congelar"
+				subtitle="Aralito"
+				description="Contiene: 60ml. Bebida analcoholica dietética.<br/>Sabores: Naranja, Frutilla, Tutti Frutti, Cola, Limón, Pera, Manzana, Uva, Durazno y Banana"
+				img="images/aralito/juguitos/aralito_juguito_para_congelar.webp"
+			/>
+			<MostViewedProduct
+				brand="viejo-minero"
+				title="Amargo"
+				subtitle="Viejo Minero"
+				description="Contenido: 1000ml alc 15%.<br/>Bebida alcoholica hecha a base de una mezcla de hierbas, especial para preparar riquísimos tragos."
+				img="images/viejo_minero/viejo_minero_amargo_1L.webp"
+			/>
+		</div>
+	</div>
+</section>

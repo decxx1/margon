@@ -1,10 +1,8 @@
 ---
-
 import Phone from '@/icons/Phone.astro';
 import Map from '@/icons/Map.astro';
 import Whatsapp from '@/icons/Whatsapp.astro';
 import Email from '@/icons/Email.astro';
-
 import {
     telphoneReadble,
     telphoneLinkeable,
@@ -15,30 +13,86 @@ import {
     whatsappReadble,
 } from '@/hooks/env.js'
 ---
-<footer class="bg-white rounded-lg shadow shadow-primary-200 dark:shadow-gray-950 dark:bg-gray-800 m-4 px-6 max-w-screen-xl w-full mx-auto mb-20">
-    <div class="w-full mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="./" class="flex items-center mb-8 sm:mb-0 space-x-3 rtl:space-x-reverse max-sm:justify-center">
-                <img loading="lazy" src="images/logos/margon_logo.webp" class="h-20 dark:hidden" alt="Margon Logo" />
-                <img loading="lazy" src="images/logos/margon_logo_blanco.webp" class="h-20 hidden dark:block" alt="Margon Logo" />
-            </a>
-            <ul class="flex flex-wrap sm:justify-end justify-center items-center mb-6 text-sm font-medium text-primary-800 sm:mb-0 dark:text-gray-300">
-                <li>
-                    <a href={'tel:' + telphoneLinkeable} class="flex hover:font-semibold me-4 md:me-6"><Phone extraClass='text-primary-600 mr-2' />{telphoneReadble}</a> 
-                </li>
-                <li>
-                    <a href={'https://wa.me/' + whatsappLinkeable} class="flex hover:font-semibold me-4 md:me-6"><Whatsapp extraClass='text-primary-600 mr-2' />{whatsappReadble}</a>
-                </li>
-                <li>
-                    <a href={'mailto:' + email} class="flex hover:font-semibold me-4 md:me-6"><Email extraClass='text-primary-600 mr-2' />{email}</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="my-6 border-primary-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="flex max-sm:text-center items-center sm:justify-between max-sm:flex-col-reverse max-sm:justify-start">
-            <span class="mt-6 sm:mt-0 block font-normal text-sm text-primary-800 sm:text-left dark:text-gray-300">Diseñado por <a href="https://manejoweb.com.ar/" class="dark:text-primary-400 text-primary-600 hover:font-bold">Manejo Web</a></span>
-            <a href={mapUrl} class="flex hover:font-semibold text-sm font-medium text-primary-800 me-4 md:me-6 dark:text-gray-300"><Map extraClass='text-primary-600 mr-2' />{address}</a>
-        </div>
-    </div>
-</footer>
+<footer class="relative overflow-hidden bg-featured text-inverse dark:bg-featured-dark">
+	<svg
+		class="relative z-10 block h-12 w-full rotate-180 text-[#fbefe3] lg:h-16 dark:text-[#2d1f15]"
+		viewBox="0 0 1440 80"
+		preserveAspectRatio="none"
+		aria-hidden="true"
+	>
+		<path
+			d="M0,48 C240,80 480,0 720,40 C960,80 1200,16 1440,48 L1440,80 L0,80 Z"
+			fill="currentColor"></path>
+	</svg>
 
+	<div
+		class="pointer-events-none absolute inset-0 opacity-35 bg-[radial-gradient(circle_at_20%_30%,rgba(231,143,79,0.08)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(201,162,39,0.06)_0%,transparent_45%)]"
+		aria-hidden="true"
+	></div>
+
+	<div class="relative z-10 mx-auto max-w-7xl px-6 py-16 lg:py-20">
+		<p class="mb-10 text-center text-[0.72rem] font-semibold tracking-[0.28em] text-primary-300 uppercase lg:text-left">
+			Estamos para ayudarte
+		</p>
+
+		<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:justify-between">
+			<a href="./" class="shrink-0">
+				<img
+					loading="lazy"
+					src="images/logos/margon_logo_blanco.webp"
+					class="h-20"
+					alt="Margon Logo"
+				/>
+			</a>
+
+			<ul class="flex flex-wrap items-center justify-center gap-3 lg:justify-end">
+				<li>
+					<a
+						href={'tel:' + telphoneLinkeable}
+						class="flex items-center rounded-full border border-inverse/12 bg-inverse/5 px-4 py-2 text-sm text-inverse-muted transition-colors hover:border-primary-400/40 hover:bg-inverse/8 hover:text-primary-300"
+					>
+						<Phone extraClass="mr-2 text-primary-400" />
+						{telphoneReadble}
+					</a>
+				</li>
+				<li>
+					<a
+						href={'https://wa.me/' + whatsappLinkeable}
+						class="flex items-center rounded-full border border-inverse/12 bg-inverse/5 px-4 py-2 text-sm text-inverse-muted transition-colors hover:border-primary-400/40 hover:bg-inverse/8 hover:text-primary-300"
+					>
+						<Whatsapp extraClass="mr-2 text-primary-400" />
+						{whatsappReadble}
+					</a>
+				</li>
+				<li>
+					<a
+						href={'mailto:' + email}
+						class="flex items-center rounded-full border border-inverse/12 bg-inverse/5 px-4 py-2 text-sm text-inverse-muted transition-colors hover:border-primary-400/40 hover:bg-inverse/8 hover:text-primary-300"
+					>
+						<Email extraClass="mr-2 text-primary-400" />
+						{email}
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="my-10 h-px bg-inverse/10" aria-hidden="true"></div>
+
+		<div class="flex flex-col-reverse items-center justify-between gap-4 sm:flex-row">
+			<span class="text-center text-sm text-inverse-subtle sm:text-left">
+				Diseñado por
+				<a
+					href="https://manejoweb.com.ar/"
+					class="font-semibold text-primary-400 transition-colors hover:text-primary-300"
+				>Manejo Web</a>
+			</span>
+			<a
+				href={mapUrl}
+				class="flex items-center text-sm text-inverse-muted transition-colors hover:text-primary-300"
+			>
+				<Map extraClass="mr-2 text-primary-400" />
+				{address}
+			</a>
+		</div>
+	</div>
+</footer>

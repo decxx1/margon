@@ -1,29 +1,75 @@
 ---
 import Brand from '@/components/Brand.astro';
 ---
-<section>
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-600 dark:text-white">Nuestras Marcas</h2>
-        </div>
-        <div class="grid gap-6 grid-cols-2 md:grid-cols-4">
-            <Brand 
-                img="images/logos/sabores_del_sol.svg"
-                title="Sabores del sol"
-            />
-            <Brand 
-                img="images/logos/aral_azul.svg"
-                title="Aral" 
-            />
-            <Brand 
-                img="images/logos/aralito.svg"
-                title="Aralito"
-            />
-            <Brand 
-                img="images/logos/viejo_minero.svg"
-                title="Viejo Minero"
-                imgDark="images/logos/viejo_minero_blanco.svg"
-            />   
-        </div>
-    </div>
+<section class="relative overflow-hidden bg-featured text-inverse dark:bg-featured-dark">
+	<div
+		class="pointer-events-none absolute inset-0 opacity-35 bg-[radial-gradient(circle_at_20%_30%,rgba(231,143,79,0.08)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(201,162,39,0.06)_0%,transparent_45%)]"
+		aria-hidden="true"
+	></div>
+
+	<div class="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:py-32">
+		<header data-animate="header" class="mb-16 max-w-3xl lg:mb-20">
+			<p class="mb-4 text-[0.72rem] font-semibold tracking-[0.28em] text-primary-300 uppercase">
+				Desde la fábrica a tu mesa
+			</p>
+			<h2 class="text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl lg:leading-[1.05]">
+				Cinco marcas,<br />
+				<span class="text-primary-300">un mismo compromiso</span>
+			</h2>
+			<p class="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-inverse-muted">
+				Más de 200 productos que cubren desde lo salado y lo dulce hasta cócteles y aderezos.
+				Cada línea nació con una receta, una tradición y un sabor que vale la pena compartir.
+			</p>
+		</header>
+
+		<div class="brands-rail grid grid-cols-2 items-stretch gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5 lg:gap-5">
+			<Brand
+				index={1}
+				accent="#e88f4f"
+				line="Salados"
+				img="images/logos/sabores_del_sol.svg"
+				title="Sabores del Sol"
+			/>
+			<Brand
+				index={2}
+				accent="#4a8fd4"
+				line="Dulces & Repostería"
+				img="images/logos/aral_azul.svg"
+				title="Aral"
+			/>
+			<Brand
+				index={3}
+				accent="#f06b8a"
+				line="Golosinas"
+				img="images/logos/aralito.svg"
+				title="Aralito"
+			/>
+			<Brand
+				index={4}
+				accent="#c9a227"
+				line="Cócteles"
+				img="images/logos/viejo_minero.svg"
+				title="Viejo Minero"
+				imgDark="images/logos/viejo_minero_blanco.svg"
+			/>
+			<Brand
+				index={5}
+				accent="#d4382a"
+				line="Salsas & Aderezos"
+				img="images/logos/condimax.webp"
+				title="Condimax"
+			/>
+		</div>
+	</div>
+
+	<svg
+		class="relative z-10 block h-16 w-full text-[#fcf0e5] lg:h-22 dark:text-[#2a1c14]"
+		viewBox="0 0 1440 80"
+		preserveAspectRatio="none"
+		aria-hidden="true"
+	>
+		<path
+			d="M0,48 C240,80 480,0 720,40 C960,80 1200,16 1440,48 L1440,80 L0,80 Z"
+			fill="currentColor"></path>
+	</svg>
 </section>

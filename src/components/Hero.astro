@@ -1,18 +1,30 @@
-<section
-    class="bg-[url('/images/hero.webp')] bg-no-repeat bg-cover bg-center bg-gray-500 dark:bg-gray-700 bg-blend-multiply">
-    <div class="relative py-8 px-4 mx-auto max-w-screen-xl lg:py-52 xl:px-0 z-1">
-        <div class="mb-6 max-w-screen-md lg:mb-0 text-center mx-auto min-h-96 max-[1022px]:flex max-[1022px]:flex-col max-[1022px]:justify-center">
-            <img src="images/logos/margon_logo_blanco.webp" alt="logo Margon" class="max-sm:pl-4 w-72 md:w-2/5 lg:w-3/5 mb-4 mx-auto" />
-            <h1 class="mb-4 text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight text-primary-50 md:text-5xl lg:text-6xl dark:text-primary-100">
-                Fábrica de alimentos
-            </h1>
-            
-            <p
-                class="font-semibold text-white text-sm sm:text-md md:text-lg lg:text-xl py-2 sm:py-4 rounded-lg shadow-md tracking-tight border w-full bg-opacity-80 backdrop-filter backdrop-blur-sm bg-primary-900 border-primary-600 dark:bg-primary-950 dark:border-primary-700 dark:text-gray-200">
-                Fabricamos más de 200 productos de excelentísima calidad
-            </p>
-            
-        </div>
+<section class="relative h-[calc(100dvh-var(--site-header-height,122px))] overflow-hidden bg-featured dark:bg-featured-dark">
+	<div
+		class="absolute inset-0 bg-[url('/images/hero.webp')] bg-cover bg-center bg-gray-500 bg-blend-multiply dark:bg-gray-700"
+		aria-hidden="true"
+	></div>
 
-    </div>
+	<div
+		class="pointer-events-none absolute inset-0 opacity-35 bg-[radial-gradient(circle_at_20%_30%,rgba(231,143,79,0.1)_0%,transparent_50%),radial-gradient(circle_at_80%_70%,rgba(201,162,39,0.07)_0%,transparent_45%)]"
+		aria-hidden="true"
+	></div>
+
+	<div class="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-6 text-center">
+		<div data-animate="hero" class="flex max-w-3xl flex-col items-center">
+			<img
+				src="images/logos/margon_logo_blanco.webp"
+				alt="logo Margon"
+				class="mb-8 w-56 sm:w-72 md:w-80 lg:w-96"
+			/>
+			<h1 class="text-4xl font-black tracking-tight text-primary-50 sm:text-5xl lg:text-6xl lg:leading-[1.05]">
+				Fábrica de alimentos
+			</h1>
+			<div class="my-6 h-1 w-16 shrink-0 rounded-sm bg-primary-400" aria-hidden="true"></div>
+			<p
+				class="inline-block max-w-xl rounded-full border border-inverse/15 bg-inverse/5 px-6 py-3 text-sm leading-relaxed font-medium tracking-wide text-inverse-muted backdrop-blur-sm sm:text-base lg:text-lg"
+			>
+				Fabricamos más de 200 productos de excelentísima calidad
+			</p>
+		</div>
+	</div>
 </section>

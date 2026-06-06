@@ -1,60 +1,86 @@
 ---
+import { brandPalette } from '@/lib/brand-palette.js';
+
 interface Props {
-    title: string;
-    subtitle: string;
-    description: string;
-    img: string;
-    left: boolean;
-    imgDark?: string;
+	title: string;
+	subtitle: string;
+	description: string;
+	img: string;
+	left: boolean;
+	imgDark?: string;
+	index: number;
+	brand: keyof typeof brandPalette;
 }
 
-const { title, subtitle, description, img, left, imgDark } = Astro.props;
-const titleFriendly = title.toLowerCase().replace(/\s/g, "_");
+const { title, subtitle, description, img, left, imgDark, index, brand } = Astro.props;
+const palette = brandPalette[brand];
+const titleFriendly = title.toLowerCase().replace(/\s/g, '_');
+const num = String(index).padStart(2, '0');
 ---
-{left && 
-    <section id={titleFriendly} class="bg-white dark:bg-gray-800 max-w-max mx-3 sm:mr-auto rounded-xl p-3 shadow-lg shadow-primary-100 dark:shadow-gray-950 lg:px-0 lg:py-4 my-5">
-        <div
-            class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 lg:pr-6"
-        >
-            <div class="grid grid-cols-1 gap-4 justify-items-center">
-                <img class="w-full max-w-72 dark:hidden"
-                    src={img} 
-                    alt={title} />
-                <img class="w-full max-w-72 hidden dark:block"
-                    src={imgDark} 
-                    alt={title} />
-            </div>
-            <div class="mt-4 md:mt-0 text-center md:text-left">
-                <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-primary-600 dark:text-white">{title}</h2>
-                <p class="mb-4 font-semibold text-primary-800 dark:text-gray-400">{subtitle}</p>
-                <p class="mb-6 font-light text-md text-primary-950 dark:text-gray-400">
-                    {description}
-                </p>
-            </div>
-        </div>
-    </section>
-}
-{!left && 
-    <section id={titleFriendly} class="bg-white dark:bg-gray-800 max-w-max mx-3 sm:ml-auto rounded-xl p-3 shadow-lg shadow-primary-100 dark:shadow-gray-950 lg:px-0 lg:py-4 my-5">
-        <div
-            class="grid gap-8 items-center py-4 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 lg:pl-6"
-        >
-            <div class="mt-4 md:mt-0 text-center md:text-right">
-                <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-primary-600 dark:text-white">{title}</h2>
-                <p class="mb-4 font-semibold text-primary-900 dark:text-gray-400">{subtitle}</p>
-                <p class="mb-6 font-light text-md text-primary-800 dark:text-gray-400">
-                    {description}
-                </p>
-            </div>
-            <div class="order-first md:order-last grid grid-cols-1 gap-4 justify-items-center">
-                <img class="w-full max-w-72 dark:hidden"
-                    src={img} 
-                    alt={title} />
-                <img class="w-full max-w-72 hidden dark:block"
-                    src={imgDark} 
-                    alt={title} />
-            </div>
-            
-        </div>
-    </section>
-}
+
+<section
+	id={titleFriendly}
+	class:list={['relative overflow-hidden', palette.section]}
+	data-layout={left ? 'left' : 'right'}
+	style={`--accent: var(${palette.accentVar})`}
+>
+	<div
+		class="pointer-events-none absolute inset-0 bg-[color-mix(in_srgb,var(--accent)_6%,transparent)]"
+		aria-hidden="true"
+	></div>
+	<div
+		class="pointer-events-none absolute top-1/2 left-1/2 z-0 -translate-x-1/2 translate-y-[-55%] select-none text-[clamp(8rem,22vw,16rem)] leading-none font-black tracking-tighter text-[color-mix(in_srgb,var(--accent)_7%,transparent)]"
+		aria-hidden="true"
+	>{num}</div>
+
+	<div class="relative z-10 mx-auto max-w-7xl px-6 py-20 lg:py-28">
+		<div class="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+			<div
+				data-animate="visual"
+				class:list={[
+					'lg:col-span-5',
+					left ? 'lg:order-first' : 'order-first lg:order-last lg:col-start-8',
+				]}
+			>
+				<div class="flex items-center justify-center p-8">
+					<div class="flex aspect-square w-full max-w-80 items-center justify-center rounded-full border-2 border-[color-mix(in_srgb,var(--accent)_20%,transparent)] bg-plate p-10 dark:border-[color-mix(in_srgb,var(--accent)_30%,transparent)] dark:bg-plate-dark">
+						<img
+							class="w-full dark:hidden"
+							src={img}
+							alt={`Logo ${title}`}
+							loading="lazy"
+						/>
+						<img
+							class="hidden w-full dark:block"
+							src={imgDark ?? img}
+							alt={`Logo ${title}`}
+							loading="lazy"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div
+				data-animate="copy"
+				class:list={[
+					'flex flex-col lg:col-span-6',
+					left ? 'lg:col-start-7 items-center lg:items-start text-center lg:text-left' : 'lg:col-start-1 items-center lg:items-end text-center lg:text-right',
+				]}
+			>
+				<span
+					class="mb-4 inline-block rounded-full border border-[color-mix(in_srgb,var(--accent)_22%,transparent)] bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] px-4 py-1.5 text-[0.68rem] font-bold tracking-[0.2em] text-(--accent) uppercase"
+				>{subtitle}</span>
+				<h2 class="text-3xl font-black tracking-tight text-foreground lg:text-5xl lg:leading-tight dark:text-inverse">
+					{title}
+				</h2>
+				<div
+					class="my-5 h-1 w-16 shrink-0 rounded-sm bg-(--accent)"
+					aria-hidden="true"
+				></div>
+				<p class="max-w-xl text-base leading-relaxed text-muted lg:text-lg dark:text-inverse-muted">
+					{description}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
