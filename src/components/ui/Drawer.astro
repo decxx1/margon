@@ -1,0 +1,39 @@
+---
+interface Props {
+	id?: string;
+	title?: string;
+	placement?: 'left' | 'right';
+	labelId?: string;
+}
+
+const {
+	id = 'drawer-navigation',
+	title = 'Filtros',
+	placement = 'left',
+	labelId = '',
+} = Astro.props;
+
+const hiddenClass = placement === 'right' ? 'translate-x-full max-[1023px]:right-0 max-[1023px]:left-auto' : '-translate-x-full';
+---
+
+<aside
+	id={id}
+	data-drawer
+	data-drawer-placement={placement}
+	class:list={[
+		'mt-4 h-full w-full rounded-lg border border-primary-200 bg-white shadow-lg transition-transform dark:border-gray-700 dark:bg-gray-800 max-[1023px]:fixed max-[1023px]:left-0 max-[1023px]:top-16 max-[1023px]:z-40 max-[1023px]:w-64 min-[1023px]:ml-4 min-[1023px]:translate-x-0',
+		hiddenClass,
+	]}
+	aria-labelledby={labelId || `${id}-label`}
+	aria-label="Sidenav"
+>
+	<div class="h-full overflow-y-auto px-3 py-5">
+		<h5
+			id={labelId || `${id}-label`}
+			class="mb-4 text-base font-semibold uppercase text-primary-700 dark:text-gray-400"
+		>
+			{title}
+		</h5>
+		<slot />
+	</div>
+</aside>
