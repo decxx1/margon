@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vue": "^4.1.0",
+    "@astrojs/vue": "6.0.1",
     "@fontsource/source-sans-pro": "^5.0.8",
     "@tailwindcss/vite": "^4.1.0",
-    "astro": "^4.6.3",
+    "astro": "6.4.4",
     "axios": "^1.6.8",
     "flowbite": "^2.3.0",
     "tailwindcss": "^4.1.0",
