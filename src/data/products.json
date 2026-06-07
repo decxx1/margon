@@ -53,15 +53,7 @@
         "title": "Salsas en Polvo",
         "packaging": "640g",
         "flavors": "",
-        "variety": "Demiglase, Blanca, 4quesos",
-        "category": "Línea Salados"
-    },
-    {
-        "img": "/images/sabores_del_sol/condimentos/condimento_tacos.webp",
-        "title": "Condimentos",
-        "packaging": "Blister x15 Unidades x30g c/u",
-        "flavors": "",
-        "variety": "Para Tacos, para Guacamole",
+        "variety": "Demiglase, Blanca, 4 quesos y Ave o Pollo",
         "category": "Línea Salados"
     },
 
@@ -74,7 +66,7 @@
         "category": "Línea Dulces, Panadería y Repostería"
     },
     {
-        "img": "/images/aral/gelatinas/35g/aral_gelatina_anana_35g.webp",
+        "img": "/images/aral/gelatinas/35g/aral_gelatina_diet_35g.webp",
         "title": "Gelatinas DIET (Sin Azúcar)",
         "packaging": "35g y 1Kg",
         "flavors": "Cereza, Frutilla, Frambuesa, Naranja, Durazno, Ananá, Limón y Manzana Verde",
@@ -116,7 +108,7 @@
     {
         "img": "/images/aral/mousse/1kg/aral_mousse_chocolate_1kg.webp",
         "title": "Mousses",
-        "packaging": "1Kg",
+        "packaging": "250g y 1Kg",
         "flavors": "Chocolate, Dulce de Leche, Café, Vainilla, Frutilla, Limón, Frutos del Bosque y Maracuyá",
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
@@ -212,7 +204,7 @@
     {
         "img": "/images/aral/varios/crema_chantilly_1kg.webp",
         "title": "Crema Chantilly",
-        "packaging": "1Kg",
+        "packaging": "250g y 1Kg",
         "flavors": "",
         "variety": "Blanca, Rosa, Celeste, Amarilla, Naranja",
         "category": "Línea Dulces, Panadería y Repostería"
@@ -245,7 +237,7 @@
         "img": "/images/aral/jugos/jugo_naranja_1kg.webp",
         "title": "Jugos en Polvo",
         "packaging": "1Kg",
-        "flavors": "Naranja, Ananá, Durazno, Pomelo y Manzana",
+        "flavors": "Naranja, Ananá, Durazno, Pomelo, Manzana y Limón",
         "variety": "",
         "category": "Línea Dulces, Panadería y Repostería"
     },
@@ -264,14 +256,6 @@
         "title": "Cacao Instantáneo",
         "packaging": "180g",
         "flavors": "Chocolate",
-        "variety": "",
-        "category": "Línea Golosinas"
-    },
-    {
-        "img": "/images/aralito/mielcitas/mielcitas.webp",
-        "title": "Caramelos Líquidos",
-        "packaging": "Bolsas x 50 unidades de 4ml",
-        "flavors": "Frutilla, Uva, Tutti Fruti, Banana, Frambuesa",
         "variety": "",
         "category": "Línea Golosinas"
     },

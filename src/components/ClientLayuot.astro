@@ -1,20 +1,38 @@
 ---
 interface Props {
-    title: string;
-    subtitle:string;
+	title: string;
+	subtitle: string;
 }
-const { title, subtitle } = Astro.props
+
+const { title, subtitle } = Astro.props;
 ---
-<div class="col-span-3 mt-16">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary-600 dark:text-white">
-        {title}
-    </h2>
-    <p class="mb-4 text-primary-800 sm:text-xl dark:text-gray-400">
-        {subtitle}
-    </p>
-</div>
-<div class="col-span-9">
-    <div class="space-y-8 md:grid md:grid-cols-2 md:gap-8 xl:gap-8 md:space-y-0">
-        <slot />
-    </div>
-</div>
+<article class="scroll-mt-28">
+	<header class="relative mb-8 overflow-hidden rounded-2xl border border-border-warm bg-tint px-6 py-6 sm:px-8 sm:py-7 dark:border-border-warm-dark dark:bg-tint-dark">
+		<div
+			class="pointer-events-none absolute inset-0 bg-[color-mix(in_srgb,var(--color-primary-500)_6%,transparent)]"
+			aria-hidden="true"
+		></div>
+		<div class="relative flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+			<div>
+				<p class="mb-2 text-[0.72rem] font-semibold tracking-[0.28em] text-primary-600 uppercase dark:text-primary-300">
+					Provincia
+				</p>
+				<h2 class="text-3xl font-black tracking-tight text-primary-700 sm:text-4xl dark:text-primary-300">
+					{title}
+				</h2>
+			</div>
+			{
+				subtitle && (
+					<span class="inline-flex w-fit shrink-0 rounded-full border border-primary-500/25 bg-primary-500/10 px-4 py-2 text-xs font-bold tracking-[0.16em] text-primary-700 uppercase dark:text-primary-300">
+						{subtitle}
+					</span>
+				)
+			}
+		</div>
+		<div class="relative mt-5 h-1.5 w-24 rounded-sm bg-primary-500 dark:bg-primary-400" aria-hidden="true"></div>
+	</header>
+
+	<div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 xl:gap-5">
+		<slot />
+	</div>
+</article>

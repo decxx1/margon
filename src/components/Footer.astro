@@ -11,11 +11,22 @@ import {
     email,
     whatsappLinkeable,
     whatsappReadble,
-} from '@/hooks/env.js'
+} from '@/hooks/env.js';
+
+interface Props {
+	wave?: 'home' | 'catalog' | 'contact';
+}
+
+const { wave = 'home' } = Astro.props;
 ---
 <footer class="relative overflow-hidden bg-featured text-inverse dark:bg-featured-dark">
 	<svg
-		class="relative z-10 block h-12 w-full rotate-180 text-[#fbefe3] lg:h-16 dark:text-[#2d1f15]"
+		class:list={[
+			'relative z-10 block h-12 w-full rotate-180 lg:h-16',
+			wave === 'catalog' && 'text-[#fffdfa] dark:text-[#1c1612]',
+			wave === 'contact' && 'text-[#fdf7ef] dark:text-[#221a14]',
+			wave === 'home' && 'text-[#fbefe3] dark:text-[#2d1f15]',
+		]}
 		viewBox="0 0 1440 80"
 		preserveAspectRatio="none"
 		aria-hidden="true"
@@ -32,7 +43,7 @@ import {
 
 	<div class="relative z-10 mx-auto max-w-7xl px-6 py-16 lg:py-20">
 		<p class="mb-10 text-center text-[0.72rem] font-semibold tracking-[0.28em] text-primary-300 uppercase lg:text-left">
-			Estamos para ayudarte
+			Fábrica de alimentos
 		</p>
 
 		<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:justify-between">

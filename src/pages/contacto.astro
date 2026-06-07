@@ -1,46 +1,55 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
 import ContactInfo from '@/components/ContactInfo.astro';
 import FormContact from '@/components/FormContact.vue';
-import {
-    mapIframe,
-    siteKey,
-    telphoneReadble,
-} from '@/hooks/env.js';
+import { mapIframe, siteKey, telphoneReadble } from '@/hooks/env.js';
 ---
-<Layout 
+<Layout
 	title="Contacto"
 	canonical="https://margon.com.ar/contacto"
 	metaTitle="MarGon - Contacto"
-	metaDescription={"¿Quiéres ser distribuidor? Contáctenos para saber más sobre nuestras marcas Aral, Aralito, Viejo Minero y Sabores del Sol, y sus productos. Escríbanos " + telphoneReadble }
+	metaDescription={'¿Quiéres ser distribuidor? Contáctenos para saber más sobre nuestras marcas Aral, Aralito, Viejo Minero, Condimax y Sabores del Sol, y sus productos. Escríbanos ' + telphoneReadble}
 	metaImg="https://margon.com.ar/images/logos/margon_meta.webp"
-    preLoad="images/contact.webp"
+	preLoad="images/contact.webp"
 >
+	<Breadcrumb
+		page="Contacto"
+		title="Contacto"
+		description="Contáctenos para obtener nuestros productos"
+	/>
 
-    <section class="bg-body dark:bg-gray-900">
-        <div class="bg-[url('/images/contact.webp')] bg-no-repeat bg-cover bg-center bg-gray-600 bg-blend-multiply">
-            <div class="px-4 lg:pt-24 pt-8 pb-72 lg:pb-80 mx-auto max-w-screen-sm text-center lg:px-6 ">
-                <h1 class="mb-4 text-5xl tracking-tight font-extrabold text-primary-50">Contacto</h1>
-                <p class="font-light text-white text-sm sm:text-md md:text-lg lg:text-xl pb-2 pt-1 px-2 rounded-lg shadow-md tracking-tight border max-w-max mx-auto bg-opacity-80 backdrop-filter backdrop-blur-sm bg-primary-900 border-primary-600 dark:bg-primary-950 dark:border-primary-700 dark:text-gray-200">Contáctenos para obtener nuestros productos</p>
-            </div> 
-        </div>
-        <div class="py-16 px-4 mx-auto -mt-96 max-w-screen-xl sm:py-20 lg:px-6 ">
-            <FormContact client:load />
-            
-            <ContactInfo />
-        </div>
-    </section>
+	<section class="bg-body pt-4 pb-20 dark:bg-body-dark lg:pb-28">
+		<div class="mx-auto max-w-7xl px-6">
+			<div class="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-12">
+				<div class="lg:col-span-7">
+					<FormContact client:load />
+				</div>
+				<div class="lg:col-span-5">
+					<ContactInfo />
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <section class="bg-white dark:bg-gray-800 py-12">
-        <div class="max-w-screen-lg mx-auto rounded-xl shadow-xl" set:html={mapIframe}>
-        </div>
-    </section>
-    
+	<section class="bg-tint py-16 dark:bg-tint-dark lg:py-20">
+		<div class="mx-auto max-w-7xl px-6">
+			<header class="mb-10 text-center">
+				<p class="mb-3 text-[0.72rem] font-semibold tracking-[0.28em] text-primary-600 uppercase dark:text-primary-300">
+					Ubicación
+				</p>
+				<h2 class="text-2xl font-black tracking-tight text-foreground sm:text-3xl dark:text-inverse">
+					Encontranos en el mapa
+				</h2>
+				<div class="mx-auto mt-4 h-1 w-12 rounded-sm bg-primary-500 dark:bg-primary-400" aria-hidden="true"></div>
+			</header>
+			<div
+				class="overflow-hidden rounded-2xl border border-border-warm shadow-sm dark:border-border-warm-dark [&_iframe]:block [&_iframe]:aspect-video [&_iframe]:h-auto [&_iframe]:min-h-[280px] [&_iframe]:w-full sm:[&_iframe]:min-h-[360px] lg:[&_iframe]:min-h-[420px]"
+				set:html={mapIframe}
+			>
+			</div>
+		</div>
+	</section>
 </Layout>
 
-
-<!-- recaptcha v3 -->
 <script async src={'https://www.google.com/recaptcha/api.js?render=' + siteKey}></script>
-<script>
-
-</script>

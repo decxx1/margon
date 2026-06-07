@@ -1,229 +1,110 @@
 ---
 import Client from '@/components/Client.astro';
 import ClientLayuot from '@/components/ClientLayuot.astro';
-
 ---
-<section class="bg-body dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-2xl tracking-tight font-bold text-primary-800 dark:text-white">
-                Si querés adquirir nuestros productos podes acercarte a cualquier de estos puntos de venta
-            </h2>
-        </div>
-        <div class="grid space-y-8 lg:grid-cols-12 lg:gap-12 lg:space-y-0">
-            <ClientLayuot title="Mendoza" subtitle="">
-                <Client
-                    title="Mayorista Oscar David"
-                    address="Elpidio González 320, Godoy Cruz"
-                />
-                <Client
-                    title="Mayorista Tadicor"
-                    address="Lateral Acceso Norte, Las Heras"
-                />
-                <Client
-                    title="Distribuidora RTC"
-                    address="Gran Mendoza"
-                />
-                <Client
-                    title="Feria de Guaymallén"
-                    address="Pasillo 7"
-                />
-                <Client
-                    title="Depósito El Cordobés"
-                    address="Feria de Guaymallén, puestos del 31 al 37"
-                />
-                <Client
-                    title="Cuyo Aromas"
-                    address="Los Pescadores 1979, Las Heras"
-                />
-                <Client
-                    title="Prisie Distribuidora Gastronómica"
-                    address="Figueroa Alcorta 450, Godoy Cruz"
-                />
-                <Client
-                    title="La Feria del Cotillón"
-                    address="San Martín Sur 1115, Godoy Cruz"
-                />
-                <Client
-                    title="Supermercados Atomo"
-                    address="Todas las sucursales"
-                />
-                <Client
-                    title="Central de Bebidas"
-                    address="Todas las sucursales"
-                />
-                <Client
-                    title="Eguinos Distribuidora"
-                    address="San Juan 385, Ciudad de Mendoza"
-                />
-                <Client
-                    title="Distribuidora de bebidas JL Vargas"
-                    address="Rodriguez Peña 2660, Godoy Cruz"
-                />
-            </ClientLayuot>
-       
-            
-            <ClientLayuot title="Mendoza" subtitle="Zona Este">
-                <Client
-                    title="Mayorista Tadicor"
-                    address="Lateral Sur de Ruta Nacional 7, San Martín"
-                />
-                <Client
-                    title="Distribuidora Tutto Dulce"
-                    address="Tucumán 10, San Martín"
-                />
-                <Client
-                    title="Mayorista Guirao"
-                    address="Tomas Thomas 452, San Martín"
-                />
-                <Client
-                    title="Cotillón Cosmos"
-                    address="España 93, San Martín"
-                />
-                <Client
-                    title="Cotillón Pato"
-                    address="Lavalle 890, Rivadavia"
-                />
-            </ClientLayuot>
-    
-            <ClientLayuot title="Mendoza" subtitle="San Rafael">
-                <Client
-                    title="Mayorista Cereales el Diamante"
-                    address="Av. Bartolomé Mitre 3001"
-                />
-                <Client
-                    title="Casadoro Alejandro"
-                    address="Ayacucho 36"
-                />
-                <Client
-                    title="Tomás Todo Suelto"
-                    address="Cnel. Suarez 232"
-                />
-                <Client
-                    title="Supermercados Amuch"
-                    address="Av. Hipólito Yrigoyen 5060 "
-                />
-                <Client
-                    title="Mayorista Piazze"
-                    address="Av. Bartolomé Mitre 3652"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Mendoza" subtitle="General alvear">
-                <Client
-                    title="Los Primos Todo Suelto"
-                    address="Libertador Sur 98"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Mendoza" subtitle="Lavalle">
-                <Client
-                    title="Limay Mayorista"
-                    address="Perón 61"
-                />
-                <Client
-                    title="Limay Mayorista"
-                    address="Sucursal Costa de Araujo (Dr. Moreno y Godoy Cruz)"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="San Juan" subtitle="">
-                <Client
-                    title="Mayorista Café América"
-                    address="Colectora Acceso Este, Santa Lucía"
-                />
-                <Client
-                    title="Repostería Paulo"
-                    address="Pje. Patria y Boulevar Sarmiento"
-                />
-                <Client
-                    title="Repostería Caramelo"
-                    address="Av. Rioja 80 Sur"
-                />
-                <Client
-                    title="Distribuidora Rumeth"
-                    address="Belgrano 672 Este Capital"
-                /> 
-                <Client
-                    title="Cabral Mayorista"
-                    address="Todas las sucursales"
-                /> 
-                <Client
-                    title="Miguel Angel Distribuidora"
-                    address="Balaguer 561, Santa Lucia"
-                /> 
-            </ClientLayuot>
-            <ClientLayuot title="San Luis" subtitle="">
-                <Client
-                    title="Distribuidora Herc. Hijos de Enrique R. Cangiano SRL"
-                    address="Ruta 3 N° 505"
-                />
-                <Client
-                    title="Todo Re Suelto"
-                    address="Rivadavia 1298, San Luis"
-                /> 
-            </ClientLayuot>
-            <ClientLayuot title="Córdoba" subtitle="">
-                <Client
-                    title="Distribuidora Verona"
-                    address="Rivadavia 548- B° Centro Norte"
-                />
-                <Client
-                    title="Chialvo S.R.L."
-                    address="Libertad 1369 Bº General Paz"
-                />
-                <Client
-                    title="Chialvo S.R.L."
-                    address="Buenos Aires 356,  Centro de Ciudad de Córdoba"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Buenos Aires" subtitle="Mar del Plata">
-                <Client
-                    title="Distribuidora Neuquén"
-                    address="Av. Champagnat 3048"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Neuquen" subtitle="">
-                <Client
-                    title="Distribuidora Rocco"
-                    address="Rivadavia 945, San Carlos de Bariloche"
-                />
-                <Client
-                    title="Cotillón Punto Caramelo"
-                    address="Av. 12 de Julio 686, Zapala, Neuquen"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Tucumán" subtitle="">
-                <Client
-                    title="Distribuidora Sosa Hnos"
-                    address="América 105, Lastenia"
-                />
-                <Client
-                    title="Distribuidora Sosa Hnos"
-                    address="Independencia 270, Banda del Rio Salí"
-                />
-                <Client
-                    title="Distribuidora Sosa Hnos"
-                    address="San Martín Nº2, Cruz Alta."
-                />
-                <Client
-                    title="Distribuidora Ramos"
-                    address="Av. San Martin 78, San Miguel de Tucumán"
-                />
-                <Client
-                    title="Mayorista del Sol"
-                    address="24 de septiembre 877, San Miguel de Tucumán "
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Salta" subtitle="">
-                <Client
-                    title="Distribuidora Área 387"
-                    address="Abraham Lincoln 1227, Bº Jardín, Salta Capital"
-                />
-            </ClientLayuot>
-            <ClientLayuot title="Jujuy" subtitle="">
-                <Client
-                    title="TOC Distribuciones"
-                    address="Uruguay 252, San Pedro de Jujuy"
-                />
-            </ClientLayuot>
-        </div>
-    </div>
+<section class="bg-body pb-20 dark:bg-body-dark lg:pb-28">
+	<div class="mx-auto max-w-7xl px-6">
+		<header class="mx-auto mb-14 max-w-4xl text-center lg:mb-20">
+			<p class="mb-4 text-[0.72rem] font-semibold tracking-[0.28em] text-primary-600 uppercase dark:text-primary-300">
+				Dónde encontrarnos
+			</p>
+			<h2 class="text-2xl font-black tracking-tight text-foreground sm:text-3xl lg:text-4xl lg:leading-snug dark:text-inverse">
+				Si querés adquirir nuestros productos podes acercarte a cualquier de estos puntos de venta
+			</h2>
+			<div class="mx-auto mt-5 h-1 w-16 rounded-sm bg-primary-500 dark:bg-primary-400" aria-hidden="true"></div>
+		</header>
+
+		<div class="flex flex-col gap-16 lg:gap-20">
+			<ClientLayuot title="Mendoza" subtitle="">
+				<Client title="Mayorista Oscar David" address="Elpidio González 320, Godoy Cruz" />
+				<Client title="Mayorista Tadicor" address="Lateral Acceso Norte, Las Heras" />
+				<Client title="Distribuidora RTC" address="Gran Mendoza" />
+				<Client title="Feria de Guaymallén" address="Pasillo 7" />
+				<Client title="Distribuidora Montefrío" address="Acceso Norte 1345, Las Heras" />
+				<Client title="El Porteño" address="Feria de Guaymallén, Ala Norte, local 19 a 24" />
+				<Client title="Almacén Natural Baharat" address="Paso de Los Andes 1628, Godoy Cruz" />
+				<Client title="Dietética Camino Verde" address="Juan A. Maza 2540, Maipú" />
+				<Client title="Bernal Alimentos Saludables" address="Dorrego 59, Guaymallén" />
+				<Client title="Cuyo Aromas" address="Los Pescadores 1979, Las Heras" />
+				<Client title="Prisie Distribuidora Gastronómica" address="Figueroa Alcorta 450, Godoy Cruz" />
+				<Client title="La Feria del Cotillón" address="San Martín Sur 1115, Godoy Cruz" />
+				<Client title="Supermercados Atomo" address="Todas las sucursales" />
+				<Client title="Central de Bebidas" address="Todas las sucursales" />
+				<Client title="Eguinos Distribuidora" address="San Juan 385, Ciudad de Mendoza" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Mendoza" subtitle="Zona Este">
+				<Client title="Mayorista Tadicor" address="Lateral Sur de Ruta Nacional 7, San Martín" />
+				<Client title="Distribuidora Tutto Dulce" address="Tucumán 10, San Martín" />
+				<Client title="Mayorista Guirao" address="Tomas Thomas 452, San Martín" />
+				<Client title="Cotillón Cosmos" address="España 93, San Martín" />
+				<Client title="Cotillón Pato" address="Lavalle 890, Rivadavia" />
+				<Client title="Cotillón Fete" address="Albuera 69, San Martín" />
+				<Client title="Cotillón Fete" address="Lavalle 912, Rivadavia" />
+				<Client title="Bernal Alimentos Saludables" address="Manuel C. Saenz 45, Rivadavia" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Mendoza" subtitle="San Rafael">
+				<Client title="Mayorista Cereales el Diamante" address="Av. Bartolomé Mitre 3001" />
+				<Client title="Casadoro Alejandro" address="Ayacucho 36" />
+				<Client title="Tomás Todo Suelto" address="Cnel. Suarez 232" />
+				<Client title="Supermercados Amuch" address="Av. Hipólito Yrigoyen 5060 " />
+				<Client title="Mayorista Piazze" address="Av. Bartolomé Mitre 3652" />
+				<Client title="Distribuidora Montefrío" address="Juan B. Alberdi 504" />
+				<Client title="Mayorista Sogo" address="Av. Bartolomé Mitre 1124, San Rafael" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Mendoza" subtitle="General alvear">
+				<Client title="Los Primos Todo Suelto" address="Libertador Sur 98" />
+				<Client title="Distribuidora Montefrío" address="Entre Ríos esq. Av. Libertador Nte. Sur, Gral. Alvear" />
+				<Client title="Mayorista Carrillo" address="Aristóbulo del Valle 373, Gral. Alvear" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Mendoza" subtitle="Lavalle">
+				<Client title="Limay Mayorista" address="Perón 61" />
+				<Client title="Limay Mayorista" address="Sucursal Costa de Araujo (Dr. Moreno y Godoy Cruz)" />
+			</ClientLayuot>
+
+			<ClientLayuot title="San Juan" subtitle="">
+				<Client title="Mayorista Café América" address="Colectora Acceso Este, Santa Lucía" />
+				<Client title="Repostería Paulo" address="Pje. Patria y Boulevar Sarmiento" />
+				<Client title="Repostería Caramelo" address="Av. Rioja 80 Sur" />
+				<Client title="Distribuidora Rumeth" address="Belgrano 672 Este Capital" />
+				<Client title="Cabral Mayorista" address="Todas las sucursales" />
+				<Client title="Distribuidora Aldeana" address="9 de Julio 941, entre Patricias Sanjuaninas y EEUU, San Juan" />
+			</ClientLayuot>
+
+			<ClientLayuot title="San Luis" subtitle="">
+				<Client title="Distribuidora Herc. Hijos de Enrique R. Cangiano SRL" address="Ruta 3 N° 505" />
+				<Client title="Todo Re Suelto" address="Rivadavia 1298, San Luis" />
+				<Client title="Distribuidora Conlara" address="Hipólito Yrigoyen 539, Concaran" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Córdoba" subtitle="">
+				<Client title="Distribuidora Verona" address="Rivadavia 548- B° Centro Norte" />
+				<Client title="Chialvo S.R.L." address="Libertad 1369 Bº General Paz" />
+				<Client title="Chialvo S.R.L." address="Buenos Aires 356,  Centro de Ciudad de Córdoba" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Santa Fé" subtitle="Rosario">
+				<Client title="Cepro Soluciones Gastronómicas" address="Mendoza 7973, Rosario" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Buenos Aires" subtitle="Mar del Plata">
+				<Client title="Distribuidora Neuquén" address="Av. Champagnat 3048" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Neuquen" subtitle="">
+				<Client title="Distribuidora Rocco" address="Rivadavia 945, San Carlos de Bariloche" />
+				<Client title="Cotillón Punto Caramelo" address="Av. 12 de Julio 686, Zapala, Neuquen" />
+				<Client title="Sosa Gastón" address="Eva Perón casa 21, Chos Malal" />
+				<Client title="Super Norte SAS" address="Arroyo Atreuco S/N, Andacollo" />
+				<Client title="Ibañez Ivan" address="Virgen de Lujan y Jarillas, Las Lajas" />
+			</ClientLayuot>
+
+			<ClientLayuot title="Tucumán" subtitle="">
+				<Client title="Aymegon Distribuciones" address="Miguel Lillo 496, San Miguel de Tucumán" />
+			</ClientLayuot>
+		</div>
+	</div>
 </section>

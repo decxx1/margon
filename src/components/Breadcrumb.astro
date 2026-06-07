@@ -7,32 +7,45 @@ interface Props {
 
 const { page, title, description } = Astro.props
 ---
-<section class="container mx-auto rounded-2xl bg-gradient-to-b from-body to-secondary-100 px-8 py-12 dark:from-gray-900 dark:to-gray-800">
-  
+<section class="relative overflow-hidden bg-featured text-inverse dark:bg-featured-dark">
+	<div
+		class="pointer-events-none absolute inset-0 opacity-35 bg-[radial-gradient(circle_at_15%_50%,rgba(231,143,79,0.1)_0%,transparent_55%),radial-gradient(circle_at_90%_30%,rgba(201,162,39,0.07)_0%,transparent_50%)]"
+		aria-hidden="true"
+	></div>
 
-  <h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-primary-600 md:text-5xl lg:text-6xl dark:text-white">{title}</h1>
-  <p class="mb-6 text-center text-lg font-normal text-primary-800 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">{description}</p>
-  
-  <nav class="mx-auto w-max my-8 flex px-3 py-2 text-gray-700 border border-primary-200 dark:border-gray-700 rounded-lg  " aria-label="Breadcrumb">
-    <ol class="inline-flex items-center justify-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-      <li class="inline-flex items-center">
-        <a href="/" class="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-800 dark:text-gray-400 dark:hover:text-white">
-          <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-          </svg>
-          Inicio
-        </a>
-      </li>
-      <li>
-        <div class="flex items-center">
-          <svg class="rtl:rotate-180 block w-3 h-3 mx-1 text-primary-800 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-          </svg>
-          <p class="ms-1 text-sm font-medium text-primary-800 md:ms-2 dark:text-gray-400 ">{page}</p>
-        </div>
-      </li>
-    </ol>
-  </nav>
+	<div class="relative z-10 mx-auto max-w-7xl px-6 py-20 text-center lg:py-24">
+		<h1 class="text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl lg:leading-tight">
+			{title}
+		</h1>
+		<div class="mx-auto my-5 h-1 w-16 rounded-sm bg-primary-400" aria-hidden="true"></div>
+		<p class="mx-auto max-w-2xl text-base leading-relaxed text-inverse-muted lg:text-lg">
+			{description}
+		</p>
+
+		<nav class="mx-auto mt-8 inline-flex rounded-full border border-inverse/15 bg-inverse/5 px-4 py-2" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center gap-2 text-sm">
+				<li>
+					<a href="/" class="inline-flex items-center gap-1.5 font-medium text-primary-300 transition-colors hover:text-primary-200">
+						<svg class="h-3.5 w-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+							<path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+						</svg>
+						Inicio
+					</a>
+				</li>
+				<li class="text-inverse-subtle" aria-hidden="true">/</li>
+				<li class="font-medium text-inverse-muted">{page}</li>
+			</ol>
+		</nav>
+	</div>
+
+	<svg
+		class="relative z-10 block h-16 w-full text-body lg:h-22 dark:text-body-dark"
+		viewBox="0 0 1440 80"
+		preserveAspectRatio="none"
+		aria-hidden="true"
+	>
+		<path
+			d="M0,48 C240,80 480,0 720,40 C960,80 1200,16 1440,48 L1440,80 L0,80 Z"
+			fill="currentColor"></path>
+	</svg>
 </section>
-
-  

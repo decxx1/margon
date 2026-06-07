@@ -1,47 +1,89 @@
 ---
-
 import Phone from '@/icons/Phone.astro';
 import Map from '@/icons/Map.astro';
 import Whatsapp from '@/icons/Whatsapp.astro';
 import Email from '@/icons/Email.astro';
-
 import {
-    telphoneReadble,
-    telphoneLinkeable,
-    address,
-    mapUrl,
-    email,
-    whatsappLinkeable,
-    whatsappReadble,
-} from '@/hooks/env.js'
+	telphoneReadble,
+	telphoneLinkeable,
+	address,
+	mapUrl,
+	email,
+	whatsappLinkeable,
+	whatsappReadble,
+} from '@/hooks/env.js';
 ---
-<div class="text-center sm:grid sm:grid-cols-2 my-8 md:grid-cols-4 sm:gap-4 md:gap-12">
-    <div class="my-4 sm:my-0">
-        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 bg-primary-100 rounded-lg dark:bg-gray-800">
-            <Whatsapp extraClass="w-8 h-8 text-primary-600" />
-        </div>
-        <p class="mb-2 text-xl text-primary-800 font-bold dark:text-white">WhatsApp</p>
-        <a href={'https://wa.me/' + whatsappLinkeable} class="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">{whatsappReadble}</a>
-    </div>
-    <div class="my-4 sm:my-0">
-        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 bg-primary-100 rounded-lg dark:bg-gray-800">
-            <Phone extraClass="w-8 h-8 text-primary-600" />
-        </div>
-        <p class="mb-2 text-xl text-primary-800 font-bold dark:text-white">Teléfono</p>
-        <a href={'tel:' + telphoneLinkeable} class="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">{telphoneReadble}</a>
-    </div>
-    <div class="my-4 sm:my-0">
-        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 bg-primary-100 rounded-lg dark:bg-gray-800">
-            <Email extraClass="w-8 h-8 text-primary-600" />
-        </div>
-        <p class="mb-2 text-xl text-primary-800 font-bold dark:text-white">E-mail</p>
-        <a href={'mailto:' + email} class="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">{email}</a>
-    </div>
-    <div class="my-4 sm:my-0">
-        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 bg-primary-100 rounded-lg dark:bg-gray-800">
-            <Map extraClass="w-8 h-8 text-primary-600" />
-        </div>
-        <p class="mb-2 text-xl text-primary-800 font-bold dark:text-white">Dirección</p>
-        <a href={mapUrl} class="inline-flex py-2 px-4 text-sm font-medium text-center rounded-lg border text-primary-600 border-primary-600 hover:text-white hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600 dark:focus:ring-primary-800">{address}</a>
-    </div>
-</div>
+<aside>
+	<header class="mb-8">
+		<p class="mb-3 text-[0.72rem] font-semibold tracking-[0.28em] text-primary-600 uppercase dark:text-primary-300">
+			Canales directos
+		</p>
+		<h2 class="text-2xl font-black tracking-tight text-foreground dark:text-inverse">
+			Escribinos o visitanos
+		</h2>
+		<div class="mt-4 h-1 w-12 rounded-sm bg-primary-500 dark:bg-primary-400" aria-hidden="true"></div>
+	</header>
+
+	<div class="flex flex-col gap-4">
+		<a
+			href={'https://wa.me/' + whatsappLinkeable}
+			class="group flex items-start gap-4 rounded-2xl border border-[#25d366]/30 bg-[color-mix(in_srgb,#25d366_8%,transparent)] p-5 transition-colors hover:border-[#25d366]/50 hover:bg-[color-mix(in_srgb,#25d366_14%,transparent)] sm:p-6"
+		>
+			<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#25d366] text-white">
+				<Whatsapp extraClass="h-6 w-6" />
+			</div>
+			<div class="min-w-0">
+				<p class="text-sm font-bold tracking-wide text-foreground uppercase dark:text-inverse">WhatsApp</p>
+				<p class="mt-1 text-base font-semibold text-[#128C7E] transition-colors group-hover:text-[#25d366] dark:text-[#25d366]">
+					{whatsappReadble}
+				</p>
+				<p class="mt-2 text-xs text-muted dark:text-inverse-muted">Respuesta rápida · Consúltenos</p>
+			</div>
+		</a>
+
+		<article class="flex items-start gap-4 rounded-2xl border border-border-warm bg-card p-5 sm:p-6 dark:border-border-warm-dark dark:bg-card-dark">
+			<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/10">
+				<Phone extraClass="h-6 w-6 text-primary-600 dark:text-primary-400" />
+			</div>
+			<div class="min-w-0">
+				<p class="text-sm font-bold tracking-wide text-foreground uppercase dark:text-inverse">Teléfono</p>
+				<a
+					href={'tel:' + telphoneLinkeable}
+					class="mt-1 inline-block text-base font-semibold text-primary-600 transition-colors hover:text-primary-700 dark:text-primary-300 dark:hover:text-primary-200"
+				>
+					{telphoneReadble}
+				</a>
+			</div>
+		</article>
+
+		<article class="flex items-start gap-4 rounded-2xl border border-border-warm bg-card p-5 sm:p-6 dark:border-border-warm-dark dark:bg-card-dark">
+			<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/10">
+				<Email extraClass="h-6 w-6 text-primary-600 dark:text-primary-400" />
+			</div>
+			<div class="min-w-0">
+				<p class="text-sm font-bold tracking-wide text-foreground uppercase dark:text-inverse">E-mail</p>
+				<a
+					href={'mailto:' + email}
+					class="mt-1 inline-block break-all text-base font-semibold text-primary-600 transition-colors hover:text-primary-700 dark:text-primary-300 dark:hover:text-primary-200"
+				>
+					{email}
+				</a>
+			</div>
+		</article>
+
+		<article class="flex items-start gap-4 rounded-2xl border border-border-warm bg-card p-5 sm:p-6 dark:border-border-warm-dark dark:bg-card-dark">
+			<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-500/10">
+				<Map extraClass="h-6 w-6 text-primary-600 dark:text-primary-400" />
+			</div>
+			<div class="min-w-0">
+				<p class="text-sm font-bold tracking-wide text-foreground uppercase dark:text-inverse">Dirección</p>
+				<a
+					href={mapUrl}
+					class="mt-1 inline-block text-sm leading-relaxed font-semibold text-primary-600 transition-colors hover:text-primary-700 dark:text-primary-300 dark:hover:text-primary-200"
+				>
+					{address}
+				</a>
+			</div>
+		</article>
+	</div>
+</aside>

@@ -54,6 +54,16 @@ const {
 
 } = Astro.props;
 
+const pagePath = Astro.url.pathname.replace(/\/$/, '').replace(/\.html$/, '') || '/';
+const normalizedPath = pagePath === '/index' ? '/' : pagePath;
+
+const footerWave =
+	normalizedPath === '/catalogo' || normalizedPath === '/puntos-venta'
+		? 'catalog'
+		: normalizedPath === '/contacto'
+			? 'contact'
+			: 'home';
+
 ---
 
 <!doctype html>
@@ -146,7 +156,7 @@ const {
 
 		<Whatsapp />
 
-		<Footer />
+		<Footer wave={footerWave} />
 
 	</body>
 

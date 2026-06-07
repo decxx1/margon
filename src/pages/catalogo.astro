@@ -7,21 +7,14 @@ import Products from '@/components/Products.vue';
 	title="Catalogo"
 	canonical="https://margon.com.ar/catalogo"
 	metaTitle="MarGon - Catálogo de productos"
-	metaDescription="Conozca nuestra extensa línea de alimentos, sabores del sol, aral, aralito y viejo minero, línea dulces, salados, y bebidas con alcohol"
+	metaDescription="Conocé nuestra extensa línea de alimentos: Sabores del Sol, Aral, Aralito, Viejo Minero y Condimax. Productos salados, dulces, golosinas, cócteles y aderezos."
 	metaImg="https://margon.com.ar/images/logos/aral_azul.webp"
-    preLoad="images/logos/aral_azul.webp"
+	preLoad="images/logos/aral_azul.webp"
 >
-    <Breadcrumb
-        page="Catálogo"
-        title="Nuestros productos"
-        description="Conocé nuestra extensa línea de alimentos"
-    />
-    <Products
-        client:load    
-    />
-
+	<Breadcrumb
+		page="Catálogo"
+		title="Nuestros productos"
+		description="Conocé nuestra extensa línea de alimentos"
+	/>
+	<Products client:load />
 </Layout>
-
-<style>
-
-</style>
