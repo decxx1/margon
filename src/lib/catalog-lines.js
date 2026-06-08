@@ -30,6 +30,13 @@ export const catalogLines = [
 		shortLabel: 'Cócteles',
 		logo: '/images/logos/viejo-minero-nuevo.webp',
 	},
+	{
+		category: 'Línea Salsas y Aderezos',
+		brand: 'condimax',
+		label: 'Línea Salsas y Aderezos',
+		shortLabel: 'Salsas & Aderezos',
+		logo: '/images/logos/condimax.webp',
+	},
 ];
 
 export function getLineByCategory(category) {

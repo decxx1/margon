@@ -285,6 +285,32 @@
         "flavors": "",
         "variety": "",
         "category": "Línea Cócteles"
+    },
+
+
+    {
+        "img": "/images/condimax/salsa_de_aji.webp",
+        "title": "Salsa de Ají Picante",
+        "packaging": "270 Gr, 190 Gr y 5Kg",
+        "flavors": "",
+        "variety": "",
+        "category": "Línea Salsas y Aderezos"
+    },
+    {
+        "img": "/images/condimax/mostaza.webp",
+        "title": "Mostaza",
+        "packaging": "300 Gr",
+        "flavors": "",
+        "variety": "",
+        "category": "Línea Salsas y Aderezos"
+    },
+    {
+        "img": "/images/condimax/salsa_inglesa.webp",
+        "title": "Salsa Inglesa",
+        "packaging": "270 Gr",
+        "flavors": "",
+        "variety": "",
+        "category": "Línea Salsas y Aderezos"
     }
 ]
 
