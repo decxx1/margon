@@ -28,7 +28,7 @@ export const catalogLines = [
 		brand: 'viejo-minero',
 		label: 'Línea Cócteles',
 		shortLabel: 'Cócteles',
-		logo: '/images/logos/viejo-minero-nuevo.webp',
+		logo: '/images/logos/viejo-minero-nuevo.svg',
 	},
 	{
 		category: 'Línea Salsas y Aderezos',
